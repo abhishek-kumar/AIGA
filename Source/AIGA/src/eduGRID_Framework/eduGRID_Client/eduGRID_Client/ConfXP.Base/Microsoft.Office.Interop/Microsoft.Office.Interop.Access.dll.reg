@@ -1,0 +1,314 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\CLSID\{E27A992D-A330-11D0-81DD-00C04FC2F51B}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.FormatConditionClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{044E54C5-B19B-11CE-A689-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.AccessFieldClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{50D56610-60AC-11CF-82C9-00AA004B9FE6}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.HyperlinkClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E973-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.PageClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{02F92C80-8F8E-101B-AF4E-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.ControlClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{90B322A4-F1D9-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access._ControlInReportEventsClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E947-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.LabelClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{BC9E4359-F037-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access._ChildLabelClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E949-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.RectangleClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E94B-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.LineClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E94D-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.ImageClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E94F-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.CommandButtonClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E951-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.OptionButtonClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{BC9E435A-F037-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access._OptionButtonInOptionClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E953-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.CheckBoxClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{BC9E435C-F037-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access._CheckBoxInOptionClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E955-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.OptionGroupClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E957-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.BoundObjectFrameClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E945-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.TextBoxClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E959-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.ListBoxClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E95B-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.ComboBoxClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E95D-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.ObjectFrameClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E95F-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.PageBreakClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E961-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.ToggleButtonClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{BC9E435E-F037-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access._ToggleButtonInOptionClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{9CD4A762-A6A9-11CE-A686-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.PaletteButtonClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E963-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.SubFormClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E965-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.SubReportClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E967-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.CustomControlClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{300471E0-7426-11CE-AB63-00AA0042B7CE}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access._CustomControlInReportClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{3B06E970-E47C-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.TabControlClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{BC9E4355-F037-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.SectionClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{BC9E4356-F037-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.GroupLevelClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{BC9E4360-F037-11CD-8701-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access._SectionInReportClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{7AD9E906-BAF8-11CE-A68A-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access._PageHdrFtrInReportClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{483615A0-74BE-101B-AF4E-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.FormOldClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{27CE30A0-91FF-101B-AF4E-00AA003F0F07}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.ReportOldClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{73A4C9C1-D68D-11D0-98BF-00A0C90DC8D9}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.ApplicationClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{EB106214-9C89-11CF-A2B3-00A0C90542FF}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.ReferencesClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{493D8A73-1DB1-11D1-98A2-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.DataAccessPageClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{08F6C813-3CFD-11D1-98BC-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.AllFormsClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{08F6C814-3CFD-11D1-98BC-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.AllReportsClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{08F6C815-3CFD-11D1-98BC-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.AllMacrosClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{08F6C816-3CFD-11D1-98BC-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.AllModulesClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{08F6C818-3CFD-11D1-98BC-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.AllDataAccessPagesClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{08F6C81B-3CFD-11D1-98BC-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.AllTablesClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{08F6C81C-3CFD-11D1-98BC-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.AllQueriesClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{08F6C81E-3CFD-11D1-98BC-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.AllViewsClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{08F6C820-3CFD-11D1-98BC-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.AllStoredProceduresClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{08F6C821-3CFD-11D1-98BC-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.AllDatabaseDiagramsClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{08F6C811-3CFD-11D1-98BC-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.CurrentProjectClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{08F6C819-3CFD-11D1-98BC-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.CurrentDataClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{9212BA72-3E79-11D1-98BD-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.CodeProjectClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{08F6C81A-3CFD-11D1-98BC-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.CodeDataClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{CB9D3172-4728-11D1-8334-006008197CC8}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.WizHookClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{416ED4F1-AB31-11D1-BF72-0060083E43CF}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.DefaultWebOptionsClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{416ED4F7-AB31-11D1-BF72-0060083E43CF}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.WebOptionsClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{8B06E321-B23C-11CF-89A8-00A0C9054129}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.ClassClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{DBC5175E-A8ED-11D3-A0DD-00C04F68712B}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.PrinterClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{483615A0-74BE-101B-AF4E-00AA003F0F08}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.FormClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{ECD1EADA-D373-11D3-8D21-0050048383FB}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.ReportClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{08F6C822-3CFD-11D1-98BC-006008197D41}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Access.AllFunctionsClass"
+"Assembly"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\TypeLib\{4AFFC9A0-5F99-101B-AF4E-00AA003F0F07}\9.0]
+"PrimaryInteropAssemblyName"="Microsoft.Office.Interop.Access, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"

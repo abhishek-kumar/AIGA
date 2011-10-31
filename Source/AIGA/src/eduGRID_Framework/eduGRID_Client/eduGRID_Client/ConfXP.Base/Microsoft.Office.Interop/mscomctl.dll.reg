@@ -1,0 +1,49 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\CLSID\{1EFB6596-857C-11D1-B16A-00C0F0283628}\InprocServer32]
+"Class"="mscomctl.TabStripClass"
+"Assembly"="mscomctl, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{66833FE6-8583-11D1-B16A-00C0F0283628}\InprocServer32]
+"Class"="mscomctl.ToolbarClass"
+"Assembly"="mscomctl, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{8E3867A3-8586-11D1-B16A-00C0F0283628}\InprocServer32]
+"Class"="mscomctl.StatusBarClass"
+"Assembly"="mscomctl, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{35053A22-8589-11D1-B16A-00C0F0283628}\InprocServer32]
+"Class"="mscomctl.ProgressBarClass"
+"Assembly"="mscomctl, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{C74190B6-8589-11D1-B16A-00C0F0283628}\InprocServer32]
+"Class"="mscomctl.TreeViewClass"
+"Assembly"="mscomctl, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{BDD1F04B-858B-11D1-B16A-00C0F0283628}\InprocServer32]
+"Class"="mscomctl.ListViewClass"
+"Assembly"="mscomctl, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{2C247F23-8591-11D1-B16A-00C0F0283628}\InprocServer32]
+"Class"="mscomctl.ImageListClass"
+"Assembly"="mscomctl, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{F08DF954-8592-11D1-B16A-00C0F0283628}\InprocServer32]
+"Class"="mscomctl.SliderClass"
+"Assembly"="mscomctl, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{DD9DA666-8594-11D1-B16A-00C0F0283628}\InprocServer32]
+"Class"="mscomctl.ImageComboClass"
+"Assembly"="mscomctl, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\TypeLib\{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}\2.0]
+"PrimaryInteropAssemblyName"="mscomctl, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"

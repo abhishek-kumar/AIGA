@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Tutorial">
+</Property><Property Name="Solution File" Value="D:\Tasks to do\Work Area\imaginecup\Working Source - eduGRID Framework\Alchemi-1.0.5-src-net-2.0\examples\Test_eduGRID\Tutorial.sln">
+</Property><Property Name="Date" Value="Monday, March 05, 2007">
+</Property><Property Name="Time" Value="17:34 PM">
+</Property></Properties><Event ErrorLevel="0" Project="Tutorial" Source="Tutorial.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="Tutorial" Source="Tutorial.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="Tutorial.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Tutorial.sln" Description="Converted">
+</Event></UpgradeLog>

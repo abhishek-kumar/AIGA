@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="AIMLbot.Bot" Collapsed="true">
+    <Position X="72.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Bot.cs</FileName>
+      <HashCode>AEACYCBihAAAhGoAiCABAAAMECBAEAgAEGAAGIAwAMA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLbot.Request" Collapsed="true">
+    <Position X="72.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Request.cs</FileName>
+      <HashCode>AEAAAAAAAAAAAAAABAAAAgAAAABCAAAAAAAAAAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLbot.Result" Collapsed="true">
+    <Position X="74" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Result.cs</FileName>
+      <HashCode>AgEAEAAAAAASAAAEAAAIQgCAEAAAAAAAAAAAQAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLbot.User" Collapsed="true">
+    <Position X="74" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>User.cs</FileName>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAggACAQADgAACAAAACAAAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLBot.iBOT" Collapsed="true">
+    <Position X="75.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>iBOT.cs</FileName>
+      <HashCode>QgAAAAAAADAACAAAgAAQAgAAAAAAAAwAAAIAAAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLbot.Normalize.ApplySubstitutions" Collapsed="true">
+    <Position X="35.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Normalize\ApplySubstitutions.cs</FileName>
+      <HashCode>AAAAEAAAQAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLbot.Normalize.MakeCaseInsensitive" Collapsed="true">
+    <Position X="36" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Normalize\MakeCaseInsensitive.cs</FileName>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLbot.Normalize.SplitIntoSentences" Collapsed="true">
+    <Position X="70.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Normalize\SplitIntoSentences.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAAAAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLbot.Normalize.StripIllegalCharacters" Collapsed="true">
+    <Position X="32.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Normalize\StripIllegalCharacters.cs</FileName>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLbot.Utils.AIMLLoader" Collapsed="true">
+    <Position X="70.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utils\AIMLLoader.cs</FileName>
+      <HashCode>EQAAAAAAAAAAAAAAGAAAIgEAAAAAAAAAQAAAgAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLbot.Utils.AIMLTagHandler" Collapsed="true">
+    <Position X="33.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utils\AIMLTagHandler.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAACAAAAAABAAIAAIAAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLbot.Utils.CustomTagAttribute" Collapsed="true">
+    <Position X="74" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utils\CustomTag.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLbot.Utils.Node" Collapsed="true">
+    <Position X="70.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utils\Node.cs</FileName>
+      <HashCode>AAAAAABBAAAAAARGCAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLbot.Utils.SettingsDictionary" Collapsed="true">
+    <Position X="75.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utils\SettingsDictionary.cs</FileName>
+      <HashCode>CAAYAAQAhAAAAAQEAAAAAiQAAiAAAAAAAAAAAAgAABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLbot.Utils.SubQuery" Collapsed="true">
+    <Position X="72.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utils\SubQuery.cs</FileName>
+      <HashCode>CAAAAAAAAEAAAAAAAQAAAAAAECAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMLbot.Utils.TextTransformer" Collapsed="true">
+    <Position X="34.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utils\TextTransformer.cs</FileName>
+      <HashCode>AAgAEAAAAAAAAAAAAAAAAgQAAAAgAAAAAAAAAAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="AIMLbot.Utils.Gender" Collapsed="true">
+    <Position X="70.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utils\Gender.cs</FileName>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAABA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AIMLbot.Utils.MatchState" Collapsed="true">
+    <Position X="72.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utils\MatchState.cs</FileName>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAABAAAAAAAAAAACAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

@@ -1,0 +1,1133 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Office XP Primary Interop Assemblies Readme File</title>
+<style>
+BODY {
+    font:normal 68% verdana,arial,helvetica;
+    color:#000000;
+}
+
+DIV.clsDocBody,
+DIV.clsFooter { margin-left:10px; margin-right:10px; margin-top:10px; }
+
+DIV.clsFPfig { font-size:80%; }
+
+TD, TH { font-size:68%; }
+
+A:link { color:#003399; text-decoration:none; }
+A:visited { color:#6699CC; text-decoration:none; }
+A:hover { text-decoration:underline; }
+
+DIV.clsDocBody A:link,
+DIV.clsDocBody A:visited {
+    text-decoration: underline
+}
+
+DIV.clsDocBody SPAN.clsHighlightItems A:link,
+DIV.clsDocBody SPAN.clsHighlightItems A:visited,
+DIV.clsNavTbl A:link, 
+DIV.clsNavTbl A:visited {
+    text-decoration: none;
+}
+
+H2 A:visited,
+H3 A:visited { color:#003399; }
+
+A.clsIncCpyRt {
+    color:#000000;
+    font-size:95%;
+    text-decoration: underline;
+}
+A.clsIncCpyRt:hover { color:#003399; }
+
+A.clsBackTop,
+A.clsBackTop:visited {
+    margin-top:10; margin-bottom:0;
+    padding-bottom:0;
+    font-size:90%;
+    color:#003399;
+    text-decoration: underline;
+}
+
+A.clsBackTop:hover { color:blue; }
+
+P {
+    line-height:1.5em;
+    margin-top:0.5em; margin-bottom:1.0em;
+}
+
+P.clsRef {
+    font-weight:bold;
+    margin-top:12pt; margin-bottom:0em;
+}
+
+
+PRE {
+    background:#EEEEEE;
+    margin-top:1em; margin-bottom:1em; margin-left:0px;
+    padding:5pt;
+}
+
+SPAN.db PRE, SPAN.ci PRE, SPAN.di PRE {
+	background:#EEEEEE;
+	padding-top: 0pt;
+	padding-bottom: 0pt;
+}
+
+PRE.clsCode, CODE.clsText { font-size:110%; font-family:'courier new',courier,serif; }
+
+PRE.clsCCCode { font-size:120%; font-family:'courier new',courier,serif;background:none }
+
+PRE.clsSyntax { font-size:100%; font-family:verdana,arial,helvetica,sans-serif; }
+
+H1 {
+    font:normal 165% verdana,arial,helvetica;
+    margin:5 0;
+    margin-top:0px;
+}
+
+H2 {
+    font:bold 125% verdana,arial,helvetica;
+    margin-top:1em; margin-bottom:0.5em;
+}
+
+H2.clsOsigHead {
+    font-family:arial, helvetica, sans-serif;
+    font-size:125%;
+    margin-top:1em; margin-bottom:0em;
+    color:#3366CC;
+}
+
+H2.clsBlue { color:#336699; }
+
+H3 {
+    font:bold 115% verdana,arial,helvetica;
+    margin-bottom:0.5em;
+}
+
+H4, H5, H6 {
+    font:bold 100% verdana,arial,helvetica;
+    margin-bottom:0.5em;
+}
+
+TABLE.clsNavTbl { margin-left: 10px; }
+TABLE.clsNavTbl TH,
+TABLE.clsNavTbl TD { font-family:verdana,arial,helvetica,sans-serif; font-size:60%; }
+
+TABLE.clsNavTbl TH { padding-bottom:0; }
+
+TABLE.clsTblHomeLeft A,
+TABLE.clsTblHomeLeft A:visited,
+TABLE.clsTblHomeLeft A:hover {
+    font-family:verdana,arial,helvetica,sans-serif; font-size:90%;
+    color:#003399;
+}
+
+TABLE.clsTblHomeLeft A:hover { text-decoration:underline; }
+
+TABLE.clsStd TH {
+    text-align:left; vertical-align:top;
+    background-color:#DDD;
+    padding:2px;
+}
+
+TABLE.clsStd TD {
+    vertical-align:top;
+    background-color:#EEE;
+    padding:2px;
+}
+
+TABLE.clsParamVls,
+TABLE.clsParamVls TD { padding-left:2pt; padding-right:2pt; }
+
+UL { margin-left:17px; margin-top:10px; margin-bottom:10px; }
+
+UL.clsBltBlu { list-style-image:url('file:///msdn-online/shared/graphics/bulletblue.gif'); }
+
+UL.clsBltRed { list-style-image:url('file:///msdn-online/shared/graphics/bulletred.gif') }
+
+OL { margin-left:25px; margin-top:10px; margin-bottom:10px; }
+
+UL LI {
+    line-height:120%;
+    margin-bottom:0.5em;
+}
+
+UL LI LI { list-style-type: disc; }
+
+
+OL LI { margin-bottom:0.7em; }
+
+INPUT.clsButton { font-weight: bold; color: #ffffff; background-color: #6699cc; margin-top: 10px; margin-left: 5px; }
+
+
+/*** VOICES STYLES ***/
+
+/* Add for gray bar style(6/7/00)*/
+TD.clsGrayBar {padding-left: 18px; border-bottom: 2px inset #CCCCCC; background-color:#CCCCCC}
+
+/* Added to provide left-margin for wrapping tables (3/13)*/
+DIV.clsVoicesBody { margin-left:10px; margin-right:10px }
+TABLE.clsVoicesHead { margin-top:4px }
+
+TD.clsCategory { font: bold 65% verdana,arial,helvetica,sans-serif }
+
+TD.clsVoiceNav {
+    background-image: url('file:///msdn-online/voices/graphics/background.jpg');
+    padding-top: 4px
+}
+TD.clsVoiceNav DIV {
+    padding-top: 4px;
+    font-size: 90%;
+}
+TD.clsVoiceNav A:visited { color:#003399 }
+TD.clsVoiceNav SPAN.clsLeftNavDot { font: 100%/80% }
+
+TD.clsArchiveTD { padding-left:20px; padding-top:20px }
+TD.clsArchiveTD { font: 68% verdana,arial,helvetica,sans-serif }
+
+H3.clsVoicesHead {
+ padding-top:6px;
+ margin-bottom:1.5em
+}
+
+TD.clsStoryTD, TH.clsStoryTD { padding-top: 4px; padding-right: 6px }
+/* Changed to TD instead of P (3/13) */
+DIV.clsByLine {
+    font-size: 80%;
+    line-height:120%;
+    padding-top: 2px
+}
+SPAN.pubdate, SPAN.pd, SPAN.clsPubdate, TD.clsPubDate, P.clsPubDate { color: #999999 } /*Added TD class (3/13)*/
+
+TABLE.clsCatItems TD.clsPubDate { padding-top: 4px; }
+TABLE.clsCatItems A:link, TABLE.clsCatItems A:visited { text-decoration: none; }
+TD.clsPubDate { padding-top: 10px }
+
+TABLE.clsCatItems { margin-top: 5px }
+TABLE.clsCatItems P {   margin-top:0; margin-bottom:0 }
+
+P.clsPostDate {
+        color:#0099FF;
+}
+
+DIV.clsPullQuote, DIV.clsPullQuote HR {
+    font:normal 110%/140% verdana,arial,helvetica,sans-serif; font-style:italic;
+    padding-bottom:.5em;
+    color:#3366FF;
+}
+
+/*** MINI PORTAL ***/
+TD.clsTDBody SPAN.clsHighlightItem
+{
+    line-height:1.5em;
+}
+
+IMG.clsLstImg { margin-top: -2px; }
+
+SPAN.clsHighlightItem A
+{
+    font-size:120%;
+}
+
+.clsNewsContent
+{
+    display:none;
+}
+
+.clsTab
+{
+    font: bold 65% verdana,arial,helvetica,sans-serif;
+    cursor:hand;
+    color:#FFFFFF;
+    background-color:#3366CC;
+}
+
+.clsTabSelected
+{
+    font: bold 65% verdana,arial,helvetica,sans-serif;
+    cursor:hand;
+    color:#000000;
+    background-color:#99CCFF;
+}
+
+.clsNewsItemTD
+{
+    padding-top:4px;
+}
+
+#idTabs TD.clsTab {
+    background-color: #003366;
+    cursor: hand;
+    border-left: 1px solid #6699CC;
+    border-right: 1px solid #6699CC;
+    border-top: 2px solid #003366;
+    border-bottom: 2px inset #99CCFF;
+}
+
+#idTabs TD.clsTab A, TD.clsTab A:hover, TD.clsTab A:active {
+    font-size:95%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#idTabs TD.clsTabSelected {
+    border-top: 2px outset #99CCFF;
+    border-left: 2px outset #99CCFF;
+    border-right: 2px outset #99CCFF;
+    background-color: #6699CC;
+}
+
+#idTabs TR.clsTblHead TD {
+    border-top: 2px groove #CCCCCC;
+    border-bottom: 1px outset #CCCCCC;
+}
+
+#idTabs TD.clsTabSelected A, TD.clsTabSelected A:hover, TD.clsTabSelected A:active {
+    font-size:95%;
+    color: #CCFFCC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#tabs a.clsTab              { font-size:95%; text-decoration:none; color:#FFFFFF; }
+#tabs a.clsTab:hover        { color:#FFFFFF; }
+#tabs a.clsTab:active       { color:#FFFFFF; }
+#tabs a.clsTab:visited      { color:#FFFFFF; }
+#tabs a.clsTabSelected      { font-size:95%; color: #003399; text-decoration:none; font-weight:bold; }
+#tabs a.clsTabSelected:active   { color:#000000; }
+#tabs a.clsTabSelected:hover    { color:#000000; }
+#tabs a.clsTabSelected:visited  { color:#000000; }
+
+
+/*** EVENTS ***/
+
+td.clsLToc a, td.clsLToc a:hover, td.clsLToc a:visited, td.clsLToc b{ cursor: hand; color: #003399; text-decoration: none; }
+TD.clsLToc A:hover { text-decoration: underline; }
+SPAN.st { font:100%/120% } /* style from generated code -- can we change class name? */
+
+/*** Glossary ***/
+
+/* I'll see if I can't get rid of some of these
+styles, or make them more universal ***/
+
+UL.clsShowHide LI {  font-weight: bold; padding-top:2px; list-style-image: url('file:///msdn-online/shared/graphics/plus.gif'); cursor: hand }
+UL.clsShowHide DIV { font-weight: normal; padding-top: 4px; }
+UL.clsShowHide A:visited { color:#003399; }
+
+DIV.clsHide { display: none; }
+UL.clsShowHide LI.clsHide {list-style-image: url('file:///msdn-online/shared/graphics/plus.gif'); }
+DIV.clsShow { display: block;  cursor: text;}
+DIV.clsShow P { line-height:120%;   margin-top:6px; margin-bottom:4px;}
+UL.clsShowHide LI.clsShow {list-style-image: url('file:///msdn-online/shared/graphics/minus.gif'); }
+
+TD.clsBigNav A:visited { color: #003399; }
+TD.clsBigNav A:hover { text-decoration: underline; }
+
+TD.clsBigNav { font-size: 108%; padding: 0 4; cursor: hand; }
+TD.clsBigNavSel { font-size: 108%; cursor: auto; padding: 0 4; }
+
+A#idToggleAll { font-weight:bold; color: #003399; }
+A#idToggleAll IMG { vertical-align:bottom; }
+
+
+/*** DOCTOP ***/
+
+#lnkPrevText, #lnkNextText, #lnkUpText {
+    color:#003399;
+    text-decoration:none;
+    font-family:verdana,arial,helvetica,sans-serif; font-size:7.5pt; font-weight:normal;
+}
+
+DIV.clsBucketBranch {
+    margin:10px;
+    font:italic verdana,arial,helvetica,sans-serif;
+}
+
+DIV.clsBucketBranch A,
+DIV.clsBucketBranch A:link,
+DIV.clsBucketBranch A:active,
+DIV.clsBucketBranch A:visited { text-decoration:none; color:#003399; }
+DIV.clsBucketBranch A:hover { color:blue; }
+
+TD.clsGrayTop
+{
+    color: #003399;
+    font-weight: normal;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 0px none;
+    padding-left:10px; padding-right:10px; padding-top:5px; padding-bottom:5px
+}
+TD.clsRaised
+{
+    border-top: solid #99CCFF 1px;
+    border-bottom: solid #003366 1px;
+    padding: 5px 10px;
+}
+TD.clsDarkRaised
+{
+    border-top: solid #6699CC 1px;
+    border-bottom: solid #000000 1px;
+    padding: 5px 10px;
+}
+TD.clsSunken
+{
+    border-top: solid #003366 1px;
+    border-bottom: solid #99CCFF 1px;
+    padding: 5px 10px;
+}
+TD.clsBBarSunken
+{
+    border-top: solid #003366 1px;
+    border-bottom: solid #99CCFF 1px;
+    padding: 0px 10px;
+}
+TD.clsBBarRaised
+{
+    border-top: solid #99CCFF 1px;
+    border-bottom: solid #000033 1px;
+    padding: 0px 10px;
+}
+TD.clsLightGreen
+{
+    color: #CCFFCC;
+    font-weight: normal;
+    font-style: italic;
+
+}
+TD.clsBtnUp
+{
+    cursor: hand;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 0 3;
+    border: outset #99CCFF 2px;
+}
+
+TD.clsBtnDown
+{
+    cursor: hand;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 0 3;
+    border: inset #99CCFF 2px;
+}
+
+TD.clsBtnOn
+{
+    background-color: #336699;
+    cursor: hand;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 0 3;
+    border: inset #99CCFF 2px;
+}
+
+TD.clsBtnOff
+{
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 0 3;
+    tab-index: 0;
+    border: solid #6699CC 2px;
+}
+
+TABLE.clsRating TD
+{
+    padding:0;
+    border-top: solid #666666 1px;
+    border-left: solid #666666 1px;
+    border-bottom: solid #CCCCCC 1px;
+    border-right: solid #CCCCCC 1px;
+}
+
+/*** SPECIFIC PAGE ELEMENTS ***/
+
+#pBackTop { display:none; }
+
+TABLE.clsNavLinks A:hover{text-decoration: underline;}
+TABLE.clsNavLinks { clear: both; }
+
+#txtCharCount
+{
+    background-color:white;
+    font-weight:bold;
+    height:1.5em;
+    width:3.7em;
+    border:ridge #CCCCCC 2px;
+    text-align:right;
+    overflow:hidden;
+}
+
+TABLE.clsCmtEntryTbl TD{padding: 3px 10px;}
+
+SPAN.clsLeftNavDot {
+    font-size:115%;
+    color:red;
+    line-height:1;
+}
+
+
+/*** SDK, IE4 ONLY ***/
+
+DIV.clsExpanded, A.clsExpanded {
+    display:inline;
+    color:#003399;
+    width:100%;
+}
+DIV.clsCollapsed, A.clsCollapsed { display:none; }
+SPAN.clsPropattr { font-weight:bold; }
+
+#pStyles,   #pCode, #pSyntax, #pEvents, #pStyles {
+    display:none;
+    text-decoration:underline;
+    cursor:hand;
+}
+
+
+/*** TB2 OVERRIDE ***/
+
+#idToolbar { font-size:10pt; }
+#idToolbar { border-bottom: 1px solid #FFFFFF; }
+#idToolbar A:hover { text-decoration:none; }
+
+
+/*** INDEX-SPECIFIC ***/
+
+A.clsDisabled {
+    text-decoration:none;
+    color:#003399;
+    cursor:text;
+}
+
+A.clsEnabled { cursor:auto; }
+
+SPAN.clsAccess { text-decoration:underline; }
+
+TABLE.clsIndex {
+    padding-left:2pt; padding-right:2pt;
+    margin-top: 17pt;
+}
+
+TABLE.clsIndex TD {
+    margin:3pt;
+    background-color:#EEEEEE;
+}
+
+TR.clsEntry { vertical-align:top; }
+
+TABLE.clsIndex TD.clsLetters {
+    background-color:#CCCCCC;
+    text-align:center;
+}
+
+TD.clsMainHead {
+    background-color:#FFFFFF;
+    vertical-align:top;
+    font-size:145%; font-weight:bold;
+    margin-top:1.35em; margin-bottom:.5em;
+}
+
+UL.clsIndex { margin-left:20pt; margin-top:0pt; margin-bottom:5pt; }
+
+LI OL { padding-bottom: 1.5em }
+
+
+/*** INETSDK-SPECIFIC STYLES ***/
+
+A.clsLeftMenu,
+A.clsLeftMenu:visited {
+    color:#003399;
+    text-decoration:none;
+    font-weight:bold; font-size:8pt;
+}
+
+BUTTON.clsShowme,
+BUTTON.clsShowme5 {
+    font-weight:bold; font-size:11; font-family:arial;
+    width:68; height:23;
+    position:relative; top:2;
+    background-color:#002F90;
+    color:#FFFFFF;
+}
+
+DIV.clsBeta {
+    font-weight:bold;
+    color:red;
+    margin-top:0.5em; margin-bottom:0.5em;
+}
+
+DIV.clsHi
+{
+padding-left:2em;
+text-indent:-2em;
+}
+
+BUTTON.clsShowme, BUTTON.clsShowme5,
+DIV.clsShowme { margin-bottom:.5em; margin-top:.5em; }
+
+SPAN.clsDefValue, TD.clsDefValue { font-weight:bold; font-family:'courier new' }
+
+SPAN.clsLiteral, TD.clsLiteral { font-family:'courier new'; }
+
+SPAN.clsRange, TD.clsRange { font-style:italic; }
+
+SPAN.clsEntryText {
+    line-height:12pt;
+    font-size:8pt;
+}
+
+SPAN.clsHeading {
+    color:#00319C;
+    font-size:11pt; font-weight:bold;
+}
+
+DIV.clsNote {
+    margin-bottom: 4pt;
+    background-color: #EEEEEE;
+}
+
+SPAN.clsFmtLib, SPAN.clsFmtInc, SPAN.clsFmtIDL, SPAN.clsFmtDLL { text-transform:lowercase; }
+
+
+/*** SITE MAP STYLES ***/
+#tblSiteMap DIV { line-height: 120%; }
+
+
+/* TOC-IE4.CSS */
+
+
+#idToc A.clsTocHeading { color:#003399;font-weight:bold; text-decoration:none; }
+#idToc A.clsTocHeading:hover { text-decoration: underline; }
+
+#idToc A.clsTocItem { color: #003399;text-decoration: none; }
+#idToc A.clsTocItem:hover   { text-decoration: underline; }
+
+#idToc A.clsTocItemSelect { font-weight:bold; color:#003399; text-decoration:none; }
+#idToc A.clsTocItemSelect:hover { color:#003399; }
+
+#idToc UL { margin-left:24px; margin-top:0px; margin-bottom:2px; }
+
+#idToc UL UL LI {margin-left:-24px; margin-top:0.1em; }  
+
+#idToc .noexpand { list-style-image: url('file:///msdn-online/shared/graphics/solid.gif'); }
+#idToc .clsNoExpand { list-style-image: url('file:///msdn-online/shared/graphics/solid.gif'); }
+
+#idToc .clsShowHide {list-style-image:url('file:///msdn-online/shared/graphics/plus.gif'); cursor: hand }
+#idToc .clsShowHideShowing { list-style-image:url('file:///msdn-online/shared/graphics/minus.gif'); cursor: hand }
+#idToc UL.clsItemsShow { list-style-image:url('file:///msdn-online/shared/graphics/arrowstop.gif'); }
+#idToc UL.clsItemsHide { display:none; }
+
+#idToc .clsStyleCheck  { margin-left:15px; margin-top:5px; }
+#idToc .clsStyleText  { margin-left:34px; margin-top:-16px; font-size:10px; cursor:default; }
+
+
+UL.clsItemsShow { margin-top: 5px; }
+UL.clsItemsShow LI { margin-left: -17px; margin-top: 5px;}
+A.clsTocHeading { line-height: 130% }
+UL.clsItemsShow LI A, UL.clsItemsShow A:visited, A.clsTocHeading, A:visited.clsTocHeading  { color: #003399; }
+UL.clsItemsShow LI A:hover, A:hover.clsTocHeading { color:#003399;text-decoration: underline; }
+
+.clsCCActListBG {background:#ffcc66}
+.clsCCRatListBG {background:#99ccff}
+.clsCCRatList, .clsCCActList {background:none}
+
+.clsCCActListText {font-family:verdana,arial,sans serif;font-size:xx-small;color:#003366}
+.clsCCActListHeader {font-family:verdana,arial,sans serif;font-size:x-small;color:#003399}
+.clsCCActListHost {background:none;font-family:verdana,arial,sans serif;font-size:x-small;color:#003399}
+.clsDicta, .clsDesc {padding:6px;font-size:x-small;font-family:verdana,arial}
+DIV.clsDesc SPAN.clsDesc { padding: 0px; }
+.clsCop {font-size:x-small;font-family:verdana,arial;color:#6699cc}
+.clsPrecis  {font-size:x-small;background-color:menu;border-bottom:1px solid threedshadow;border-top:1px solid threedhighlight;color:menutext;font-size:small;font-family:verdana,arial}
+
+.clsCCGeneralHead {width:100%;height:25px;background:#003366;color:#ffffff;padding:2pt;padding-left:6pt;border-top:1px solid #6699cc;font-size:12pt;font-family:verdana,arial,sans serif;font-weight:bold}
+.clsCCGeneralHead2 {width:100%;height:23px;background:#cccccc;color:#003366;padding:2pt;padding-left:6pt;border-top:1px solid #ffffff;border-bottom:1px solid #999999;font-size:10pt;font-weight:bold;font-family:verdana,arial,sans serif}
+</style>
+</head>
+
+<body>
+
+<h1>Office XP Primary Interop Assemblies Readme File</h1>
+<p>Copyright (c) 2002 Microsoft&#174; Corporation. All rights reserved.</p>
+<p>This document provides information about the Microsoft Office XP Primary Interop 
+Assemblies.<h2>Contents</h2>
+
+<p><a href="#whatare">What are the Office XP Primary Interop Assemblies?</a><br>
+<a href="#included">Included assemblies</a><br>
+<a href="#systemreq">System requirements</a><br>
+<a href="#install">Installing and uninstalling the Office XP PIAs</a><br>
+<a href="#view">Viewing the installed assemblies</a><br>
+<a href="#reference">Referencing the Office XP PIAs</a><br>
+<a href="#distribute">Distributing solutions that rely on the Office XP PIAs</a><br>
+<a href="#issues">Known issues</a></p>
+
+<h2><a name="whatare"></a>What are the Office XP Primary Interop Assemblies?</h2>
+<p>Component Object Model (COM) <i>interop assemblies</i> allow <i>unmanaged</i> (COM) code to be 
+called from <i>managed</i> (.NET) code by using the Microsoft .NET Framework and the 
+common language runtime. COM interop assemblies allow managed applications to 
+bind to unmanaged types at compile time and provide information to the common 
+language runtime about how the unmanaged types should be marshaled at run time.
+</p>
+<p>While any number of COM interop assemblies may exist for a given type library, only one COM interop 
+assembly is designated as the <i>primary interop assembly</i> (PIA). The PIA contains 
+the official description of the unmanaged types as defined by the publisher of 
+those unmanaged types. The PIA usually also contains certain customizations that 
+make the types easier to use from managed code. The PIA is always digitally 
+signed by the publisher of the original unmanaged type.</p>
+<p>Microsoft has created several PIAs that contain the official description of 
+commonly-used Microsoft Office XP type libaries for products such as Microsoft 
+Access 2002, Microsoft Excel 2002, Microsoft FrontPage&#174; 2002, and so on. This 
+group of PIAs are known as the <i>Office XP Primary Interop Assemblies</i>. 
+Microsoft has customized the Office XP PIAs to make them easier for managed code 
+to interoperate with the Office XP COM type libraries. Any Office XP COM interop assembly that is not provided as part of the Office XP PIAs, or any 
+Office XP COM interop assembly that is generated by Microsoft Visual Studio&#174; 
+.NET at design time, should be considered unofficial and their use should be 
+avoided.</p>
+
+<h2><a name="included"></a>Included assemblies</h2>
+
+<p>The Office XP PIAs include the following assemblies:</p>
+
+<ul>
+  <li>adodb.dll </li>
+  <li>dao.dll</li>
+  <li>Microsoft.Office.Interop.Access.dll </li>
+  <li>Microsoft.Office.Interop.Excel.dll </li>
+  <li>Microsoft.Office.Interop.FrontPage.dll </li>
+  <li>Microsoft.Office.Interop.FrontPageEditor.dll </li>
+  <li>Microsoft.Office.Interop.Graph.dll </li>
+  <li>Microsoft.Office.Interop.Outlook.dll </li>
+  <li>Microsoft.Office.Interop.OutlookViewCtl.dll </li>
+  <li>Microsoft.Office.Interop.Owc.dll </li>
+  <li>Microsoft.Office.Interop.PowerPoint.dll </li>
+  <li>Microsoft.Office.Interop.Publisher.dll </li>
+  <li>Microsoft.Office.Interop.SmartTag.dll</li>
+  <li>Microsoft.Office.Interop.Visio.dll </li>
+  <li>Microsoft.Office.Interop.Word.dll</li>
+  <li>Microsoft.Vbe.Interop.dll</li>
+  <li>mscomctl.dll </li>
+  <li>msdatasrc.dll </li>
+  <li>office.dll </li>
+  <li>stdole.dll</li>
+</ul>
+
+<h2><a name="systemreq"></a>System requirements</h2>
+<p>Minimum system requirements for the Office XP Primary Interop Assemblies include 
+Microsoft Visual Studio&#174; .NET for solution developers, or the Microsoft .NET 
+Framework Redistributable for end users. For more information on these products, 
+including additional system requirements, go to the Microsoft Developer Network 
+(MSDN) Web site at <a href="http://msdn.microsoft.com/vstudio">http://msdn.microsoft.com/vstudio</a> or 
+<a href="http://msdn.microsoft.com/net">http://msdn.microsoft.com/net</a>.</p>
+
+<h2><a name="install"></a>Installing and uninstalling the Office XP PIAs</h2>
+<p>The Office XP PIAs are included as part of a self-extracting executable (.exe) 
+file. To extract the Office XP PIAs to a file directory folder of your choice, 
+simply open the .exe file. Once you have extracted all of the Office XP PIAs 
+from the .exe file, you must individually install each of the Office XP PIAs 
+that you want to reference from Microsoft Visual Studio .NET. To install the 
+Office XP PIAs, you must individually install a copy of each Office XP PIA in the 
+computer's global assembly cache (GAC), and then register all of that Office XP PIA's declared types, 
+or you can run a batch file that automatically installs all of the Office XP 
+PIAs in the computer's GAC and registers all of the Office XP PIAs' declared 
+types.</p>
+<p><b>To install the Office XP PIAs</b></p>
+<ol>
+<li>On a computer with Visual Studio .NET installed and the extracted Office XP 
+PIAs, on the <b>Start</b> menu, click <b>(All) Programs</b>, point to <b>Microsoft Visual Studio 
+.NET</b>, point to <b>Visual Studio .NET Tools</b>, and click <b>Visual Studio .NET Command 
+Prompt</b>. The <b>Visual Studio .NET Command Prompt</b> window appears. This 
+facilitates the use of the .NET Framework SDK tools.</li>
+<li>In the <b>Visual Studio .NET Command Prompt</b> window, use the <code>cd</code> 
+(change directory) 
+command to change to the file directory in which the Office XP PIAs were 
+extracted. For exampLe, if you extracted the Office XP PIAs to a C:\Office XP 
+PIAs\ folder, type <code><pre>cd C:\Office XP PIAs\</pre></code>and press ENTER.</li>
+<li>To install all of the Office XP PIAs at once, type
+<code><pre>register.bat</pre></code>and press ENTER. <p>You can skip steps 4 through 6 of this procedure, as all of the Office XP PIAs are automatically 
+installed in the computer's GAC and all of the Office XP PIAs' declared types 
+are registered. <br></li>
+<li>If you want to install an individual Office XP PIA, type<code><pre>gacutil -i assembly_file_name</code></pre>and press ENTER, where <code>assembly_file_name</code> is the file name of 
+the Office XP PIA. <br>
+<br>
+For example, assuming that you are in the file directory in which the Office XP PIAs 
+were extracted, and you want to install the Microsoft Word 
+2002 PIA only, type <code><pre>gacutil -i Microsoft.Office.Interop.Word.dll</pre></code>
+and press ENTER.  </li>
+<li>Next, in the <b>Visual Studio .NET Command Prompt </b>window, type the 
+<code>regedit /s</code> command and the name 
+of the Office XP PIA file name along with a .reg file extension. For example, if 
+the Office XP PIA file name is Microsoft.Office.Interop.Word.dll, and you are in 
+the file directory in which the Office XP PIAs were extracted, type <code><pre>regedit /s Microsoft.Office.Interop.Word.dll.reg</pre></code>
+and press ENTER. </li>
+<li>Repeat steps 4 and 5 above for all of the Office XP PIAs on which your 
+application depends, as described in the following table:</li></ol>
+<table border="1" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" cellspacing="1" bordercolorlight="#EEEEEE" bordercolordark="#EEEEEE">
+  <tr>
+    <td width="50%"><b>These Office XP applications...</b></td>
+    <td width="50%"><b>...depend on these Office XP PIAs.</b></td>
+  </tr>
+  <tr>
+    <td width="50%">Microsoft Access</td>
+    <td width="50%">
+    <ul>
+      <li>adodb.dll</li>
+      <li>dao.dll</li>
+      <li>Microsoft.Office.Interop.Access.dll</li>
+      <li>Microsoft.Office.Interop.Owc.dll</li>
+      <li>Microsoft.Vbe.Interop.dll</li>
+      <li>mscomctl.dll </li>
+      <li>msdatasrc.dll</li>
+      <li>office.dll </li>
+      <li>stdole.dll</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">Microsoft Excel</td>
+    <td width="50%">
+    <ul>
+      <li>Microsoft.Office.Interop.Excel.dll </li>
+      <li>Microsoft.Vbe.Interop.dll </li>
+      <li>office.dll </li>
+      <li>stdole.dll</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">Microsoft FrontPage</td>
+    <td width="50%">
+    <ul>
+      <li>Microsoft.Office.Interop.FrontPage.dll</li>
+      <li>Microsoft.Office.Interop.FrontPageEditor.dll </li>
+      <li>Microsoft.Vbe.Interop.dll </li>
+      <li>office.dll </li>
+      <li>stdole.dll</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">Microsoft Graph</td>
+    <td width="50%">
+    <ul>
+      <li>Microsoft.Office.Interop.Graph.dll</li>
+      <li>office.dll </li>
+      <li>stdole.dll</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">Microsoft Office XP Web Components</td>
+    <td width="50%">
+    <ul>
+      <li>adodb.dll </li>
+      <li>Microsoft.Office.Interop.Owc.dll </li>
+      <li>mscomctl.dll </li>
+      <li>msdatasrc.dll </li>
+      <li>stdole.dll</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">Microsoft Outlook&#174;</td>
+    <td width="50%">
+    <ul>
+      <li>Microsoft.Office.Interop.Outlook.dll</li>
+      <li>Microsoft.Office.Interop.OutlookViewCtl.dll</li>
+      <li>office.dll </li>
+      <li>stdole.dll</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">Microsoft PowerPoint&#174;</td>
+    <td width="50%">
+    <ul>
+      <li>Microsoft.Office.Interop.PowerPoint.dll</li>
+      <li>Microsoft.Vbe.Interop.dll</li>
+      <li>office.dll </li>
+      <li>stdole.dll</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">Microsoft Publisher</td>
+    <td width="50%">
+    <ul>
+      <li>Microsoft.Office.Interop.Publisher.dll</li>
+      <li>office.dll </li>
+      <li>stdole.dll</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">Microsoft Office XP smart tags</td>
+    <td width="50%">
+    <ul>
+      <li>Microsoft.Office.Interop.SmartTag.dll</li>
+      <li>stdole.dll</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">Microsoft Visio&#174;</td>
+    <td width="50%">
+    <ul>
+      <li>Microsoft.Office.Interop.Visio.dll</li>
+      <li>stdole.dll</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">Microsoft Word</td>
+    <td width="50%">
+    <ul>
+      <li>Microsoft.Office.Interop.Word.dll </li>
+      <li>Microsoft.Vbe.Interop.dll </li>
+      <li>office.dll </li>
+      <li>stdole.dll</li>
+    </ul>
+    </td>
+  </tr>
+</table>
+<p><b>Note</b>&nbsp;&nbsp;Failure to follow the above steps will cause 
+Visual Studio .NET to build incompatible COM interop 
+assemblies at design time.</p>
+</p>
+<p><b>To uninstall the Office XP PIAs</b><ol>
+<li>On a computer with Visual Studio .NET installed and the extracted Office XP 
+PIAs, on the <b>Start</b> menu, click <b>(All) Programs</b>, point to <b>Microsoft Visual Studio 
+.NET</b>, point to <b>Visual Studio .NET Tools</b>, and click <b>Visual Studio .NET Command 
+Prompt</b>. The <b>Visual Studio .NET Command Prompt</b> window appears. This 
+facilitates the use of the .NET Framework SDK tools.</li>
+<li>For each Office XP PIA that you want to uninstall, type<code><pre>gacutil /u assembly_display_name</pre></code>
+and press ENTER.
+In this case, <code>assembly_display_name</code> is the PIA's global assembly cache display 
+name. For example, to uninstall the Word 2002 PIA from the GAC, type<code><pre>gacutil /u Microsoft.Office.Interop.Word</pre></code>and press ENTER. 
+<br>
+<br>
+Note that this step does not remove any registry entries. If you want to remove 
+registry entries associated with the assembly, you must do so manually by using 
+a program such as the Registry Editor.</li></ol><p><b>Caution</b>&nbsp;&nbsp; Modifying the 
+Microsoft Windows® Registry in any manner always carries some degree of risk. Incorrect modification 
+can cause serious problems that may require you to reinstall your operating 
+system. It is a good practice to always back up a computer's registry first 
+before modifying it. If you are running Microsoft Windows NT® or Microsoft 
+Windows 2000, you should also update your Emergency Repair Disk (ERD).</p><h2><a name="view"></a>Viewing the installed assemblies</h2>
+<p>To view the installed assemblies in the global assembly cache (GAC):</p>
+<ol>
+<li>Open Microsoft Windows Explorer.</li>
+<li>Open the system root folder (for example, C:\WINDOWS\ or C:\WINNT\).</li>
+<li>Open the \assembly folder.</li></ol>
+<p>- OR -</p>
+<ol>
+<li>On the <b>Start</b> menu, click <b>Run</b>. The <b>Run</b> dialog box appears.</li>
+<li>Type <b>C:\WINDOWS\assembly\</b> or <b>C:\WINNT\assembly\</b> (depending on the name of 
+your computer's system root folder) in the <b>Open</b> box.</li>
+<li>Click <b>OK</b>.</li></ol>
+<p>The Office XP PIAs are displayed along with all of the other assemblies 
+registered in the GAC.</p>
+
+<h2><a name="reference"></a>Referencing the Office XP PIAs</h2>
+<p>Unlike standard COM interop assemblies, you cannot browse to a PIA and set a 
+reference to it as you would with other assemblies in the Microsoft Visual 
+Studio .NET IDE. Instead, you set a reference to an existing COM type library; 
+if a PIA exists in the GAC for that COM type library, the PIA will be silently 
+referenced instead. To demonstrate this behavior, perform the following steps on 
+a computer with Visual Studio .NET and the Microsoft Word 2002 PIA installed:</p>
+<ol>
+<li>Start Visual Studio .NET.</li>
+<li>On the <b>File</b> menu, point to <b>New</b>, and click <b>Project</b>. The 
+<b>New Project</b> dialog box 
+appears.</li>
+<li>Click the <b>Visual Basic Projects</b> folder in the <b>Project Types</b> pane.</li>
+<li>Click <b>Console Application</b> in the <b>Templates</b> pane.</li>
+<li>Type <b>OfficeXPPIATest </b>in the <b>Name</b> box.</li>
+<li>Type or browse to a location in the <b>Location</b> list that is easy for you to 
+remember.</li>
+<li>Click <b>OK</b> to create the solution.</li>
+<li>On the <b>Project</b> menu, click <b>Add Reference</b>. The <b>Add Reference</b> dialog box 
+appears.</li>
+<li>Click the <b>COM</b> tab.</li>
+<li>Select the <b>Microsoft Word 10.0 Object Library</b> entry in the list of COM type 
+libraries.</li>
+<li>Click <b>Select</b> to select the Word object library entry.</li>
+<li>Click <b>OK</b> to add the reference.</li>
+<li>In the <b>Solution Explorer</b> window, in the <b>References</b> folder, click the 
+<b>Word</b> 
+reference.</li>
+<li>In the <b>Properties</b> window, notice that the <b>Path</b> property is set to 
+a string similar to <b>C:\WINDOWS\assembly\GAC\Word\...\Microsoft.Office.Interop.Word.dll</b>. This indicates that the 
+Word PIA is being used instead of forcing Visual Studio .NET to create its own 
+COM interop assembly in your project's location.</li></ol>
+<p>One you have successfully set a reference to a specific Office XP PIA, you can 
+use it just like any other COM interop assembly. For example, with the Microsoft 
+PowerPoint 2002 PIA, you can type
+<code>Imports Microsoft.Office.Interop.PowerPoint</code> at the beginning of a Microsoft Visual 
+Basic&#174; .NET code module
+to keep from typing <code>Microsoft.Office.Interop.PowerPoint</code> every time you want to 
+reference a specific PowerPoint object or member.
+<p>For a list of all of the available namespaces, objects, and members associated 
+with a specific Office XP PIA, go to the Visual Studio .NET Object Browser (on 
+the <b>View</b> menu, point to <b>Other Windows</b>, and click <b>Object Browser</b>) after you have 
+successfully set a reference to the Office XP PIA.</p>
+
+<h2><a name="distribute"></a>Distributing solutions that rely on the Office XP PIAs</h2>
+<p>You have several options to distribute a Visual Studio .NET solution that relies 
+on one or more of the Office XP PIAs:</p>
+<ol>
+<li>Have the end user of your solution manually install the required Office XP 
+PIAs on their computer before running your solution. This option is only 
+recommended for technically advanced end users. See the <a href="#install">Installing 
+and uninstalling the Office XP PIAs</a> section above for details.</li>
+<li>Place the required Office XP PIAs in the same directory as your solution and 
+distribute your solution and the Office XP PIAs as a single unit. This option is 
+only recommended for simple solution deployments, such as copying solutions from 
+one file directory folder to another across a computer network. The main 
+disadvantage with this option is that multiple copies of the same Office XP PIAs 
+may be installed on end users' computers, which reduces these computers' available hard 
+disk space.</li>
+<li>Install the required Office XP PIAs on end users' computers through the use 
+of a Visual Studio .NET Setup project. This option is recommended for most 
+deployments as it automatically installs and registers the required Office XP 
+PIAs, as well as reduces the number of duplicate Office XP PIAs on end users' 
+computers.</li></ol>
+<p>These first and second options are straightforward and are self-explanatory. To 
+demonstrate and practice the third option (using a Visual Studio .NET Setup 
+project), you will need two computers, one computer with Office XP, Visual Studio .NET, and 
+the Office XP PIAs installed, and another computer with Office XP and the Visual Studio .NET or 
+the Microsoft .NET Framework Redistributable installed but the Office XP PIAs 
+are not installed.</p>
+<p>On the computer with Visual Studio .NET and the Office XP PIAs installed:</p>
+First, create the executable project.
+<ol>
+<li>Create a Visual Basic .NET console application solution as described in steps 
+1 through 12 of the <a href="#reference">Referencing the Office XP PIAs</a> section above.</li>
+&nbsp;<li>Add the following code to the <code>Module1.vb</code> file:<br>
+<code><pre>Module Module1
+
+    Sub Main()
+
+        ' Purpose: Tests the Microsoft Word 2002 primary
+        ' interop assembly (PIA).
+
+        Dim wdApp As New Microsoft.Office.Interop.Word.Application()
+
+        Console.WriteLine(&quot;The version of Microsoft Word installed &quot; &amp; _
+            &quot;on this computer is &quot; &amp; wdApp.Version &amp; &quot;.&quot;)
+        Console.ReadLine()
+
+    End Sub
+
+End Module</pre></code></li>
+
+</ol>
+
+Next, create the Setup project.
+<ol>
+<li>Right-click the solution in the <b>Solution Explorer</b> window, point to <b>Add</b>, and 
+click <b>New Project</b>. The <b>Add New Project</b> dialog box appears.</li>
+<li>Click the <b>Setup and Deployment Projects</b> folder in the <b>Project Types</b> pane. 
+Click <b>Setup Project</b> in the <b>Templates</b> pane.</li>
+<li>Type <b>OfficeXPPIATestSetup</b> in the <b>Name</b> box.</li>
+<li>Type or browse to a location in the <b>Location</b> list that is easy for you to 
+remember.</li>
+<li>Click <b>OK</b> to add the OfficeXPPIATestSetup project to the OfficeXPPIATest 
+solution.</li>
+</ol>
+
+<p>
+Next, add the Setup project to the build. </p>
+<ol>
+<li>In the Solution Explorer window, right-click <b>OfficeXPPIATestSetup</b>, and click 
+<b>Properties</b>. The <b>OfficeXPPIATestSetup Property Pages</b> dialog box appears.</li>
+<li>Click <b>Configuration Manager</b>. The <b>Configuration Manager</b> dialog box appears.</li>
+<li>In the <b>Project Contexts</b> list, for the <b>OfficeXPPIATestSetup</b> entry, check the 
+<b>Build</b> box.</li>
+<li>Click <b>Close</b> to close the <b>Configuration Manager</b> dialog box.</li>
+<li>Click <b>OK</b> to close the <b>OfficeXPPIATestSetup Property Pages</b> dialog box.</li>
+</ol>
+
+<p>
+Next, add the executable project output to the Setup project. </p>
+<ol>
+<li>In the <b>Solution Explorer</b> window, right-click <b>OfficeXPPIATestSetup</b>, point to 
+<b>Add</b>, and click <b>Project Output</b>. The <b>Add Project Output Group</b> dialog box appears.</li>
+<li>Accept the default settings by clicking <b>OK</b>. The <b>Add Project Output Group</b> 
+dialog box closes.</li>
+</ol>
+
+<p>Next, add the Word 2002 PIA to the <b>Global Assembly Cache</b> output folder. </p>
+<ol>
+<li>In the <b>Solution Explorer</b> window, right-click <b>OfficeXPPIATestSetup</b>, point to 
+<b>View</b>, and click <b>File System</b>. The <b>File System</b> panes appear.</li>
+<li>Right-click <b>File System on Target Machine</b>, point to <b>Add Special Folder</b>, and 
+click <b>Global Assembly Cache Folder</b>. The <b>Global Assembly Cache Folder
+</b>is added to 
+the <b>File System on Target Machine</b> folder list.</li>
+<li>In the <b>Project Explorer </b>window, right-click <b>
+Microsoft.Office.Interop.Word.dll</b>, and click 
+<b>Properties</b>. 
+The <b>Property</b> window appears.</li>
+<li>In the <b>Property</b> window, in the <b>Folder</b> box, click the ellipses (<b>...</b>) button. 
+The <b>Select Folder</b> dialog box appears.</li>
+<li>Click <b>Global Assembly Cache Folder</b>, and click <b>OK</b> to close the 
+<b>Select Folder</b> 
+dialog box.</li>
+</ol>
+
+<p>Next, add the Word 2002 PIA registry entries to the <b>Registry on Target 
+Machine</b> pane.</p>
+<ol>
+  <li>In the <b>Solution Explorer</b> window, right-click <b>OfficeXPPIATestSetup</b>, point to 
+<b>View</b>, and click <b>Registry</b>. The <b>Registry on Target Machine </b> panes appear.</li>
+  <li>Right-click <b>Registry on Target Machine</b>, and click <b>Import</b>. 
+  The <b>Import Registry File</b> dialog box appears.</li>
+  <li>Locate and click the <b>Microsoft.Office.Interop.Word.dll.reg</b> file in the 
+  folder in which you extracted the original Office XP PIAs, and then click <b>
+  Open</b>. The Word 2002 PIA registry entries are added, and the <b>Import 
+  Registry File</b> dialog box disappears.</li>
+</ol>
+
+<p>
+Next, exclude unneeded dependencies from the Setup project. </p>
+<ol>
+<li>In the <b>Project Explorer</b> window, right-click <b>MSWORD.OLB</b>, and check 
+<b>Exclude</b>. A 
+strikeout symbol appears next to the MSWORD.OLB dependency.</li>
+<li>Repeat the previous step for the <b>Office.dll</b> and <b>stdole.dll</b> dependencies.</li>
+</ol>
+
+<p>
+Now, build the solution. </p>
+<ol>
+<li>On the <b>Build</b> menu, click <b>Build Solution</b>. Wait while the solution is  
+built.</li>
+<li>When the solution is finished building, copy all of the files in the &lt;Project Location&gt;\OfficeXPPIATestSetup\Debug\ folder on the computer with Visual Studio 
+and the Office XP PIAs installed, to a location accessible the computer that 
+has Office XP and Visual Studio .NET or 
+the Microsoft .NET Framework Redistributable installed but the Office XP PIAs 
+are not installed. There should be five files in the 
+accessible location: InstMsiA.exe, InstMsiW.exe, OfficeXPPIATestSetup.msi, Setup.exe, and Setup.ini.</li></ol>
+<p>On another computer that has Office XP and Visual Studio .NET or the Microsoft .NET Framework 
+Redistributable installed but does not the Office XP PIAs installed:</p>
+<ol><li>Run the Setup.exe file that was copied from the &lt;Project Location&gt;\OfficeXPPIATestSetup\Debug\ folder on the 
+  first computer. The OfficeXPPIATestSetup Wizard appears.</li>
+<li>Click <b>Next</b>. The <b>Select Installation Folder</b> page appears.</li>
+<li>Click <b>Next</b>. The <b>Confirm Installation</b> page appears.</li>
+<li>Click <b>Next</b>, and wait while the OfficeXPPIATestSetup.exe program is installed.</li>
+<li>When the <b>Installation Complete</b> page appears, click <b>Close</b>.</li>
+<li>Locate and run the OfficeXPPIATest.exe file. The message <b>The version of 
+Microsoft Word installed on this computer is 10.0</b> appears.</li>
+<li>Press any key to end the program and complete this exercise.</li>
+</ol>
+
+<h2><a name="issues"></a>Known issues</h2>
+<p>For a list of known issues associated with developing solutions that rely on the 
+Office XP PIAs, go to the MSDN Office Developer Center at 
+<a href="http://msdn.microsoft.com/office">http://msdn.microsoft.com/office</a>.</p>
+</body>
+</html>

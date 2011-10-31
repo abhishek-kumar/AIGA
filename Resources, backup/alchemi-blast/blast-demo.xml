@@ -1,0 +1,45 @@
+<task>
+  <manifest>
+    <embedded_file name="blastall.exe" location="blastall.exe" />
+    <embedded_file name="formatdb.exe" location="formatdb.exe" />
+    <embedded_file name="ecoli.nt" location="ecoli.nt" />
+    <embedded_file name="alchemi-blast.bat" location="alchemi-blast.bat" />
+  </manifest>
+  
+  <job id="0">
+    <input>
+      <embedded_file name="seq0.txt" location="seq0.txt" />
+    </input> 
+    <work run_command="alchemi-blast seq0.txt seq0.out" />
+    <output>
+      <embedded_file name="seq0.out"/>
+    </output>  
+  </job>
+
+  <job id="1">
+    <input>
+      <embedded_file name="seq1.txt" location="seq1.txt" />
+    </input> 
+    <work run_command="alchemi-blast seq1.txt seq1.out" />
+    <output>
+      <embedded_file name="seq1.out"/>
+    </output>  
+  </job>
+
+  <job id="2">
+    <input>
+      <embedded_file name="seq2.txt" location="seq2.txt" />
+    </input> 
+    <work run_command="alchemi-blast seq2.txt seq2.out" />
+    <output>
+      <embedded_file name="seq2.out"/>
+    </output>  
+  </job>
+
+
+</task>  
+    
+    
+  
+
+    

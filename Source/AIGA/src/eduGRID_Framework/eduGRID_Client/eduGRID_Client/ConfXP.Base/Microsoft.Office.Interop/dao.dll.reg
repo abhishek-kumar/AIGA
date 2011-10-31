@@ -1,0 +1,49 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\CLSID\{00000103-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="dao.TableDefClass"
+"Assembly"="dao, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000104-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="dao.FieldClass"
+"Assembly"="dao, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000105-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="dao.IndexClass"
+"Assembly"="dao, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000108-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="dao.QueryDefClass"
+"Assembly"="dao, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000109-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="dao.RelationClass"
+"Assembly"="dao, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000107-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="dao.UserClass"
+"Assembly"="dao, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000106-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="dao.GroupClass"
+"Assembly"="dao, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000100-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="dao.DBEngineClass"
+"Assembly"="dao, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000101-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="dao.PrivDBEngineClass"
+"Assembly"="dao, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\TypeLib\{00025E01-0000-0000-C000-000000000046}\5.0]
+"PrimaryInteropAssemblyName"="dao, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"

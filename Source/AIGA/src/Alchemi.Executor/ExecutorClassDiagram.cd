@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Alchemi.Executor.AppDomainExecutor" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>AppDomainExecutor.cs</FileName>
+      <HashCode>AAAAAAAACAAAAAACAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Executor.Configuration" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Configuration.cs</FileName>
+      <HashCode>AAACAAAAAiAAMAgAAyAAAAAAAABAAgE6gAgAAAIAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Executor.ExecutorContainer" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExecutorContainer.cs</FileName>
+      <HashCode>BCQAAAAAAiIEwAQCAAADAICAAAAgAAEMIAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GExecutor" />
+    </ShowAsAssociation>
+    <AssociationLine Name="GExecutor" Type="Alchemi.Executor.GExecutor" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="0.875" Y="1.259" />
+        <Point X="0.875" Y="3.062" />
+        <Point X="1.5" Y="3.062" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.162" Y="-0.221" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="Alchemi.Executor.GExecutor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GExecutor.cs</FileName>
+      <HashCode>BBYKAAAAAwIIRAUCBCIBACAAERhgQBIKDAAAIEAGAQA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GridAppDomain" />
+    </ShowAsAssociation>
+    <InheritanceLine Type="Alchemi.Core.GNode" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="2.13" />
+        <Point X="2.5" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Alchemi.Executor.GridAppDomain" Collapsed="true">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GridAppDomain.cs</FileName>
+      <HashCode>EAAAAAAAAAAAAAQAAAAAAgAAAgAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AppDomainExecutor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Alchemi.Core.GNode" Collapsed="true">
+    <Position X="1.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="Alchemi.Core.IExecutor" Collapsed="true">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Delegate Name="Alchemi.Executor.ExecutorConnectStatusEventHandler" Collapsed="true">
+    <Position X="6.5" Y="5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>ExecutorContainer.cs</FileName>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Alchemi.Executor.NonDedicatedExecutingStatusChangedEventHandler" Collapsed="true">
+    <Position X="6.5" Y="5.75" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>GExecutor.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Alchemi.Executor.GotDisconnectedEventHandler" Collapsed="true">
+    <Position X="6.5" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>GExecutor.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+</ClassDiagram>

@@ -1,0 +1,395 @@
+/* ================================
+    CSS STYLES FOR www.ConferenceXP.net 
+    v1.1, 2002.06.19 - Jack Davis
+    v1.0, 2001.01
+   ================================
+*/   
+
+
+/* PAGE BACKGROUND */
+/* background color for the header at the top of the page  */
+.HeadBg {
+    background-color: white;
+}
+
+/* background color for the content part of the pages */
+Body    { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 9pt; line-height: 12pt; background-color: white;}
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Body
+{
+    background-color: white;
+}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/* PAGE BANNER */
+/* NOTE: Site Title, Site Links and Tabs are rendered by MobilePortalBanner.ascx
+/* style for the text of the site title */
+.SiteTitle {
+    font-family: Verdana Bold, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:#cccc99
+}
+
+/* background/border colors for the selected tab */
+.TabBg {
+    background-color: white;
+    border-color: white;
+}
+
+/* background/border colors for the unselected tabs */
+.OtherTabsBg {
+    background-color: white;
+    border-color: white;
+}
+
+/* text style for the selected tab */
+.SelectedTab {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #003399;
+    font-weight: bold;
+}
+
+/* text style for the unselected tabs */
+.OtherTabs {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 13px;
+    color:#FF3300;
+    text-decoration:none;
+    font-weight: bold
+}
+
+/* hyperlink styles of the unselected tabs */
+A.OtherTabs:link    {
+    text-decoration:    none;
+    color:#FF3300;
+}
+
+A.OtherTabs:visited {
+    text-decoration:    none;
+    color:#FF3300;
+}
+
+A.OtherTabs:active  {
+    text-decoration:    none;
+    color:#FF3300;
+}
+
+A.OtherTabs:hover   {
+    text-decoration:    underline;
+    color:#FF3300;
+}
+    
+/* text style for the site links (at extreme top-right of header) */
+.SiteLink {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold
+}   
+
+/* hyperlink style for the site links */
+A.SiteLink:link {
+    text-decoration:    none;
+    color:white;
+}
+
+A.SiteLink:visited  {
+    text-decoration:    none;
+    color:#eeeeee;
+}
+
+A.SiteLink:active   {
+    text-decoration:    none;
+    color:#eeeeee;
+}
+
+A.SiteLink:hover    {
+    text-decoration:    underline;
+    color:white;
+}
+
+/* style for separator between site links */
+.Accent
+{
+    color: red;
+    font-weight:    bold;
+}
+
+
+
+/* MODULE-SPECIFIC */
+/* text style for reading messages in Discussion */    
+.Message    {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    font-size: 11px;
+    background-color: #eeeeee
+}   
+
+/* style of item titles by Announcements and events */
+.ItemTitle    {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: black;
+}
+
+.Cell
+{
+	border: solid 1px black;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 12px;
+}
+
+
+/* GENERAL */
+/* style for module titles */
+.Head { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 12pt; line-height: 16pt; color:#003399; font-weight:normal; }
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+.Head   {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  20px;
+    font-weight:    normal;
+    color: #003399;
+}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+/* style of item titles on edit and admin pages */
+.SubHead    {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    normal;
+    color: darkred;
+}
+
+/* module title style used instead of Head for compact rendering by QuickLinks and Signin modules */
+.SubSubHead {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: black;
+}
+
+/* text style used for most text rendered by modules */
+.Normal
+{
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size:    9pt;  /*11px;*/
+    line-height: 12pt;  /*12px;*/
+}
+
+/* text style used for textboxes in the admin and edit pages, for Nav compatibility */
+.NormalTextBox
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.NormalRed
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: red
+}
+
+.NormalBold { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size:  9pt; font-weight: bold; }
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+.NormalBold
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:    9pt;  /*11px;*/
+    font-weight: bold;
+}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+/* text style for buttons and link buttons used in the portal admin pages */
+.CommandButton     {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+    
+/* hyperlink style for buttons and link buttons used in the portal admin pages */
+A.CommandButton:link {
+    text-decoration:    underline;
+    color: #003399;
+}
+
+A.CommandButton:visited  {
+    text-decoration:    underline;
+    color: #003399;
+}
+
+A.CommandButton:active   {
+    text-decoration:    underline;
+    color: #003399;
+}
+
+A.CommandButton:hover    {
+    text-decoration:    underline;
+    color: red;
+}
+
+
+/* CUSTOM */
+
+.biggest { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 14pt; }
+.bigger  { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 12pt; }
+.big     { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 10pt; }
+.medium  { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 9pt; line-height: 12pt; }
+.small   { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 8pt; line-height: 10pt; }
+.tiny    { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 7pt; line-height: 9pt; }
+.todo    { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 9pt; line-height: 11pt;
+           font-weight: normal; color: gray; font-style: italic; }
+.copyright { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 8pt; line-height: 10pt; }
+.document  { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 8pt; line-height:  9pt; }
+
+
+/* GENERIC */
+
+p, th, td    { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size:  9pt; line-height: 12pt; }
+h1, .heading1 { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 14pt; color:#003399; font-weight:normal; }
+h2, .heading2 { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 12pt; color:#003399; font-weight:normal; }
+h3, .heading3 { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 11pt; color:#003399; font-weight:normal; }
+h4, .heading4 { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size: 10pt; color:#003399; font-weight:normal; }
+h5, .heading5 { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size:  9pt; color:#003399; font-weight:bold;   }
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+H1  {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  20px;
+    font-weight:    normal;
+    color: #666644;
+}
+
+H2  {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  20px;
+    font-weight:    normal;
+    color: #666644;
+}
+
+H3  {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  12px;
+    font-weight:    normal;
+    color: darkred;
+}
+
+H4  {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  12px;
+    font-weight:    normal;
+    color: darkred;
+}
+
+H5, DT  {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: darkred;
+}
+
+H6  {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: darkred;
+}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+TFOOT, THEAD    {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  12px;
+    color: darkred;
+}
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+TH  {
+    vertical-align: baseline;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  12px;
+    font-weight:    bold;
+    color: darkred;
+}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+/*
+A:link  {
+    text-decoration:    none;
+    color:  #003399;
+}
+
+A:visited   {
+    text-decoration:    none;
+    color:  #003399;
+}
+
+A:active    {
+    text-decoration:    none;
+    color:  #003399;
+}
+
+A:hover {
+    text-decoration:    underline;
+    color:  red;
+}
+*/
+
+/* vvvvvvvvvvvvvvvvvv
+SMALL   {
+    font-size:  8px;
+}
+^^^^^^^^^^^^^^^^^^ */
+
+BIG {
+    font-size:  14px;
+}
+
+BLOCKQUOTE, PRE {
+    font-family:    Lucida Console, monospace;
+}
+
+
+ol, ul, li { font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size:  9pt; line-height: 12pt; }
+
+/* ********************************************
+UL LI   {
+    list-style-type:    square ;
+}
+
+UL LI LI    {
+    list-style-type:    disc;
+}
+
+UL LI LI LI {
+    list-style-type:    circle;
+}
+
+OL LI   {
+    list-style-type:    decimal;
+}
+
+OL OL LI    {
+    list-style-type:    lower-alpha;
+}
+
+OL OL OL LI {
+    list-style-type:    lower-roman;
+}
+*********************************************** */
+
+HR {
+    color: dimgrey;
+    height:1pt;
+    text-align:left
+}

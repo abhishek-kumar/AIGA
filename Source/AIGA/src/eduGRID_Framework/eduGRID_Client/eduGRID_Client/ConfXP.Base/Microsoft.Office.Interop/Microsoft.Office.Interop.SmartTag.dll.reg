@@ -1,0 +1,4 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\TypeLib\{9B92EB61-CBC1-11D3-8C2D-00A0CC37B591}\1.0]
+"PrimaryInteropAssemblyName"="Microsoft.Office.Interop.SmartTag, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"

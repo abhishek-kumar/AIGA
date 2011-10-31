@@ -1,0 +1,25 @@
+/* site-wide style overrides for media="print" */
+
+.forscreen {
+      display: none;
+}
+.forprint {
+      display: inline;
+}
+
+.tdsecondarynav {
+      background-color: transparent;
+}
+
+#tablefooter {
+      background-color: transparent;
+}
+.footer,
+.footer a,
+.footer a:link,
+.footer a:visited,
+.footer a:active,
+.footer a:hover,
+.lastupdate {
+      color: #000000;
+}

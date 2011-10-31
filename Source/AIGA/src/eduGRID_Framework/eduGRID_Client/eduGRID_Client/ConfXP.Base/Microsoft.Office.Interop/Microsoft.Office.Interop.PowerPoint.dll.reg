@@ -1,0 +1,24 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\CLSID\{91493441-5A91-11CF-8700-00AA0060263B}\InprocServer32]
+"Class"="Microsoft.Office.Interop.PowerPoint.ApplicationClass"
+"Assembly"="Microsoft.Office.Interop.PowerPoint, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{91493443-5A91-11CF-8700-00AA0060263B}\InprocServer32]
+"Class"="Microsoft.Office.Interop.PowerPoint.GlobalClass"
+"Assembly"="Microsoft.Office.Interop.PowerPoint, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{91493446-5A91-11CF-8700-00AA0060263B}\InprocServer32]
+"Class"="Microsoft.Office.Interop.PowerPoint.OLEControlClass"
+"Assembly"="Microsoft.Office.Interop.PowerPoint, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{91493448-5A91-11CF-8700-00AA0060263B}\InprocServer32]
+"Class"="Microsoft.Office.Interop.PowerPoint.PowerRexClass"
+"Assembly"="Microsoft.Office.Interop.PowerPoint, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\TypeLib\{91493440-5A91-11CF-8700-00AA0060263B}\2.7]
+"PrimaryInteropAssemblyName"="Microsoft.Office.Interop.PowerPoint, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"

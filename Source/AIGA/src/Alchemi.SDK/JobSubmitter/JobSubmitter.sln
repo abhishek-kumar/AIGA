@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSubmitter", "JobSubmitter.csproj", "{B31B92E1-0CA5-4226-BDEF-C4DD5BC43E3D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{B31B92E1-0CA5-4226-BDEF-C4DD5BC43E3D}.Debug.ActiveCfg = Debug|.NET
+		{B31B92E1-0CA5-4226-BDEF-C4DD5BC43E3D}.Debug.Build.0 = Debug|.NET
+		{B31B92E1-0CA5-4226-BDEF-C4DD5BC43E3D}.Release.ActiveCfg = Release|.NET
+		{B31B92E1-0CA5-4226-BDEF-C4DD5BC43E3D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,19 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\CLSID\{0006F069-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.OutlookViewCtl.ObjectModelCtlClass"
+"Assembly"="Microsoft.Office.Interop.OutlookViewCtl, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0006F063-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.OutlookViewCtl.ViewCtlClass"
+"Assembly"="Microsoft.Office.Interop.OutlookViewCtl, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0468C085-CA5B-11D0-AF08-00609797F0E0}\InprocServer32]
+"Class"="Microsoft.Office.Interop.OutlookViewCtl.DataCtlClass"
+"Assembly"="Microsoft.Office.Interop.OutlookViewCtl, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\TypeLib\{0006F062-0000-0000-C000-000000000046}\1.0]
+"PrimaryInteropAssemblyName"="Microsoft.Office.Interop.OutlookViewCtl, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"

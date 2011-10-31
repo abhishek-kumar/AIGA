@@ -1,0 +1,42 @@
+/*** level 3 background images - don't load with NN4 as it doesn't display the images correctly ***/
+
+#tdlefttop {
+      background-image: url("/img/lev3/bkglefttop_logo.gif");
+      background-repeat: no-repeat;
+}
+#tdrighttop {
+      background-image: url("/img/lev3/bkgrighttop.gif");
+      background-repeat: no-repeat;
+}
+#tdrighttopspotlights,
+#tdrighttopspotlight {
+      background-image: url("/img/spotlights/bkgrighttop.jpg");
+      background-repeat: no-repeat;
+}
+#tdrighttopmitstrategy,
+#tdrighttopmicrosoftgoals,
+#tdrighttopbythenumbers {
+      background-image: url("/img/icampus/bkgrighttoplev3.jpg");
+      background-repeat: no-repeat;
+}
+#tdrighttopfaculty,
+#tdrighttopstudents {
+      background-image: url("/img/projects/bkgrighttoplev3.jpg");
+      background-repeat: no-repeat;
+}
+#tdrighttopwebservices,
+#tdrighttopclassroomtransform {
+      background-image: url("/img/themes/bkgrighttoplev3.jpg");
+      background-repeat: no-repeat;
+}
+#tdrighttopannouncement,
+#tdrighttoppresskit,
+#tdrighttopevents {
+      background-image: url("/img/news/bkgrighttoplev3.jpg");
+      background-repeat: no-repeat;
+}
+#tdrighttopimages,
+#tdrighttopvideo {
+      background-image: url("/img/gallery/bkgrighttoplev3.jpg");
+      background-repeat: no-repeat;
+}

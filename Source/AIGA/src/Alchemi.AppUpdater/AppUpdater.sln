@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppUpdater", "AppUpdater.csproj", "{0B88ED59-656E-4982-B402-A3448A81D84B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0B88ED59-656E-4982-B402-A3448A81D84B}.Debug.ActiveCfg = Debug|.NET
+		{0B88ED59-656E-4982-B402-A3448A81D84B}.Debug.Build.0 = Debug|.NET
+		{0B88ED59-656E-4982-B402-A3448A81D84B}.Release.ActiveCfg = Release|.NET
+		{0B88ED59-656E-4982-B402-A3448A81D84B}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

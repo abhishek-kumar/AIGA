@@ -1,0 +1,34 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\CLSID\{00000514-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="ADODB.ConnectionClass"
+"Assembly"="ADODB, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000560-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="ADODB.RecordClass"
+"Assembly"="ADODB, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000566-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="ADODB.StreamClass"
+"Assembly"="ADODB, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000507-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="ADODB.CommandClass"
+"Assembly"="ADODB, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000535-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="ADODB.RecordsetClass"
+"Assembly"="ADODB, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0000050B-0000-0010-8000-00AA006D2EA4}\InprocServer32]
+"Class"="ADODB.ParameterClass"
+"Assembly"="ADODB, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\TypeLib\{EF53050B-882E-4776-B643-EDA472E8E3F2}\2.7]
+"PrimaryInteropAssemblyName"="ADODB, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"

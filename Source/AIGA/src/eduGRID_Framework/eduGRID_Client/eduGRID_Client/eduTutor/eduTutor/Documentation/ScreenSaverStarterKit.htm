@@ -1,0 +1,582 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+
+<!--TO READ THIS HELP FILE, RIGHT-CLICK ON THE FILE NAME IN THE
+    SOLUTION EXPLORER WINDOW AND SELECT "VIEW IN BROWSER"-->
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Screen Saver Starter Kit</title>
+<style>
+<!--
+BODY         { background: url('Images/top-vc.gif') repeat-x; font-family: Verdana; font-size: 67% }
+.maindiv     { background: url('Images/side-vc.gif') repeat-y; padding-left: 55px; padding-top: 5px; position: relative; height: 50px }
+P            { margin-top: 0; margin-bottom: 6px; line-height:130% }
+H1           { margin-top: 20px; margin-bottom: 12px; font-size:190% }
+H2           { color: #585F56; left: -55px; position: relative; margin-top: 21px; margin-bottom: 9px; font-size:170% }
+H3           { margin-top: 21px; margin-bottom: 9px; font-size: 140%;  font-weight: bold}
+H4           { margin-top: 18px; margin-bottom: 9px; font-size: 140%; font-weight: bold}
+OL           { margin-top: 0; margin-bottom: 9px; line-height:130%}
+UL           { margin-top: 0; margin-bottom: 9px; line-height:130%}
+LI           { margin-top: 0; margin-bottom: 6px }
+BLOCKQUOTE   { margin-left: 20px }
+TABLE        { padding: 4px; BACKGROUND: #f8f7ef; BORDER: #DDDCD6 1px solid; BORDER-COLLAPSE: collapse; margin-bottom: 9px; }
+TR           { vertical-align: top} 
+TD           { padding: 4px; font-family: Verdana; font-size: 67%; line-height: 130%} 
+.contents    { line-height: 150% }
+DIV.CodeBlock   { font-family: "Courier New"; font-size: 100%; margin-bottom: 6px; BACKGROUND: #f8f7ef; BORDER: #eeede6 1px solid; padding: 10px; }
+.CodeInline  { font-family: "Courier New" }
+.ProcedureLabel {margin-top: 12px; font-style: italic; font-weight: bold; color: #0D4CC3 } 
+.FileNameCol { padding: 6px; BACKGROUND: #eeede6; width=220px; font-weight: bold}
+-->
+</style>
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="20">
+<div class="maindiv">
+
+<a name="top">
+
+<!-- MAIN CONTENT BEGINS -->
+
+</a>
+
+<p><a name="top">Microsoft Visual C# Starter Kit </a> </p>
+<h1><a name="top">Starter Kit: Screen Saver</a></h1>
+<p class="contents"><font color="#003300"><b><a name="top">Contents:</a></b></font></p>
+<p class="contents"><font color="#003300">
+<a href="#Introduction">Introduction</a><br>
+<a href="#Goals">Goals</a><br>
+<a href="#GettingStarted">Getting Started</a><br>
+<a href="#HowItWorks">How the Screen Saver Works</a><br>
+<a href="#Concepts">Concepts</a><br>
+<a href="#Extending">Extending the Screen Saver</a><br>
+<a href="#ForMoreInformation">For More Information</a><br>
+</font></p>
+
+<h2><A href="#top"><IMG src="Images\topjump-vc.gif" border=0></A><a name="Introduction">Introduction</a></h2>
+	<p><img border="0" src="Images\screensaver_thumbnail.png" width="250" height="177" alt="Screen Saver" align="right" style="margin-left: 15px; margin-bottom: 10px"
+>
+<p>This Visual C# Starter Kit is a ready-to-run Windows screen saver 
+application. The screen saver displays a sequence of images — either default 
+images, or images from a directory you specify — overlaid with text from a live 
+internet <a href="http://go.microsoft.com/fwlink/?LinkId=47765">RSS</a> (Really Simple 
+Syndication) feed. The project comes ready to compile and run, and you can 
+customize it with only a little extra C# programming. We’ve included a list of 
+suggestions in the section <a href="#extending">Extending the Screen Saver</a>. 
+You are also free to use the source code as the basis for your own projects, and 
+share your work with others or upload it to the Internet.</p>
+
+<br>
+<p>
+
+	<b>Note:</b> This documentation assumes that you have a basic knowledge of programming
+ concepts and the Visual C# environment. You can learn more about these topics in the product documentation
+ by clicking <b>Help</b> on the Main Menu, and selecting <b>Contents</b>, <b>Index</b>, or <b>Search</b>. You can also access Help by 
+ positioning the mouse cursor on language keywords or user interface elements such as windows
+ or dialog boxes, and pressing <b>F1</b>.
+
+</p>
+
+<h2><A href="#top"><IMG src="Images\topjump-vc.gif" border=0></A><a name="Goals">Goals</a></h2>
+	<p class="MsoNormal">
+
+	After reading through this starter kit documentation you will understand how to install and configure the 
+	Screen Saver application, how the source code is organized, how the application works, and how you can 
+	customize it using Visual C#. This starter kit demonstrates the following technologies:
+</p>
+<ul>
+
+	<li>GDI+ &mdash; to format and display graphics and text</li>
+	<li>System.XML &mdash; using XmlTextReader and XmlNode to read XML files containing RSS source information</li>
+	<li>The WebClient class &mdash; to download data from the web</li>
+	<li>RSS &mdash; including RSS feeds, channels and items</li>
+	<li>The C# 2.0 Language &mdash; including generics</li>
+	</ul>
+				
+			
+
+<h2><A href="#top"><IMG src="Images\topjump-vc.gif" border=0></A><a name="GettingStarted">Getting Started</a></h2>
+
+<h3>Building and running the Screen Saver</h3>
+
+<p>Once your project is loaded into the Visual C# environment, you can 
+compile and run the program in one step. </p>
+
+<p class="ProcedureLabel">To build and run the Screen Saver application</p>
+
+<ul>
+	<li>
+		Press F5 to <b>build</b> and start the screen saver under the <b>debugger</b>.
+	</li>
+</ul>
+
+<p>The screen saver launches and starts displaying the most recent articles from 
+the RSS feed. Pressing a key or moving the mouse causes the screen saver to 
+exit.</p>
+	
+<h3>Making a Quick Change to the Source Code</h3>
+
+<p>Editing the source code to change the way the program works is easy. Here’s 
+an example that adds your own text string to the screen saver display.</p>
+
+<p class="ProcedureLabel">To display an extra line of text:</p>
+
+<ol>
+	<li>Find the <b>Solution Explorer</b> window; its default position is in the upper right corner
+	of the Visual C# environment. Right-click <b>ScreenSaverForm.cs</b> in the <b>Solution Explorer</b> window and 
+	select <b>View Code</b> to open <b>ScreenSaverForm.cs</b> in Code view.</li>
+	<li>Scroll through the source code until you see the <b>OnPaint</b> method, 
+	or select it from the drop-down list in the upper right of Code View.</li>
+	<li><p>Type the following code at the end of the method:</p>
+	<div class="CodeBlock">e.Graphics.DrawString(<font color="#800000">"&lt;Your name&gt;C# Screen Saver"</font>, rssView.TitleFont, 
+		<font color="#008080">Brushes</font>.Orange, <font color="#0000FF">new</font>
+		<font color="#008080">PointF</font>(0, 0));</div></li>
+	<li><p>Press <b>F5</b> to run the application again.</p>
+	</li>
+</ol>
+
+<p>A title is now displayed on the screen saver.</p>
+
+	<h3>Accessing the Options Dialog Box</h3>
+
+	<p>The Screen Saver Starter Kit also includes an Options dialog where users can change
+		the settings for the Screen Saver.  To run the <b>Options</b> dialog inside Visual Studio, you will need to send a command-line argument
+		directly to the executable as it opens.  If you are
+		using Windows 98, be aware that the data you enter in the <b>Options</b> dialog
+		box will be visible to other users of your computer.
+	</p>
+
+
+	<p class="ProcedureLabel">To force the Options dialog box to appear:</p>
+
+	<ol>
+		<li>
+			Open <b>Solution Explorer</b>, and double-click the <b>Properties</b>
+			node under the Screen Saver project.<br>
+	This shows you options for configuring your project. </li>
+		<li>
+			Click the <b>Debug</b> tab, and find the <b>Command Line Arguments</b>
+			text box.
+		</li>
+		<li>
+			Type <b>/c</b> into the text box.<br>
+			This tells Visual C# to run the screen saver with the <b>/c</b> command-line
+				argument.
+			</li>
+		<li>
+			Press <b>F5</b> to launch the application.<br>
+	The Options dialog box appears.</li>
+		<li>
+			Experiment with the options by selecting a different background image
+			directory or entering a new RSS feed.
+		</li>
+		<li>
+			Click <b>OK</b> to close the dialog box.
+		</li>
+	</ol>
+
+	<p>
+		After changing the settings in the options mode, you can run the screen saver
+		again by entering <b>/s</b> as the command line argument instead of <b>/c</b>.
+	</p>
+
+
+	<h3>Installing the Screen Saver on Your Computer</h3>
+
+<p>The following steps describe how to install the screen saver application on your computer.</p>
+
+<p class="ProcedureLabel">To install the screen saver:</p>
+
+<ol>
+	<li>
+	<p>If you haven't already done so, load the Starter Kit into Visual C#.</p></li>
+	<li>
+	<p>On the File menu, click <b>Save All</b>.</p></li>
+	<li>
+	<p>If you are requested to enter a location to save the project, select a 
+	directory or accept the default location. Make a note of where the project 
+	is saved - by default it will be in a directory under <b>\My 
+	Documents\Visual Studio 2005\Projects</b>.</p></li>
+	<li>
+	<p>On the <b>Build</b> menu, click <b>Build Solution</b>. <br>
+	This creates an executable file for the screen saver.</p></li>
+	<li>
+	<p>Open up the directory specified in step 3 containing the saved project.</p></li>
+	<li>
+		<p>
+			Open the <b>bin\Debug</b> subdirectory. This is where the debug version of your executable
+			file is located. Its default name is <b>ScreenSaver1.exe</b> but you may have given it a different name when you
+			created the project the first time. Change the ".exe" extension on this file to ".scr".
+			<P>
+				<b>Note:</b> If you do not see the file extensions in <b>Windows Explorer</b>, then click on 
+							Folder Options under the <b>Tools</b> menu, click on the <b>View</b> 
+									tab, and uncheck the checkbox labeled
+									"Hide extensions for known file types". </P>
+		</p>
+	</li>
+	<li>
+		<p>Right-click on the .scr file and select "Install".<br>
+		This opens up the Windows Screen Saver Dialog Box.
+	</p></li>
+	
+	<li>
+	<p>Click the <b>Preview</b> button in the Windows Screen Saver Dialog Box.<br>
+	The screen saver launches. Press any key to stop it.</p>
+</li>
+<li>
+	<p>
+		Click the <b>Settings</b> button in the Windows Screen Saver Dialog Box to see the screen saver options. Try
+		changing the background image or the RSS feed.</p></li>
+	<li>
+	<p>Click <b>OK</b>. <br>
+	&nbsp;</p></li>
+</ol>
+<p>You have now installed your own Windows screen saver.</p>
+
+
+
+<h3>Sharing Your Version of the Screen Saver with Friends</h3>
+
+<p>Now that you have a customized version of the screen saver, you can share it 
+with your friends and family. Please note that the screen saver application uses 
+version 2.0 of the .NET Framework, so any computer running it needs to have this 
+version of the Framework installed. The .NET Framework is installed as part of 
+Visual Studio, but it can also be installed directly from the
+<a href="http://go.microsoft.com/fwlink/?LinkId=47766">
+Microsoft .NET Framework Developer Center</a>. If you plan on sharing your screen saver with friends, you 
+should let them know that they need to install the new .NET Framework as well.</p>
+
+<h2><A href="#top"><IMG src="Images\topjump-vc.gif" border=0></A><a name="HowItWorks">How 
+the Screen Saver Works </a></h2>
+
+<p>When Windows activates the screen saver due to a period of inactivity it 
+launches the executable, which is named "ScreenSaver1.scr" unless you have given it a different name. <br>
+<br>
+Unless the screen saver has been requested to open the <b>Options</b> dialog 
+box, it then creates a full-screen Windows Form, inserts the default background 
+image, and then accesses the Internet to download and display data from the RSS 
+feeds. Two timers update the currently selected topic and change the background 
+image.<br>
+<br>
+If the mouse is moved or clicked at any point, or if a key is pressed, the 
+program exits immediately.</p>
+
+<h3>Screen Saver Project Files</h3>
+
+<p>The project contains eight different C# source-code files.</p>
+
+<table border="1" bordercolor= #DDDCD6 width="100%" style="border-collapse: collapse">
+	<tr>
+		<td class="FileNameCol">Program.cs</td>
+		<td>Contains the <b>Main()</b> method — the location where the program 
+		begins execution — and the code for handling the command line switches</td>
+	</tr>
+	<tr>
+		<td class="FileNameCol">OptionsForm.cs</td>
+		<td>Contains the 
+		Windows Form that displays the settings options. From this dialog box, 
+		you can select a background image and an RSS feed to use when the screen 
+		saver is run.</td>
+	</tr>
+	<tr>
+		<td class="FileNameCol">ScreenSaverForm.cs</td>
+		<td>Contains the main screen saver Windows Form. The background images 
+		and RSS feed selected by the user are read and displayed on this 
+		full-screen form.</td>
+	</tr>
+	<tr>
+		<td class="FileNameCol">RSSFeed.cs</td>
+		<td>Contains the class representing an RSS 2.0 feed.</td>
+	</tr>
+	<tr>
+		<td class="FileNameCol">RssChannel.cs</td>
+		<td>Contains the class representing an RSS channel. There is one channel 
+		in any RSS feed. It represents a collection of articles.</td>
+	</tr>
+	<tr>
+		<td class="FileNameCol">RSSItem.cs</td>
+		<td>Contains the class representing an RSS item. An RSS channel can have 
+		any number of RSS items. An RSS item represents an article, blog post, 
+		or news story.</td>
+	</tr>
+	<tr>
+		<td class="FileNameCol">Item.cs</td>
+		<td>Contains the class representing an item, an object with a title and 
+		a description.</td>
+	</tr>
+	<tr>
+		<td class="FileNameCol">ItemDescriptionView.cs</td>
+		<td>Contains code that displays the description of an item from an RSS 
+		feed. It slowly fades in the text of the item, and then fades it out 
+		again.</td>
+	</tr>
+	<tr>
+		<td class="FileNameCol">ItemListView.cs</td>
+		<td>Contains code that displays the title of an item from an RSS 
+		feed. It keeps track of a currently selected article, which it can 
+		scroll forward or backward.</td>
+	</tr>
+	</table>
+
+
+<h2><A href="#top"><IMG src="Images\topjump-vc.gif" border=0></A><a name="Concepts">Concepts</a></h2>
+
+<h3>How Windows Interacts with Screen Savers</h3>
+
+<p>A Windows screen saver is an executable that opens a full-screen window 
+displaying a changing graphical display, such as a star field or selection of 
+photographs. Any executable can be used as a Windows screen saver. To make an 
+executable appear in the screen saver selection dialog box, it simply needs to 
+be placed in the Windows directory (This is \Windows\System32 in the system 
+drive if you’re using Windows 98 or Windows XP, or \WinNT\System32, if you 
+are using Windows NT or Windows 2000).<br>
+<br>
+When Windows runs your screen saver, it launches it with one of three command 
+line options:</p>
+<ul>
+	<li><b>/s</b> – Tells the screen saver to start displaying. </li>
+	<li><b>/c</b> – Tells the screen saver to open its Settings dialog box.</li>
+	<li><b>/p</b> – Tells the screen saver to show a small preview.</li>
+</ul>
+<p>This starter kit handles these arguments in the <b>Program.cs</b> source 
+file. When you look at the code in that file, you see that the <b>/p</b> 
+argument is not implemented by this starter kit.</p>
+<h3>Storing Options Using the Settings and Resource Designers</h3>
+<p>Since the starter kit can be run in two different modes, it needs to have a 
+way to store its settings between sessions, which it does using the Settings 
+Designer. You can see this designer by right-clicking the <b>ScreenSaver</b> 
+project node in Solution Explorer, selecting <b>Properties</b>, and then 
+clicking the <b>Settings</b> tab. This designer enables you to list all the 
+settings that your program would like to set and to access them from your code 
+as:<br>
+<br>
+<span style="font-size:10.0pt;
+font-family:Courier">Properties.Settings.Default.&lt;SettingName&gt;</span></p>
+<p><br>
+Similarly, the Resource Designer is used to store the default background image 
+and RSS feed. You can see it by right-clicking the <b>ScreenSaver</b> project 
+node in Solution Explorer and selecting <b>Properties</b>, then clicking the <b>
+Resources</b> tab.</p>
+
+<h3>XML and RSS</h3>
+
+<p>RSS feeds are an XML format for syndicating content on the Web. They are 
+often used by sites for publishing their lists of current news articles or blog 
+posts. An RSS feed has an <b>&lt;rss&gt;</b> node containing one <b>&lt;channel&gt;</b> 
+node. The <b>&lt;channel&gt;</b> node has one or more &lt;item&gt; nodes, one for each of 
+the articles or blog posts in the feed. It also contains a <b>&lt;title&gt;</b> 
+element, that contains the title of the channel. Each <b>&lt;item&gt;</b> can contain 
+a title, a link, and a description. A very simple example is below.</p>
+<p>&nbsp;</p>
+
+<div class="CodeBlock">
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New; color: blue">&lt;</span><span style="font-size: 10.0pt; font-family: Courier New; color: maroon">rss</span><span style="font-size: 10.0pt; font-family: Courier New; color: blue">
+		</span>
+		<span style="font-size: 10.0pt; font-family: Courier New; color: red">
+		version</span><span style="font-size: 10.0pt; font-family: Courier New; color: blue">=</span><span style="font-size: 10.0pt; font-family: Courier New">&quot;<span style="color:blue">2.0</span>&quot;<span style="color:blue">&gt;</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;
+		<span style="color:blue">&lt;</span><span style="color:maroon">channel</span><span style="color:blue">&gt;</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;&nbsp;&nbsp;
+		<span style="color:blue">&lt;</span><span style="color:maroon">title</span><span style="color:blue">&gt;</span>My 
+		Feed<span style="color:blue">&lt;/</span><span style="color:maroon">title</span><span style="color:blue">&gt;</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;&nbsp;&nbsp;
+		<span style="color:blue">&lt;</span><span style="color:maroon">description</span><span style="color:blue">&gt;</span>Some 
+		articles.<span style="color:blue">&lt;/</span><span style="color:maroon">description</span><span style="color:blue">&gt;</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;&nbsp;&nbsp;
+		<span style="color:blue">&lt;</span><span style="color:maroon">link</span><span style="color:blue">&gt;</span>http://msdn.microsoft.com/<span style="color:blue">&lt;/</span><span style="color:maroon">link</span><span style="color:blue">&gt;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;&nbsp;&nbsp;
+		<span style="color:blue">&lt;</span><span style="color:maroon">item</span><span style="color:blue">&gt;</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span style="color:blue">&lt;</span><span style="color:maroon">title</span><span style="color:blue">&gt;</span>Article 
+		1<span style="color:blue">&lt;/</span><span style="color:maroon">title</span><span style="color:blue">&gt;</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span style="color:blue">&lt;</span><span style="color:maroon">description</span><span style="color:blue">&gt;</span>The 
+		abstract of the article.<span style="color:blue">&lt;/</span><span style="color:maroon">description</span><span style="color:blue">&gt;</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">&lt;</span><span style="color:maroon">link</span><span style="color:blue">&gt;</span>http://msdn.microsoft.com/netframework<span style="color:blue">&lt;/</span><span style="color:maroon">link</span><span style="color:blue">&gt;</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;&nbsp;&nbsp;
+		<span style="color:blue">&lt;/</span><span style="color:maroon">item</span><span style="color:blue">&gt;</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;&nbsp;&nbsp;
+		<span style="color:blue">&lt;</span><span style="color:maroon">item</span><span style="color:blue">&gt;</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span style="color:blue">&lt;</span><span style="color:maroon">title</span><span style="color:blue">&gt;</span>Article 
+		2<span style="color:blue">&lt;/</span><span style="color:maroon">title</span><span style="color:blue">&gt;</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span style="color:blue">&lt;</span><span style="color:maroon">description</span><span style="color:blue">&gt;</span>Some 
+		other abstract.<span style="color:blue">&lt;/</span><span style="color:maroon">description</span><span style="color:blue">&gt;</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span style="color:blue">&lt;</span><span style="color:maroon">link</span><span style="color:blue">&gt;</span>http://msdn.microsoft.com/vcsharp/<span style="color:blue">&lt;/</span><span style="color:maroon">link</span><span style="color:blue">&gt;</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;&nbsp;&nbsp;
+		<span style="color:blue">&lt;/</span><span style="color:maroon">item</span><span style="color:blue">&gt;</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;
+		<span style="color:blue">&lt;/</span><span style="color:maroon">channel</span><span style="color:blue">&gt;</span></span></p>
+		<span style="font-size: 10.0pt; font-family: Courier New; color: blue">
+		&lt;/</span><span style="font-size: 10.0pt; font-family: Courier New; color: maroon">rss</span><span style="font-size: 10.0pt; font-family: Courier New; color: blue">&gt;</span>
+</div>
+
+<h2><A href="#top"><IMG src="Images\topjump-vc.gif" border=0></A><a name="Extending">Extending 
+the Screen Saver</a></h2>
+
+<h3>Adding Support for the Keyboard</h3>
+
+<p>One way to easily enhance the screen saver is by adding keyboard support. For 
+example, you can allow the user to select the current RSS item with the cursor 
+keys. These steps show you how.</p>
+
+<p class="ProcedureLabel">To add keyboard support:</p>
+
+<ol>
+	<li>In Solution Explorer, right-click <b>ScreenSaverForm.cs</b> and select
+		<b>View Designer</b>.
+	</li>
+	<li>If the <b>Properties</b> window is not yet showing, open it by clicking 
+	the <b>View</b> menu, and selecting <b>Properties Window</b>.</li>
+	<li>In the drop-down list at the top of the <b>Properties</b> window select <b>ScreenSaverForm</b>.
+	</li>
+	<li>Click the <b>Events</b> button (the lightning bolt) to see the events 
+	that the form can raise.</li>
+	<li>Find the <b>KeyDown</b> event. It will have a method,
+	<font face="Courier">ScreenSaverForm_KeyDown</font>, listed as the handler 
+	for the event.</li>
+	<li>Double-click the <b>KeyDown</b> event.<br>
+	This opens Code View, and takes you to the <font face="Courier">
+	ScreenSaverForm_KeyDown</font> method.</li>
+	<li><p>Replace the line <font face="Courier">Close();</font> with the 
+	following:</p>
+	<div class="CodeBlock">
+		<p class="MsoNormal" style="margin-left:.75in;text-indent:.25in">
+		<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;color:blue">
+		switch</span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;"> 
+		(e.KeyCode)</span></p>
+		<p class="MsoNormal">
+		<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+		<p class="MsoNormal">
+		<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span style="color:blue">case</span>
+		<span style="color:teal">Keys</span>.Down:</span></p>
+		<p class="MsoNormal">
+		<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:gray">// Rotate down through the 
+		articles.</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rssView.NextArticle();</span></p>
+		<p class="MsoNormal">
+		<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">&nbsp;&nbsp;&nbsp; break</span>;</span></p>
+		<p class="MsoNormal">
+		<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">&nbsp;&nbsp;&nbsp; case</span>
+		<span style="color:teal">Keys</span>.Up:</span></p>
+		<p class="MsoNormal">
+		<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:gray">&nbsp;&nbsp;&nbsp; // Rotate up through the 
+		articles.</span></span></p>
+		<p class="MsoNormal">
+		<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rssView.PreviousArticle();</span></p>
+		<p class="MsoNormal">
+		<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">&nbsp;&nbsp;&nbsp; break</span>;</span></p>
+		<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue">&nbsp;&nbsp;&nbsp; default</span>:</span>
+		<p class="MsoNormal">
+		<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Close();</span></p>
+		<p class="MsoNormal">
+		<span style="font-size:10.0pt;font-family:&quot;Courier New&quot;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue">&nbsp;&nbsp;&nbsp; break</span>;</span></p>
+		<span style="font-size: 10.0pt; font-family: Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span>&nbsp;
+    </div>
+	<li>Save the file, and press <b>F5</b> to run the project.</li>
+	<li>While the screen saver is running, press the <b>UP ARROW</b> and <b>DOWN 
+	ARROW</b> keys to change the currently selected article.</li>
+</ol>
+<h3>More Suggestions</h3>
+
+<p>The screen saver 
+application is designed to be easily expanded and customized. Some ideas for 
+extending it are:</p>
+
+<ul>
+	<li><i><b>Select your own built-in default image:<br>
+	</b></i>Change the default 
+screen saver image to the picture of your choice.</li>
+	<li><i><b>Show weather Information in the upper right</b>:<br>
+	</i>Use a Web service 
+such as  <a href="http://go.microsoft.com/fwlink/?LinkId=47764">this one</a> 
+to retrieve weather information, and then display some current weather details 
+in the upper right of the screen.</li>
+	<li><i><b>Build your own screen saver</b>:<br>
+	</i>Replace <b>ScreenSaverForm</b> 
+with another Windows Form that displays an entirely different screen saver. Look 
+at the existing Windows screen savers for some ideas – star fields and 3D pipes 
+have all been done before; what can you come up with? The <b>Program.cs</b> file 
+handles all of the command-line options to support a screen saver.</li>
+	<li><i><b>Multiple RSS feeds</b>:<br>
+	</i>Extend the <b>Options</b> dialog box to 
+allow the user to select a set of RSS feeds from which to gather news articles. 
+There are a few ways this could be done:<br>1. The <b>Options</b> dialog box lets the user select an OPML file containing a 
+list of RSS feeds, <br>-or-<br>2. The <b>Options</b> dialog box lets the user populate a list of RSS feeds.<br>A random news feed could be chosen when the screen saver loads and then a new 
+feed could be chosen each time the screen saver finishes displaying the contents 
+of a feed.</li>
+	<li><i><b>Finish implementing the RSS classes</b>:<br>
+	</i>The RSS classes provided 
+with this starter kit don’t support the entire
+	<a href="http://go.microsoft.com/fwlink/?LinkId=47765">RSS 2.0 specification</a>. The 
+rest of the specification can be added to these classes. The classes could then 
+be packaged as a dll, and reused in another application.</li>
+	<li><i><b>Reuse the RSS classes</b>:<br>
+	</i>The RSS classes could be reused in 
+another application. Some possibilities include writing your own RSS aggregator, 
+or creating a system tray application that pops up a news article every hour.&nbsp; 
+	</li>
+</ul>
+
+
+<h2><A href="#top"><IMG src="Images\topjump-vc.gif" border=0></A><a name="ForMoreInformation">For 
+More Information</a></h2>
+
+<h3>Online Resources</h3>
+
+<ul>
+	<li><a href="http://go.microsoft.com/fwlink/?linkid=35117">Provide 
+	feedback on this documentation</a></li>
+	<li><a href="http://go.microsoft.com/fwlink/?linkid=29939">Visual C# on MSDN</a></li>
+	<li><a href="http://go.microsoft.com/fwlink/?LinkId=47765">RSS 2.0 specification</a></li>
+	<li><a href="http://go.microsoft.com/fwlink/?LinkId=47767">MSDN RSS Feeds</a></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>
+<a href="http://www.microsoft.com/info/cpyright.mspx">
+© Microsoft Corporation and/or its suppliers. All rights reserved. Terms of Use.</a>
+</p>
+
+<!-- DO NOT EDIT BELOW THIS LINE  -->
+<p>&nbsp;</p>
+</div>
+</body>
+</html>

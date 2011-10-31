@@ -1,0 +1,39 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\CLSID\{0006F03A-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Outlook.ApplicationClass"
+"Assembly"="Microsoft.Office.Interop.Outlook, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0006F023-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Outlook._RecipientControlClass"
+"Assembly"="Microsoft.Office.Interop.Outlook, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0006F024-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Outlook._DocSiteControlClass"
+"Assembly"="Microsoft.Office.Interop.Outlook, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0006F099-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Outlook._DpxCtrlClass"
+"Assembly"="Microsoft.Office.Interop.Outlook, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0006F098-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Outlook._PageWrapCtrlClass"
+"Assembly"="Microsoft.Office.Interop.Outlook, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0006F09C-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Outlook._InspectorCtrlClass"
+"Assembly"="Microsoft.Office.Interop.Outlook, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0006F02C-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Outlook.DataSourceObjectClass"
+"Assembly"="Microsoft.Office.Interop.Outlook, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\TypeLib\{00062FFF-0000-0000-C000-000000000046}\9.1]
+"PrimaryInteropAssemblyName"="Microsoft.Office.Interop.Outlook, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"

@@ -1,0 +1,39 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\CLSID\{04DF1015-7007-11D1-83BC-006097ABE675}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPage.ApplicationClass"
+"Assembly"="Microsoft.Office.Interop.FrontPage, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{388ED915-7FD2-11D0-A60B-00A0C90A43CE}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPage.CWebberAutomationClass"
+"Assembly"="Microsoft.Office.Interop.FrontPage, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{388ED917-7FD2-11D0-A60B-00A0C90A43CE}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPage.CAutoJackClass"
+"Assembly"="Microsoft.Office.Interop.FrontPage, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{30DF7E4C-82C3-4112-BE10-1F246668CCCD}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPage.ExplorerWebsClass"
+"Assembly"="Microsoft.Office.Interop.FrontPage, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{8D89C1BD-E744-4BD1-BC6E-E52D1D4C8832}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPage.ExplorerWebClass"
+"Assembly"="Microsoft.Office.Interop.FrontPage, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{9389CD3B-9318-11D3-9F96-005004AE6A5C}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPage.WebExClass"
+"Assembly"="Microsoft.Office.Interop.FrontPage, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{E7E802D2-A215-11D3-9FA5-005004AE6A5C}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPage.WebWindowExClass"
+"Assembly"="Microsoft.Office.Interop.FrontPage, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\TypeLib\{3824BCD5-7042-11CE-8E17-0020AF9F9648}\5.0]
+"PrimaryInteropAssemblyName"="Microsoft.Office.Interop.FrontPage, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"

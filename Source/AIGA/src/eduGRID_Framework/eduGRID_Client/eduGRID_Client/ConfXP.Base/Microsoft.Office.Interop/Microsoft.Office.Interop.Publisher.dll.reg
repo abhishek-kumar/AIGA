@@ -1,0 +1,14 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\CLSID\{0002123D-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Publisher.ApplicationClass"
+"Assembly"="Microsoft.Office.Interop.Publisher, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{09FD2EFF-5669-11D3-B65F-00C04F8EF32D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Publisher.DocumentClass"
+"Assembly"="Microsoft.Office.Interop.Publisher, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\TypeLib\{0002123C-0000-0000-C000-000000000046}\1.0]
+"PrimaryInteropAssemblyName"="Microsoft.Office.Interop.Publisher, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"

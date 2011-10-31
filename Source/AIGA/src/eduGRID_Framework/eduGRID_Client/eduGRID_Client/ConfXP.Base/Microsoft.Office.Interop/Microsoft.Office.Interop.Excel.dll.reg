@@ -1,0 +1,39 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\CLSID\{59191DA1-EA47-11CE-A51F-00AA0061507F}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Excel.QueryTableClass"
+"Assembly"="Microsoft.Office.Interop.Excel, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00024500-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Excel.ApplicationClass"
+"Assembly"="Microsoft.Office.Interop.Excel, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00020821-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Excel.ChartClass"
+"Assembly"="Microsoft.Office.Interop.Excel, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00020820-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Excel.WorksheetClass"
+"Assembly"="Microsoft.Office.Interop.Excel, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00020812-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Excel.GlobalClass"
+"Assembly"="Microsoft.Office.Interop.Excel, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00020819-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Excel.WorkbookClass"
+"Assembly"="Microsoft.Office.Interop.Excel, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{00020818-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.Excel.OLEObjectClass"
+"Assembly"="Microsoft.Office.Interop.Excel, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\TypeLib\{00020813-0000-0000-C000-000000000046}\1.4]
+"PrimaryInteropAssemblyName"="Microsoft.Office.Interop.Excel, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"

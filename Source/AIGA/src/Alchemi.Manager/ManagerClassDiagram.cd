@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Alchemi.Manager.Configuration" Collapsed="true">
+    <Position X="7" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Configuration.cs</FileName>
+      <HashCode>AAAGAAAAAiAAEAAAACAAAAAAAABAACExgAgABCIAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Manager.DedicatedSchedule" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>DedicatedSchedule.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Manager.DefaultScheduler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DefaultScheduler.cs</FileName>
+      <HashCode>AAAQAAKAABAAAAQCAAAAAAAAAAAAAAAEgABACAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DedicatedSchedule" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Alchemi.Manager.ExecutorCommException" Collapsed="true">
+    <Position X="8.75" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <FileName>Exceptions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Manager.GManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GManager.cs</FileName>
+      <HashCode>QCEYmQCBAgEhFQAGICCOAILSARgQAAQICIqFJAAAEAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Alchemi.Manager.InternalShared" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>InternalShared.cs</FileName>
+      <HashCode>AAAAAAABACAAAAAAAAAAAAAABEAAAAAAQAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Manager.ManagerContainer" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ManagerContainer.cs</FileName>
+      <HashCode>ACAxAASAAqAQgAACEAAAAAECAQIAAAAEMAgAEAAIBAQ=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MExecutorCollection" />
+      <Property Name="IScheduler" />
+      <Property Name="MApplicationCollection" />
+      <Property Name="ManagerStorageFactory" />
+      <Property Name="GManager" />
+    </ShowAsAssociation>
+    <AssociationLine Name="MExecutorCollection" Type="Alchemi.Manager.MExecutorCollection" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.5" Y="2.13" />
+        <Point X="11.5" Y="2.259" />
+        <Point X="10.188" Y="2.259" />
+        <Point X="10.188" Y="2.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.473" Y="0.029" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="IScheduler" Type="Alchemi.Manager.IScheduler">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.169" Y="0.193" Height="0.16" Width="1.004" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="MApplicationCollection" Type="Alchemi.Manager.MApplicationCollection" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12" Y="2.13" />
+        <Point X="12" Y="2.253" />
+        <Point X="12" Y="2.253" />
+        <Point X="12" Y="3.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.534" Y="0.079" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ManagerStorageFactory" Type="Alchemi.Manager.Storage.ManagerStorageFactory">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.786" Y="0.268" Height="0.16" Width="1.777" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="GManager" Type="Alchemi.Manager.GManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.5" Y="2.13" />
+        <Point X="12.5" Y="2.973" />
+        <Point X="13.25" Y="2.973" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="Alchemi.Manager.MApplication" Collapsed="true">
+    <Position X="11.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MApplication.cs</FileName>
+      <HashCode>gQAAAAAIAACAABACCAAAQAEAAAAAAAAAIAAADABEAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MThread" />
+    </ShowAsAssociation>
+    <AssociationLine Name="MThread" Type="Alchemi.Manager.MThread">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.175" Y="0.058" Height="0.16" Width="0.92" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="Alchemi.Manager.MApplicationCollection" Collapsed="true">
+    <Position X="11" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>MApplicationCollection.cs</FileName>
+      <HashCode>AACBAAAAAAAAAAAACAEAAiAAACAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MApplication" />
+    </ShowAsAssociation>
+    <AssociationLine Name="MApplication" Type="Alchemi.Manager.MApplication">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.204" Y="0.06" Height="0.16" Width="1.066" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="Alchemi.Manager.MExecutor" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MExecutor.cs</FileName>
+      <HashCode>AAQAYAIAKAAAAAACAAAAAAQIAEgAAAAEAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Manager.MExecutorCollection" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>MExecutorCollection.cs</FileName>
+      <HashCode>AAAAAAAQAAAABAACCAgAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MExecutor" />
+    </ShowAsAssociation>
+    <AssociationLine Name="MExecutor" Type="Alchemi.Manager.MExecutor">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.89" Y="0.123" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="Alchemi.Manager.MThread" Collapsed="true">
+    <Position X="12" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MThread.cs</FileName>
+      <HashCode>AAgAAAAAAAAABAEGAIAAAAAAAAAEAAAAAAAiBEAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Manager.Storage.GenericManagerDatabaseStorage" Collapsed="true">
+    <Position X="3" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Storage\GenericManagerDatabaseStorage.cs</FileName>
+      <HashCode>YCAwCALBDSBRAVAGQYgKCCgAEAAkYUAEYAAJSFBAkBU=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Alchemi.Manager.Storage.InMemoryManagerStorage" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>Storage\InMemoryManagerStorage.cs</FileName>
+      <HashCode>YCAgKAKATSBQAQAEQYECACgAEABkQUoEQAAACAgAkBU=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Alchemi.Manager.Storage.ManagerStorageBase" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Storage\ManagerStorageBase.cs</FileName>
+      <HashCode>AAAIAQAAAAAAAAAAQAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Manager.Storage.ManagerStorageFactory" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Storage\ManagerStorageFactory.cs</FileName>
+      <HashCode>AAAAQAAAAQAAAAIAAAQAAAAAAAAAAEAAAAAAAAAAQAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IManagerStorage" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Alchemi.Manager.Storage.MySqlManagerDatabaseStorage" Collapsed="true">
+    <Position X="3.75" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Storage\MySqlManagerDatabaseStorage.cs</FileName>
+      <HashCode>AAAQAAABAAAAAAAAAAgACAAAAAAAIAAAAAAAABBAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Manager.Storage.SqlServerManagerDatabaseStorage" Collapsed="true">
+    <Position X="1" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Storage\SqlServerManagerDatabaseStorage.cs</FileName>
+      <HashCode>AAAQAAAAAAAAAAAAAAgAAAAAAAAAIAAAAAAAABBAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Alchemi.Manager.IScheduler" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IScheduler.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAQAAAAAAAAAAAAAAAAEAAAACAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Alchemi.Core.Manager.Storage.IManagerStorage" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="Alchemi.Manager.Storage.ManagerStorageEnum" Collapsed="true">
+    <Position X="11" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Storage\ManagerStorageEnum.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Alchemi.Manager.ManagerStartStatusEventHandler" Collapsed="true">
+    <Position X="7" Y="8.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>ManagerContainer.cs</FileName>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+</ClassDiagram>

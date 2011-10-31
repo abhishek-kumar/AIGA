@@ -1,0 +1,15 @@
+FUTURE WORK (Reference nos at the end...to be renumbered and placed below:)
+Considering scalability and performance, there are several issues that we target for future work.
+
+Personalization: By personalization, our assistant should be able to learn from user conversations and store it within the knowledge farm for future references. One way of avoiding privacy issues between multiple users is to adopt an implementation where a separate domain is created for each user and is activated only when the user "logs in" to the system.
+
+Scalability and deployment: Given the current scenario in GRID computing, our model employs a rigid internal communication framework and scheduling procedures. So, in order to avoid deployment of a dedicated GRID for our purpose, and to increase scalability, we would like to integrate our framework with an existing deployment like GARUDA[1]. GARUDA is a collaboration of science researchers and experimenters on a nation wide grid of computational nodes, mass storage and scientific instruments that aims to provide the technological advances required to enable data and compute intensive science for the 21st century. Integration with GARUDA could be achieved by using the Gridbus broker (or the GRID service broker)[4]. The Grid Service Broker, developed as part of the Gridbus Project[3], mediates access to distributed resources of the GRID. This would give us the advantage of reusing a robust and ready to use GRID infrastructure(GARUDA) with a scalable architecture[2].
+
+Learning and self-organization: The process of learning is synonymous with finding information that couldnt be found in the knowledge farm when queried.
+A secondary issue is that of self-organization. A particular information may be stored in the database under a particular domain; but on later inspection, it is found that it also belongs to few other domains. in this case either we replicate this information in the other domains(redundancy - in case it is a frequently accessed information), or we cross reference it well in the lookup table.
+
+Local references:
+[1] GARUDA- India's National GRID Computing Initiative, http://www.garudaindia.in
+[2] Resource management, scheduling, GRID middleware and architecture of GARUDA, http://www.garudaindia.in/gms.asp
+[3] Gridbus: Middleware for Utility-based Grid Computing, http://www.gridbus.org
+[4] Grid Service Broker: A Grid Scheduler for Computational and Data Grids,http://www.gridbus.org/broker/

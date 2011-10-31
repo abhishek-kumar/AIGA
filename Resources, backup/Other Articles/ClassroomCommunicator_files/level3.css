@@ -1,0 +1,203 @@
+/*** level 3 style overrides and additions ***/
+
+/*** TEXT ***/
+/* announcement */
+.announcepast {
+      color: #0066CC;
+      font-size: 1.20em;
+      font-weight: bold;
+}
+.announcepast a,
+.announcepast a:link,
+.announcepast a:visited,
+.announcepast a:active {
+      color: #0066CC;
+      text-decoration: none; 
+}
+.announcepast a:hover {
+      color: #0066CC;
+      text-decoration: underline; 
+}
+/* faculty page headings and link colors */
+.facname,
+.facname a,
+.facname a:link,
+.facname a:visited,
+.facname a:active,
+.facname a:hover {
+      color: #0066CC;
+      font-weight: bold;
+}
+.facdept {
+      color: #0066CC;
+}
+.facprojectname {
+      color: #003366;
+}
+
+a.facprojectlink,
+a.facprojectlink:link,
+a.facprojectlink:visited,
+a.facprojectlink:active,
+a.facprojectlink:hover {
+      color: #003366;
+      font-weight: bold;
+}
+
+/* student page project links */
+a.studprojectlink,
+a.studprojectlink:link,
+a.studprojectlink:visited,
+a.studprojectlink:active,
+a.studprojectlink:hover {
+      color: #0066CC;
+      font-weight: bold;
+}
+div.Contacts
+{
+    margin-left:0.5in;
+    margin-top:10;
+}
+/* contact page names */
+.contactname,
+.contactname a,
+.contactname a:link,
+.contactname a:visited,
+.contactname a:active,
+.contactname a:hover {
+      color: #0066CC;
+      font-weight: bold;
+}
+/* contact page titles */
+.contacttitle {
+      color: #0066CC;
+      font-weight: normal;
+}
+/* contact page contact info (email and phone) */
+.contactinfo {
+      color: #003366;
+      font-weight: normal;
+}
+.contactinfo a,
+.contactinfo a:link,
+.contactinfo a:visited,
+.contactinfo a:active,
+.contactinfo a:hover {
+      color: #003366;
+      font-weight: normal;
+}
+
+/* press contact names */
+.presscontactname,
+.presscontactname a,
+.presscontactname a:link,
+.presscontactname a:visited,
+.presscontactname a:active,
+.presscontactname a:hover {
+      color: #003366;
+      font-weight: normal;
+}
+/* press contact titles */
+.presscontacttitle {
+      color: #003366;
+      font-weight: normal;
+}
+/* press contact contact info (email and phone) */
+.presscontactinfo {
+      color: #003366;
+      font-weight: normal;
+}
+.presscontactinfo a,
+.presscontactinfo a:link,
+.presscontactinfo a:visited,
+.presscontactinfo a:active,
+.presscontactinfo a:hover {
+      color: #003366;
+      font-weight: normal;
+}
+
+/* gallery images page styles */
+.tdimagesproject {
+      background-color: #6699CC;
+}
+.tdimagesproject p {
+      color: #FFFFFF;
+      line-height: 110%;
+}
+.tdimagesproject a,
+.tdimagesproject a:link,
+.tdimagesproject a:visited,
+.tdimagesproject a:active {
+      color: #FFFFFF;
+      font-weight: bold;
+      text-decoration: none;
+}
+.tdimagesproject a:hover {
+      color: #FFFFFF;
+      font-weight: bold;
+      text-decoration: underline;
+}
+.gallerypopcaption {
+      font-weight: bold;
+}
+
+/* "prior spotlights" link */
+.priorspotlights,
+.priorspotlights a,
+.priorspotlights a:link,
+.priorspotlights a:visited,
+.priorspotlights a:active,
+.priorspotlights a:hover {
+      color: #0066CC;
+      font-weight: bold;
+}
+
+/*** TABLE BACKGROUND COLORS ***/
+/* background images set in level3img.css */
+
+#tdlefttop {
+      background-color: #6699CC;
+}
+#tdcentertop {
+      background-color: #0066CC;
+}
+#tdrighttop {
+      background-color: #6699CC;
+}
+#tdrighttopspotlights, #tdrighttopspotlight, #tdrighttopmitstrategy, #tdrighttopmicrosoftgoals, #tdrighttopbythenumbers, #tdrighttopfaculty, #tdrighttopstudents, #tdrighttopwebservices, #tdrighttopclassroomtransform, #tdrighttopannouncement, #tdrighttoppresskit, #tdrighttopevents, #tdrighttopimages, #tdrighttopvideo
+{
+      background-color: #336699;
+}
+
+/* most pages have a table to hold second line of title, or descenders */
+#tabletitle2 {
+      background-color: #FFFFFF;
+}
+
+/* project pages have a subtitle table instead of tabletitle2 */
+#tablesubtitle {
+      background-color: #CCCCCC;
+}
+
+/* main content */
+#tablecontent {
+      background-color: #FFFFFF;
+}
+
+.caption {
+	font-size: 12px;
+	line-height: 14px;
+	margin:0px;
+	padding:6px 0px 2px 0px;
+    color: #003366;
+    font-family: "Trebuchet MS", Arial, Lucida, Helvetica, sans-serif;
+
+}
+
+.photoCredit {
+	margin:0px;
+	padding:2px 0px 0px 0px;
+	font-size:10px;
+	line-height:12px;
+	color:#999999;
+}

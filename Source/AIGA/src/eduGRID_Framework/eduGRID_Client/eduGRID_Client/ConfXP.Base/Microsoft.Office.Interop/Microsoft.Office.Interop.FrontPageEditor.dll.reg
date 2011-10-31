@@ -1,0 +1,464 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\CLSID\{31B4599A-FFA3-11CF-B35E-00A0C90A9044}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.CWPEDocClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{71AF875A-D0D9-4F84-B6C0-891677D779E8}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.CAutoJackInternalClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{E2EA9C96-F3F4-4A6A-B870-56287E761AFD}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.URLPickerClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{F7819961-F148-4468-9D33-769CF571F559}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.HTMLColorPickerClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0085A8C6-220B-4AC2-9B48-88CC17A0820D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPAxTagPageClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{017B0166-A2AE-4441-9F48-B08B23EF3EB3}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPAxParamsPageClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{01F48CD9-C4F1-4B84-958D-315E6E8A154A}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.ChServClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{35B08EF5-9124-4F34-A7B3-6FF69F16DA5B}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPEditorControlClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{C86A1A04-FAA6-11D1-B3ED-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLUndoTransactionClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464946-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLDocumentClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464910-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLStyleClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464911-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLFiltersCollectionClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464912-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLStyleSheetClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464913-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLStyleSheetsCollectionClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464914-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLLinkElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{940CDFB0-E059-11D1-B3E1-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLFrontPageBotElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464915-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLFormElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464916-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLTextElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464917-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLImgClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464918-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLInputImageClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46491A-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLImageElementFactoryClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46491B-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLBodyClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46491C-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLFontElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46491D-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLAnchorElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46491E-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLLabelElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46491F-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLListElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464920-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLUListElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464921-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLOListElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464922-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLLIElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464923-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLBlockElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464924-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLDivElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464925-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLDDElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464926-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLDTElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464927-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLBRElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464928-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLDListElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464929-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLHRElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46492A-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLParaElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46492B-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLHeaderElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46492C-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLSelectElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46492D-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLOptionElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46492E-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLOptionElementFactoryClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46492F-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLInputTextElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464930-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLTextAreaElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464931-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLInputButtonElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{05F1AF20-4106-11D2-AD1E-00C04F795285}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLInputHiddenElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464932-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLButtonElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464933-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLInputFileElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464934-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLMarqueeElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464935-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLOptionButtonElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464936-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLTitleElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464937-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLMetaElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464938-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLBaseElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464939-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLIsIndexElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46493A-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLNextIdElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46493B-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLBaseFontElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46493C-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLUnknownElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46493D-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLHistoryClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46493E-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLCMimeTypesClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46493F-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLCPluginsClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464940-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLCOpsProfileClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464941-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLNavigatorClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464942-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLLocationClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464943-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLScreenClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464944-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLWindow2Class"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464945-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLWindowProxyClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464947-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLEmbedClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464948-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLMapElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464949-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLAreaElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46494A-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLTableCaptionClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46494B-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLCommentElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46494C-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLPhraseElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46494D-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLSpanElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46494E-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLTableClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46494F-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLTableColClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464950-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLTableSectionClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464951-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLTableRowClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464952-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLTableCellClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464953-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLScriptElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464954-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLNoShowElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464955-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLObjectElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464956-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLFrameBaseClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464957-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLFrameElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464958-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLIFrameClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464959-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLDivPositionClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46495A-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLFieldSetElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46495B-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLLegendElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46495C-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLSpanFlowClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46495D-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLFrameSetSiteClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46495E-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLBGsoundClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE46495F-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLStyleElementClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464960-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLStyleFontFaceClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{AE464961-8B76-11D1-B3BD-0060977B463D}\InprocServer32]
+"Class"="Microsoft.Office.Interop.FrontPageEditor.FPHTMLDialogClass"
+"Assembly"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\TypeLib\{7577AE81-4416-11CE-9C34-524153480000}\5.0]
+"PrimaryInteropAssemblyName"="Microsoft.Office.Interop.FrontPageEditor, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"

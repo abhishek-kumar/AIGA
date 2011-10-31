@@ -1,0 +1,391 @@
+@import url("inc/agent-k12.css");
+@import url("inc/ew-overall.css");
+@import url("inc/ew-layout-inside.css");
+@import url("inc/ew-header.css");
+@import url("inc/ew-footer.css");
+@import url("inc/ew-leftnav.css");
+@import url("inc/ew-promo-story.css");
+@import url("inc/ew-media-promo.css");
+@import url("inc/viewpoints.css");
+@import url("inc/ew-fixes.css");
+@import url("inc/ew-sponsor.css");
+@import url("inc/old-ewtables.css");
+
+/* ew-story/brief page styles */
+
+/** unique containers **/
+
+	/* container: left nav, story well, right column */
+		#container-ewstory, #container-ewbrief, #container-ewletter, 
+		#container-ewbookstory, #container-qcstory{
+		width:1000px; 
+		}
+
+	/*center-well: user tool box up top */
+	.usertoolbox-top {
+	float:right;
+	width:133px;
+	font-weight:normal;
+	font-size:10px;
+	}
+	.usertoolbox-title {
+	background:url(/images/user-tool-bg.gif) top repeat-x;
+	height:14px;
+	}
+	img.article-tools {
+	background: url(/images/article-tool.gif) top left no-repeat;
+	height:14px;
+	width:133px;
+	}
+	.usertoolbox-top ul {
+	list-style:none;
+	margin-top:-5px;
+	border-left:1px solid #E5E5E5;
+	border-bottom:1px solid #E5E5E5;
+	}
+	.usertoolbox-top ul li {
+	padding:2px 0px 4px 8px
+	}
+	
+	.center-well-content p {
+	padding-bottom:11px
+	}
+	
+	.center-well-content p a {
+	
+	}
+	
+	/* story elements alignment */
+	.right {
+	float:right;
+	margin-left:5px;
+	}
+	.left {
+	float:left;
+	margin-right:5px;
+	}
+
+
+	/* permanent story elements */
+		p.coverdate {
+		padding:0px 0px 5px 0px;
+		}
+	
+		.center-well-content h1 {
+		font-size:160%;
+		font-weight:bold;
+		padding-bottom:6px;	
+		line-height:1.3em; 
+		}
+	
+		/** .reviewer-bylinefor ew-book **/
+		.byline, .reviewer-byline {
+		font-size:75%;
+		font-weight:bold;
+		padding:0px 0px 6px 0px;
+		}
+		
+		/** .reviewer-bylinefor ew-book **/
+		#container-ewbrief .byline, .reviewer-byline {
+		text-align:right;
+		}
+	
+		p.vol-issue-pages {
+		margin-top:15px;
+		}
+	
+		p.back-to-top {
+		text-align:right;
+		padding-bottom:15px;
+		font-size:75%;
+		}
+		
+		p.back-to-top a {
+		
+		}
+
+	/* optional story elements */
+		.collection-logo {
+		text-align:right
+		}
+		/* top image to go under headline and above everything else */
+		.feature-image {
+		padding:5px 0px 8px 0px;
+		}
+		.feature-image .left, .feature-image .right {
+		float:none;
+		}
+		/* subhead */
+		h2 {
+		font-weight:bold;
+		font-size:100%;
+		padding-bottom:8px;
+		}
+		/* subtitle */
+		/* .book-subtitle for ew-book */
+		h2.subtitle, .book-subtitle {
+		line-height:1.4em;
+		padding-bottom:4px;	
+		}
+		/* dateline */
+		.dateline {
+		font-style:italic;
+		font-size:85%;
+		padding-bottom:3px;
+		}
+		/* pullquote */
+		.pullquote {
+		width:150px;
+		font-size:100%;
+		color:#003366;
+		line-height:1.4em;
+		padding:2px 0px 2px 0px;
+		}
+		/* pullquote, for more info and see also all share the same border style */
+		.right .pullquote, .right .addon-box {
+		border-left: 1px solid #003366;
+		padding-left: 8px;
+		text-align:left;
+		}
+		.left .pullquote, .left .addon-box {
+		border-right: 1px solid #003366;
+		padding-right: 8px;
+		text-align:right
+		}
+		.pullquote .quote {
+		padding-bottom:4px;
+		font-weight:bold;
+		}
+		.pullquote .source {
+		font-weight:bold;
+		font-size:11px;
+		line-height:1.2em;
+		color:#333333;
+		}
+		.pullquote .source-description {
+		line-height:1.2em;
+		color:#333333;
+		font-size:10px;
+		}
+		/* story footer */
+		div.story-footer {
+		font-style:italic;
+		line-height:1.4em
+		}
+		.story-footer p {
+		padding-bottom:3px;
+		}
+		/* story type labels */
+		.center-well-content p.gray-label-bold {
+		font-size:85%;
+		padding:0px 0px 3px 0px;
+		}
+		.center-well-content div.gray-label-bold
+		{
+		font-size:85%;
+		margin-top:15px;
+		}
+		
+		/* photo and graphic holders, no styles yet */
+		.enlarge-photo {
+		font-size:75%;
+		padding-bottom:1px; 
+		}
+		.enlarge-photo a {
+		font-weight:normal;
+		}
+		.photo, .graphic {
+		}
+		/* photo sub elements */
+		.caption, .source-line {
+		line-height:1.3em;
+		font-size:75%;
+		}
+		source-line {
+		padding-top:2px
+		}
+		
+		/* graphic sub elements */
+		.graphic-header {
+		color:#996600;
+		font-weight:bold;
+		}
+		.graphic-description, 
+		.graphic-footer {
+		font-size:70%;
+		padding-bottom:3px;	
+		line-height:1.3em;		
+		}
+		
+		/* byline bio */
+		.byline-bio {
+		font-style:italic;
+		border-top:1px solid #666666;
+		margin-top:2px;
+		padding-bottom:5px;
+		margin-top:10px;
+		}
+		.byline-bio p {
+		margin:0;
+		padding:0;
+		}
+		
+/* ew-letter styles */
+
+.letter-author {
+padding-top:5px;
+line-height:1.2em;
+}
+
+.author-name {
+padding-bottom:3px;
+}
+
+.author-description {
+font-style:italic
+}
+		
+		
+		/* headshot, no styles yet */
+		.headshot {
+		}
+		
+		/* addon-box for: for more info, see also and talkback box */
+		.addon-box {
+		width:160px;
+		line-height:1em;
+		}
+		/* new temp style for fmi and see also boxes for briefs */
+		.bottom-infobox {
+		}
+	
+		/* .addon-box: header and text style */
+		.box-header {
+		text-transform:uppercase;
+		color:#999999;
+		font-size:72%;
+		font-weight:bold;
+		padding-bottom:1px;
+		border-bottom:1px solid #CCCCCC;
+		}
+		.box-item {
+		font-size:75%;
+		margin-bottom:3px;
+		}
+		/* see also, for more info, talkback, no styles need to be set now
+		reserved for future development if specific styles are decided */
+		.see-also, .for-more-info, .talkback {
+		}
+		
+		/* inset story */
+		.inset-story {
+		width:280px;
+		border-bottom:1px solid #666666;		
+		border-top:1px solid  #666666;
+		padding: 5px 7px 5px 5px;
+		font-size:85%;
+		line-height:1.5em
+		}
+		.inset-story .left, .inset-story .right {
+		float:none;
+		text-align:center;
+		}
+		.left .inset-story {
+		border-left:1px solid #666666;
+		}
+		.right .inset-story {
+		border-right:1px solid #666666;
+		}
+		.inset-story .left .headshot {
+		float:left;
+		}
+		.inset-story .right .headshot {
+		float:right;
+		}
+		.inset-header {
+		font-size:130%;
+		font-weight:bold;
+		padding-bottom:3px;
+		color:#663300
+		}
+		.inset-byline {
+		font-weight:bold;
+		font-size:95%
+		}
+		.inset-footer {
+		font-size:85%;
+		padding-top:5px;
+		line-height:1.3em;
+		}
+		.inset-story .graphic-footer {
+		font-size:85%;
+		text-align:left
+		}
+		.inset-story .graphic {
+		padding-bottom:4px;
+		}
+
+		
+		/* section break hr rule */
+		.section-break {
+		width:80%;
+		margin:0 10% 10px 10%;
+		height:1px;
+		border: 0 solid #CCCCCC ;
+		border-top-width: thin;
+		}
+		
+		/* photo credit */
+		.photo-credits {
+		border-top:1px solid #666666;
+		padding-bottom:5px;
+		margin-top:10px;
+		font-size:85%;
+		line-height:1.3em;
+		}
+		.photo-credits .credit-to  {
+		padding-bottom:5px;
+		}
+		.photo-credits .credit-text  {
+		padding-bottom:2px;
+		}
+		
+/*center well: right promo column for ads and other promo items*/
+	.center-well-right-col {
+		float:right;
+		width:300px;
+		text-align:center;
+		padding-top:4px;
+		}
+	
+/** LOGO DISPLAY ON PRINTER-FRIENDLY PAGE **/
+#print-logo {
+display:none;
+}
+
+
+/** special for ew BOOK STORY - could be seperated out later **/
+h1.book-title, .book-title {
+font-size:130%;
+font-weight:bold;
+padding-bottom:3px;	
+}
+
+.book-info {
+font-style:italic;
+padding-bottom:6px;
+}
+
+.corrections {
+font-size:10px;
+text-align:left;
+padding:2px 0px 8px 0px
+}
+
+
+
+
+
+
+
+

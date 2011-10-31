@@ -1,0 +1,245 @@
+@import url(/css/rc/rc_main_top_story.css);
+
+/* RC styles */
+
+
+   .user-status-box .boxborder .box
+   {
+	    border: #522873; 
+   }
+
+	/* Site header, contains the title bar and site navigation */
+	#site-header
+	{
+		background: #522873;
+	}
+
+	/* default link */
+	
+		 a 
+      {   
+        color : #522873;
+      }
+	
+ 	/* Pub header */
+	#pub-header
+	{
+		border-bottom : 1px solid #330458;
+	}
+	
+	/* Story List/Promo Boxes */
+	
+	.personal-news .head
+	, .daily-news .boxheader
+	,.editorial-promo .boxheader
+	,.state-select .boxheader
+	{
+
+	    background-color: #522873; /* Default, this changes based on subsite */
+	}
+
+		
+	.personal-news .item a
+	,.daily-news-box .box .item .title a
+	,.editorial-promo .box p a
+	,.editorial-promo .box p ul li a
+	,.editorial-promo .box ul li a
+	,.editorial-promo .box .bottom-link a
+	{
+		color: #330458;; /* Default */
+	}
+	
+	
+
+/* Top title bar */
+	.title-bar
+	,.footer-color-bar
+	{
+		background-color : #522873;
+	}
+
+	.title-bar label
+	,.title-bar .subscribe a
+	,.title-bar .subscribe a:visited
+	{
+		color : #edeacb;
+	}
+
+/* Main pages */
+	.main .top-story .title a
+	{
+	    color: #330458;
+	}
+
+	.main .story-list .item .title a
+	{
+	    color: #330458;
+	}
+
+/* Log In Form */
+	#user-box
+	{
+		background-color : #edeacb;
+	}
+
+	#user-box .head
+	{
+	    color: #330458;
+	}
+
+	#user-box label
+	{
+		color: #000000;
+	}
+
+/* Article Styles */
+	/* Shared border and alignment characteristics based on left/right float */
+	.right .see-also
+	,.right .talkback
+	,.right .for-more-info
+	,.right .pullquote
+	{
+		border-left: 2px solid #522873;
+	}
+     .left .see-also
+	,.left .talkback
+	,.left .for-more-info
+	,.left .pullquote
+	{
+	border-right: 2px solid #522873;
+   }
+	
+	
+	.pullquote .quote
+	{
+		color: #522873;
+	}
+	
+	.pullquote .source
+	,.pullquote .source-description
+		{
+		color: #522873;
+	}
+	
+
+	/* See also box */
+	.see-also .header
+	,.talkback .header
+	,.for-more-info .header
+	{
+		border-bottom: 1px solid #B3BEC0;
+	}
+
+	.see-also .item a
+	,.for-more-info .item a
+	,.browse .item a
+	{
+		color: #522873;
+	}
+
+	/* Talkback box */
+	.talkback .quote a
+	{
+		color: #522873;
+	}
+
+   	.talkback .read-more a
+   	{
+		color: #522873;
+   	}
+
+	/* For more info box */
+   	.for-more-info .item a
+   	{
+		color: #522873;
+	}
+
+	.from-the-archives .header
+	,.resources .header
+	,.sources .header
+	,.related-terms .header
+	,.related-organizations .header
+	,.left-item .header
+	,.right-item .header
+	{
+		border-bottom: 1px solid #b3bec0;
+	}
+
+	.from-the-archives .item a
+	,.resources .item a
+	,.sources .item a
+	,.related-terms .item a
+	,.related-organizations .item a
+	,.left-item .item a
+    ,.right-item .item a
+	{
+		color: #522873;	
+	}
+
+	.data-snapshot .body .bottom-link a
+	{
+		color: #330458;
+    }
+
+/* COPYRIGHT */
+	#copyright a
+	{
+		color : #522873;
+	}
+
+	#copyright a:hover
+	{
+		color : #445983; 
+	}
+
+	#article-header
+	{
+		border-bottom: 1px solid #522873;
+	}
+	
+	#cat-header
+	{
+		border-bottom : 1px solid #330458;
+	}
+
+	#cat-header .left h1
+	{
+	    color: #AD9ECE;
+	}
+
+	#cat-content .top-stories .item .title a
+	,#cat-content .story-list .item .title a
+	{
+		color: #330458;
+	}
+	
+		
+/* RC Nav */
+	#nav a:hover
+	,#nav .item a:hover
+	,#nav div .item a:hover
+	{
+		background-color : #AD9ECE;
+}
+	
+	/* Subhead */
+	#nav div .header
+	{
+		display : block; 
+		background-color : #522873; 
+		padding-top : 3px; 
+		padding-left : 5px; 
+		padding-bottom : 3px; 
+		font-size : 8pt; 
+	 	line-height : 9pt; 
+	 	color : #ffffff; 
+	 	font-weight : bold; 
+	} 
+	
+	#nav div .item
+	{
+		background-color : #ffffff; 
+		border-right : 1px solid #edeacb; 
+		border-top : 1px solid #edeacb; 
+	}
+

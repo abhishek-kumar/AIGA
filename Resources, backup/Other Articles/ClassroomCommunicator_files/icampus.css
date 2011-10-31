@@ -1,0 +1,169 @@
+/*** BODY ***/
+
+html, body {
+      background-color: #FFFFFF;
+      margin: 0px;
+}
+
+/*** TEXT ***/
+
+/* ordinary paragraph text */
+p, h1, h2, h3, ul, ol, dl {
+      font-family: "Trebuchet MS", Arial, Lucida, Helvetica, sans-serif;
+      font-size: 0.85em;
+      color: #003366;
+      line-height: 135%;
+      margin-top: 0px;
+}
+li {
+      line-height: 150%
+}
+h2 {
+      color: #0066CC;
+}
+h3 {
+      font-weight: normal;
+      color: #0066CC;
+}
+
+/* in combination with margin-top: 0px on paragraphs, allows running heads */
+h2, h3 {
+      margin-bottom: 0px;
+}
+/* put a h1 with class="nodisplay" at the top of the content */
+/* (that is also a good place to put the "content" anchor)   */
+h1.nodisplay {
+      display: none;
+}
+
+h1.projectsubtitle {
+      font-size: 1.20em;
+      font-weight: normal;
+      color: #000000;
+      line-height: 135%;
+}
+
+/* captions - put on P */
+.caption {
+      color: #0066CC;
+}
+
+
+/* put these classes on images that are meant for screen display or for print display   */
+/* usually the two images are side-by-side; the screen display image has alt text and   */
+/* may be inside a link; the print image would be outside the link and have no alt text */
+/* *if CSS is turned off, both images are displayed!!                                   */
+.forscreen {
+      display: inline;
+}
+.forprint {
+      display: none;
+}
+
+/* default link characteristics for body text */
+a,
+a:link { color: #336699 }
+a:visited { color: #003366 }
+a:active,
+a:hover { color: #336699 }
+
+
+/*** SECONDARY NAVIGATION ***/
+
+/* table cell containing secondary navigation images */
+.tdsecondarynav {
+      background-color: #CCFF66;
+}
+
+
+/*** FOOTER ***/
+
+/* the table containing the footer */
+#tablefooter {
+      background-color: #666666;
+}
+/* search input box */
+.searchbox { 
+      font-family: Arial, Lucida, Helvetica, sans-serif; 
+      font-size: 0.75em; 
+      width: 110px;
+}
+/* go button (note that this style doesn't do what it should in NN4) */
+.gobutton {
+      border-width: 0px;
+}
+/* general link text (use on P) */
+.footer {
+      font-size: 0.75em;
+      color: #FFFFFF;
+      line-height: 100%;
+}
+/* links */
+.footer a,
+.footer a:link,
+.footer a:visited {
+      color: #FFFFFF; 
+      text-decoration: none; 
+}
+.footer a:active,
+.footer a:hover {
+      color: #FFFFFF; 
+      text-decoration: underline; 
+}
+/* last update text (use on P) */
+.lastupdate {
+      font-size: 0.70em;
+      color: #FFFFFF; 
+      line-height: 100%;
+}
+
+
+/*** POP-UP MENUS ***/
+/* The positions below are 8 pixels too far down and to the right  */
+/*  because of the margin offset in NN4. The correct positions are */
+/*  set in icampusimg.css, which should be hidden from NN4.           */
+#menuicampus {
+      position:absolute;
+      width: 176px;
+      height: 47px;
+      z-index: 1;
+      left: 363px;
+      top: 22px;
+      visibility: hidden;
+}
+#menuprojects {
+      position:absolute;
+      width: 176px;
+      height: 31px;
+      z-index: 1;
+      left: 363px;
+      top: 50px;
+      visibility: hidden;
+}
+#menuthemes {
+      position:absolute;
+      width: 176px;
+      height: 31px;
+      z-index: 1;
+      left: 363px;
+      top: 78px;
+      visibility: hidden;
+}
+#menunews {
+      position:absolute;
+      width: 176px;
+      height: 47px;
+      z-index: 1;
+      left: 363px;
+      top: 106px;
+      visibility: hidden;
+}
+#menugallery {
+      position:absolute;
+      width: 176px;
+      height: 31px;
+      z-index: 1;
+      left: 363px;
+      top: 134px;
+      visibility: hidden;
+}

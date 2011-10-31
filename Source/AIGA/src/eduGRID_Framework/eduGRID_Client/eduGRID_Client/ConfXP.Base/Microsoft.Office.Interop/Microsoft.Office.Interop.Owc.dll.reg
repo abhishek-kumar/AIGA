@@ -1,0 +1,49 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\CLSID\{0002E556-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.OWC.ChartSpaceClass"
+"Assembly"="Microsoft.Office.Interop.Owc, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0002E551-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.OWC.SpreadsheetClass"
+"Assembly"="Microsoft.Office.Interop.Owc, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{6A8E5006-3EEB-4505-97F9-F357CA315E91}\InprocServer32]
+"Class"="Microsoft.Office.Interop.OWC.NumberFormatClass"
+"Assembly"="Microsoft.Office.Interop.Owc, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0002E553-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.OWC.DataSourceControlClass"
+"Assembly"="Microsoft.Office.Interop.Owc, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0002E554-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.OWC.RecordNavigationControlClass"
+"Assembly"="Microsoft.Office.Interop.Owc, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0002E557-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.OWC.FieldListControlClass"
+"Assembly"="Microsoft.Office.Interop.Owc, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{E2AC0C6A-7079-11D3-8D01-0050048383A8}\InprocServer32]
+"Class"="Microsoft.Office.Interop.OWC.OfflineInfoClass"
+"Assembly"="Microsoft.Office.Interop.Owc, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{19A4E1A0-9334-4EB0-BD78-0AE080B8B4A7}\InprocServer32]
+"Class"="Microsoft.Office.Interop.OWC.RangeClass"
+"Assembly"="Microsoft.Office.Interop.Owc, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\CLSID\{0002E552-0000-0000-C000-000000000046}\InprocServer32]
+"Class"="Microsoft.Office.Interop.OWC.PivotTableClass"
+"Assembly"="Microsoft.Office.Interop.Owc, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+"RuntimeVersion"="v1.0.3705"
+
+[HKEY_CLASSES_ROOT\TypeLib\{0002E550-0000-0000-C000-000000000046}\1.0]
+"PrimaryInteropAssemblyName"="Microsoft.Office.Interop.Owc, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"

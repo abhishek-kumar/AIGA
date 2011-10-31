@@ -1,0 +1,3072 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Alchemi.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Alchemi.Core.Utility.ServiceHelper">
+            <summary>
+            Summary description for ServiceHelper.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Utility.ServiceHelper.checkServiceInstallation(System.String)">
+            <summary>
+            Verifies if the Window service with the given name is installed.
+            </summary>
+            <param name="serviceName"></param>
+            <returns>true if the service is installed properly. false otherwise</returns>
+        </member>
+        <member name="M:Alchemi.Core.Utility.ServiceHelper.installService(System.Configuration.Install.Installer,System.String)">
+            <summary>
+            Installs the Windows service with the given "installer" object.
+            </summary>
+            <param name="pi"></param>
+            <param name="pathToService"></param>
+        </member>
+        <member name="M:Alchemi.Core.Utility.ServiceHelper.uninstallService(System.Configuration.Install.Installer,System.String)">
+            <summary>
+            UnInstalls the Windows service with the given "installer" object.
+            </summary>
+            <param name="pi"></param>
+            <param name="pathToService"></param>
+        </member>
+        <member name="T:Alchemi.Core.Owner.EmbeddedFileDependency">
+            <summary>
+            The EmbeddedFileDependency Class extends from the FileDependency class
+            and provides concrete implementation of the methods to pack and unpack files using base64 encoding.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.FileDependency">
+            <summary>
+            The FileDependency abstract class defines the members that need to exist in sub classes that are used to implement 
+            "File" Dependencies. A file dependency represents a single file on which the grid application depends for input.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Owner.FileDependency._FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.FileDependency.#ctor(System.String)">
+            <summary>
+            Creates an instance of the FileDependency
+            </summary>
+            <param name="fileName">name of the file</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.FileDependency.UnPack(System.String)">
+            <summary>
+            Unpacks the file to the specified location
+            </summary>
+            <param name="fileLocation">location and file name to unpack the file</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.FileDependency.UnPackToFolder(System.String)">
+            <summary>
+            Unpacks the file to the specified folder.
+            The current file name is appended to the given folder name.
+            </summary>
+            <remarks>
+            The FileName property might contain some folder structures as well. 
+            This can be used to reproduce a folder structure.
+            </remarks>
+            <param name="targetFolder">Folder where the current file will be unpacked</param>
+        </member>
+        <member name="P:Alchemi.Core.Owner.FileDependency.FileName">
+            <summary>
+            Creates an instance of the FileDependency
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Owner.EmbeddedFileDependency._Base64EncodedContents">
+            <summary>
+            Contents of the file representing using base64 encoding.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.EmbeddedFileDependency.#ctor(System.String)">
+            <summary>
+            Creates an instance of an EmbeddedFileDependency
+            </summary>
+            <param name="name">file name</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.EmbeddedFileDependency.#ctor(System.String,System.String)">
+            <summary>
+            Creates an instance of an EmbeddedFileDependency
+            </summary>
+            <param name="name">file name</param>
+            <param name="fileLocation">file location</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.EmbeddedFileDependency.Pack(System.String)">
+            <summary>
+            Reads the file and converts its contents to base64 format
+            </summary>
+            <param name="fileLocation">location of the file</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.EmbeddedFileDependency.UnPack(System.String)">
+            <summary>
+            Unpacks (writes out) the file to the specified location
+            </summary>
+            <param name="fileLocation">file location</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.EmbeddedFileDependency.GetEmbeddedFileDependencyFromFolder(System.String)">
+            <summary>
+            Create an array of dependencies from the given folder. 
+            All files under the folder structure will be recursively added to the array.
+            </summary>
+            <remarks>
+            This will preserve the folder structure for any sub-folders. The root folder will not be preserved though
+            </remarks>
+            <param name="folderName">The root folder to start from</param>
+            <returns></returns>
+        </member>
+        <member name="P:Alchemi.Core.Owner.EmbeddedFileDependency.Base64EncodedContents">
+            <summary>
+            Gets or sets the file contents in base64-encoded format
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.GThread">
+            <summary>
+            Represents a "thread" that can be run on a remote grid node
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThread.SetId(System.Int32)">
+            <summary>
+            Sets the id of the grid thread
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThread.SetWorkingDirectory(System.String)">
+            <summary>
+            Sets the working directory of the grid thread
+            </summary>
+            <param name="workingDirectory">the directory name to set as the working directory</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThread.SetFailed(System.Boolean)">
+            <summary>
+            Sets the thread state to failed
+            </summary>
+            <param name="failed">value indicating whether to set the thread to failed</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThread.SetApplication(Alchemi.Core.Owner.GApplication)">
+            <summary>
+            Sets the application to which this grid thread belongs
+            </summary>
+            <param name="application"></param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThread.Start">
+            <summary>
+            Starts the execution of the thread on the remote node.
+            This method is to be implemented by subclasses to include code 
+            which is actually executed on the executor.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThread.Abort">
+            <summary>
+            Aborts this grid thread
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GThread.Id">
+            <summary>
+            Gets the id of the grid thread
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GThread.WorkingDirectory">
+            <summary>
+            Gets the working directory of the grid thread
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GThread.Application">
+            <summary>
+            Gets the application to which this grid thread belongs
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GThread.Priority">
+            <summary>
+            Gets or sets the grid thread priority
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GThread.State">
+            <summary>
+            Gets the state of the grid thread
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.OwnEndPoint">
+            <summary>
+            Represents the end point of the local node
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.OwnEndPoint.#ctor(System.Int32,Alchemi.Core.RemotingMechanism)">
+            <summary>
+            Creates an instance of the OwnEndPoint
+            </summary>
+            <param name="port"></param>
+            <param name="remotingMechanism"></param>
+        </member>
+        <member name="M:Alchemi.Core.OwnEndPoint.ToRemoteEndPoint">
+            <summary>
+            Creates an instance of the OwnEndPoint
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.OwnEndPoint.Port">
+            <summary>
+            Gets or sets the port number of the connection to this node
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.OwnEndPoint.RemotingMechanism">
+            <summary>
+            Gets or sets the remoting mechanism used to connect to this node
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.OwnEndPoint.Host">
+            <summary>
+            Returns  the host name of this end point.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.LogEventHandler">
+            <summary>
+            Delegate for the log event
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Utility.TriStateBoolean">
+            <summary>
+            Define a structure that holds a tri state boolean value: true, false, undefined
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.ThreadCollection">
+            <summary>
+            Represents a collection of GThreads.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.ThreadCollection.Add(Alchemi.Core.Owner.GThread)">
+            <summary>
+            Adds a GThread object to this collection
+            </summary>
+            <param name="thread">the grid thread to add</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.ThreadCollection.Remove(Alchemi.Core.Owner.GThread)">
+            <summary>
+            Removes a GThread object from this collection IF it is in a dead / finished state.
+            </summary>
+            <param name="thread"></param>
+        </member>
+        <member name="P:Alchemi.Core.Owner.ThreadCollection.Item(System.Int32)">
+            <summary>
+            Gets or sets the GThread at the given index
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.GConnection">
+            <summary>
+            The GConnection class represents a connection to a Alchemi manager.
+            It is a container for the properties such as host, port, securityCredentials etc... used to connect to the manager.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GConnection.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GConnection.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance of the GConnection
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GConnection.#ctor">
+            <summary>
+            Creates a new instance of the GConnection
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GConnection.#ctor(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Creates a new instance of the GConnection
+            </summary>
+            <param name="host"></param>
+            <param name="port"></param>
+            <param name="username"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GConnection.Dispose(System.Boolean)">
+            <summary>
+            Disposes the GConnection object and performs clean up operations.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GConnection.FromConsole(System.String,System.String,System.String,System.String)">
+            <summary>
+            Gets an instance of the GConnection class, from values input through the console.
+            </summary>
+            <param name="defaultHost"></param>
+            <param name="defaultPort"></param>
+            <param name="defaultUsername"></param>
+            <param name="defaultPassword"></param>
+            <returns>GConnection</returns>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GConnection.Host">
+            <summary>
+            Gets or sets the host name of the Alchemi manager
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GConnection.Port">
+            <summary>
+            Gets or sets the port number of the Alchemi manager
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GConnection.Username">
+            <summary>
+            Gets or sets the username used to connect to the manager
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GConnection.Password">
+            <summary>
+            Gets or sets the password used to connect to the manager
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GConnection.RemoteEP">
+            <summary>
+            Gets the "remoteEndPoint" object associated with the manager.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GConnection.Credentials">
+            <summary>
+            Gets the SecurityCredentials object associated with this manager.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Utility.Utils">
+            <summary>
+            This class contains some convenient utility function used in various classes in the Alchemi framework
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Utility.Utils.Trace(System.String)">
+            <summary>
+            Prints the message with a stack trace to the console.
+            </summary>
+            <param name="msg">message to be printed</param>
+        </member>
+        <member name="M:Alchemi.Core.Utility.Utils.SerializeToByteArray(System.Object)">
+            <summary>
+            Serializes an object graph to an in-memory byte-array using the binary formatter.
+            </summary>
+            <param name="objGraph">The object / object graph to be serialized</param>
+            <returns>byte-array after serialization</returns>
+        </member>
+        <member name="M:Alchemi.Core.Utility.Utils.DeserializeFromByteArray(System.Byte[])">
+            <summary>
+            Desserializes a byte array using the binary formatter to return the object after deserialization.
+            </summary>
+            <param name="buffer">byte array to be deserialized</param>
+            <returns>result object after deserialization</returns>
+        </member>
+        <member name="M:Alchemi.Core.Utility.Utils.WriteByteArrayToFile(System.String,System.Byte[])">
+            <summary>
+            Write the given byte-array to a file
+            </summary>
+            <param name="fileLocation">file name to write the data to</param>
+            <param name="byteArray">byte-array to be written into the file</param>
+        </member>
+        <member name="M:Alchemi.Core.Utility.Utils.ReadByteArrayFromFile(System.String)">
+            <summary>
+            Reads the file at the specified location and returns a byte-array.
+            </summary>
+            <param name="fileLocation">location of the file to read</param>
+            <returns>byte-array representing the contents of the file</returns>
+        </member>
+        <member name="M:Alchemi.Core.Utility.Utils.SerializeToFile(System.Object,System.String)">
+            <summary>
+            Serializes an object graph to a disk file.
+            </summary>
+            <param name="objGraph">The object / objectGraph to be serialized</param>
+            <param name="fileLocation">filename to store the serialized object graph</param>
+        </member>
+        <member name="M:Alchemi.Core.Utility.Utils.DeserializeFromFile(System.String)">
+            <summary>
+            Desserializes a file using the binary formatter to return the object after deserialization.
+            Throws an Exception if the File cannot be found / read.
+            </summary>
+            <param name="fileLocation">location of file to be deserialized</param>
+            <returns>result object after deserialization</returns>
+        </member>
+        <member name="M:Alchemi.Core.Utility.Utils.BoolToSqlBit(System.Boolean)">
+            <summary>
+            Converts the input boolean val to an int value, used in SQL queries.
+            </summary>
+            <param name="val">value to be converted to int</param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Utility.Utils.WriteBase64EncodedToFile(System.String,System.String)">
+            <summary>
+            Writes the given base64-data  to a file
+            Throws an Exception if the File cannot written.
+            </summary>
+            <param name="fileLocation">filename to write the data to</param>
+            <param name="base64EncodedData">the base64-encoded data to be written into the file</param>
+        </member>
+        <member name="M:Alchemi.Core.Utility.Utils.ReadBase64EncodedFromFile(System.String)">
+            <summary>
+            Reads a base64-encoded file and returns the contents as a string.
+            </summary>
+            <param name="fileLocation">location of the file to read</param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Utility.Utils.ReadStringFromFile(System.String)">
+            <summary>
+            Reads a text file and returns the contents as a string
+            </summary>
+            <param name="fileLocation">location of the file to read</param>
+            <returns>string representing the file contents</returns>
+        </member>
+        <member name="M:Alchemi.Core.Utility.Utils.ValueFromConsole(System.String,System.String)">
+            <summary>
+            Prompts the user for a value, reads it from the console and returns it 
+            </summary>
+            <param name="prompt">Prompt given to the user</param>
+            <param name="defaultVal">default value is none is input by the user</param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Utility.Utils.DateDiff(Alchemi.Core.Utility.DateTimeInterval,System.DateTime,System.DateTime)">
+            <summary>
+            same common params similar to the VBScript DateDiff: 
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/script56/html/vsfctdatediff.asp
+              /*
+               * Sample Code:
+               * System.DateTime dt1 = new System.DateTime(1974,12,16);
+               * System.DateTime dt2 = new System.DateTime(1973,12,16);
+               * double diff = DateDiff(DateTimeInterval.Day, dt1, dt2);
+               * 
+               */
+            </summary>
+            <param name="howtocompare"></param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Alchemi.Core.Utility.Utils.AssemblyVersion">
+            <summary>
+            Gets the version of the current assembly.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.GNode">
+            <summary>
+            Represents a grid node
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.GNode.#ctor">
+            <summary>
+            Creates a new instance of the GConnection class
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.GNode.#ctor(Alchemi.Core.RemoteEndPoint,Alchemi.Core.OwnEndPoint,Alchemi.Core.SecurityCredentials)">
+            <summary>
+            Creates a new instance of the GConnection class
+            </summary>
+            <param name="managerEP">manager end point</param>
+            <param name="ownEP">own end point</param>
+            <param name="credentials"></param>
+        </member>
+        <member name="M:Alchemi.Core.GNode.#ctor(Alchemi.Core.Owner.GConnection)">
+            <summary>
+            Creates a new instance of the GConnection class
+            </summary>
+            <param name="connection"></param>
+        </member>
+        <member name="M:Alchemi.Core.GNode.Init">
+            <summary>
+            Initialised the remoted "node"
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.GNode.GetRemoteRef(Alchemi.Core.RemoteEndPoint)">
+            <summary>
+            Gets the reference to the remote node
+            </summary>
+            <param name="remoteEP">end point of the remote node</param>
+            <returns>Node reference</returns>
+        </member>
+        <member name="M:Alchemi.Core.GNode.GetRemoteManagerRef(Alchemi.Core.RemoteEndPoint)">
+            <summary>
+            Gets the reference to a remote manager
+            </summary>
+            <param name="remoteEP">end point of the remote manager</param>
+            <returns>Manager reference</returns>
+        </member>
+        <member name="M:Alchemi.Core.GNode.InitializeLifetimeService">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.GNode.UnRemoteSelf">
+            <summary>
+            Unregister channel and disconnect remoting
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.GNode.Manager">
+            <summary>
+            Gets the manager
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.GNode.ManagerEP">
+            <summary>
+            Gets the manager end point
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.GNode.OwnEP">
+            <summary>
+            Gets the node end point
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.GNode.Credentials">
+            <summary>
+            Gets the security credentials
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.GNode.Connection">
+            <summary>
+            Gets or sets the GConnection
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.ApplicationState">
+            <summary>
+            The possible states of a grid application.
+            AwaitingManifest = 0<br/>
+            Ready = 1<br/>
+            Stopped = 2
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Owner.ApplicationState.AwaitingManifest">
+            <summary>
+            Application awaiting manifest.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Owner.ApplicationState.Ready">
+            <summary>
+            Application ready to be executed.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Owner.ApplicationState.Stopped">
+            <summary>
+            Application stopped.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Manager.Storage.IManagerStorage">
+            <summary>
+            Define the Manager Storage interface.
+            Contains an entry for each storage operation the manager needs to do
+            The manager storage is meant to offer a uniform look at the data needed by the manager.
+            
+            Storage guildelines:
+            Writing and returning data from the storage should not be done with storage specific data structures
+            	such as DataSet, DataTable and so on. Rather, the data should be handled in the format needed by 
+            	the application such as custom objects.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.VerifyConnection">
+            <summary>
+            Verifies if the connection to the back-end storage is alive and valid.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.CheckPermission(Alchemi.Core.SecurityCredentials,Alchemi.Core.Manager.Permission)">
+            <summary>
+            Check if a permission is set.
+            </summary>
+            <param name="sc">Security credentials to use in the check.</param>
+            <param name="perm">Permission to check for</param>
+            <returns>true if the permission is set, false otherwise</returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.AuthenticateUser(Alchemi.Core.SecurityCredentials)">
+            <summary>
+            Authenticate a user's security credentials.
+            </summary>
+            <param name="sc">Security credentials to authenticate.</param>
+            <returns>True if the authentication is successful, false otherwise.</returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.AddUsers(Alchemi.Core.Manager.Storage.UserStorageView[])">
+            <summary>
+            Add a list of users to the storage.
+            </summary>
+            <param name="users"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.UpdateUsers(Alchemi.Core.Manager.Storage.UserStorageView[])">
+            <summary>
+            Update a list of users in the storage.
+            </summary>
+            <param name="updates">Users to be updated.</param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetUsers">
+            <summary>
+            Get an array with all the users found in the current storage.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.DeleteUser(Alchemi.Core.Manager.Storage.UserStorageView)">
+            <summary>
+            Delete the given user.
+            Only the username has to be set in the UserStorageView structure, all other data is ignored.
+            </summary>
+            <param name="userToDelete"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.AddGroups(Alchemi.Core.Manager.Storage.GroupStorageView[])">
+            <summary>
+            Add alist of groups to the storage.
+            </summary>
+            <param name="groups"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetGroups">
+            <summary>
+            Get a list of all the groups in the storage.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetGroup(System.Int32)">
+            <summary>
+            Get the details for the group with the requested Id from storage.
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.AddGroupPermission(System.Int32,Alchemi.Core.Manager.Permission)">
+            <summary>
+            Add group permissions to the given group Id.
+            The permission is added to the existing group permissions.
+            </summary>
+            <param name="groupId">The group Id</param>
+            <param name="permission">Permission to set.</param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetGroupPermissions(System.Int32)">
+            <summary>
+            Get a list of the current group permissions.
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetGroupPermissionStorageView(System.Int32)">
+            <summary>
+            Get a list of the current group permissions.
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.DeleteGroup(Alchemi.Core.Manager.Storage.GroupStorageView)">
+            <summary>
+            Delete the given group and all the users associated with it.
+            </summary>
+            <param name="groupToDelete"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetGroupUsers(System.Int32)">
+            <summary>
+            Get a list with all the users in a given group.
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.AddExecutor(Alchemi.Core.Manager.Storage.ExecutorStorageView)">
+            <summary>
+            Add an executor to the storage.
+            </summary>
+            <param name="executor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.UpdateExecutor(Alchemi.Core.Manager.Storage.ExecutorStorageView)">
+            <summary>
+            Update the details for an existing executor in the storage.
+            </summary>
+            <param name="executor"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.DeleteExecutor(Alchemi.Core.Manager.Storage.ExecutorStorageView)">
+            <summary>
+            Delete the given executor from storage.
+            </summary>
+            <param name="executor"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetExecutors">
+            <summary>
+            Get a list with all the executors in the storage.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetExecutors(Alchemi.Core.Utility.TriStateBoolean)">
+            <summary>
+            Get a list with all executors in the storage that have the requested Dedicated property.
+            </summary>
+            <param name="dedicated"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetExecutors(Alchemi.Core.Utility.TriStateBoolean,Alchemi.Core.Utility.TriStateBoolean)">
+            <summary>
+            Get a list with all the executors in the storage that have the requested Dedicated and Connected properties.
+            </summary>
+            <param name="dedicated"></param>
+            <param name="connected"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetExecutor(System.String)">
+            <summary>
+            Get the details for the exector with the given executor Id.
+            </summary>
+            <param name="executorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.AddApplication(Alchemi.Core.Manager.Storage.ApplicationStorageView)">
+            <summary>
+            Add an application to the storage.
+            </summary>
+            <param name="application"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.UpdateApplication(Alchemi.Core.Manager.Storage.ApplicationStorageView)">
+            <summary>
+            Update the details of an application in the storage.
+            </summary>
+            <param name="updatedApplication"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetApplications">
+            <summary>
+            Get all applications in the storage.
+            Do not populate the thread count properties for the returned objects.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetApplications(System.Boolean)">
+            <summary>
+            Get all applications in the storage.
+            </summary>
+            <param name="populateThreadCount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.DeleteApplication(Alchemi.Core.Manager.Storage.ApplicationStorageView)">
+            <summary>
+            Delete application and all associated threads
+            </summary>
+            <param name="applicationToDelete"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetApplications(System.String,System.Boolean)">
+            <summary>
+            Get the user's applications
+            </summary>
+            <param name="userName"></param>
+            <param name="populateThreadCount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetApplication(System.String)">
+            <summary>
+            Get the details for the application with the given application Id.
+            </summary>
+            <param name="applicationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.AddThread(Alchemi.Core.Manager.Storage.ThreadStorageView)">
+            <summary>
+            Add a thread to the storage.
+            </summary>
+            <param name="thread"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.UpdateThread(Alchemi.Core.Manager.Storage.ThreadStorageView)">
+            <summary>
+            Update the details of a thread in the storage.
+            </summary>
+            <param name="updatedThread"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetThread(System.String,System.Int32)">
+            <summary>
+            Get the details for a given thread in an application.
+            </summary>
+            <param name="applicationId"></param>
+            <param name="threadId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetThreads(Alchemi.Core.Owner.ThreadState[])">
+            <summary>
+            Get all threads with the given states.
+            </summary>
+            <param name="state">a parameter array with a list of all requested thread states.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetThreads(Alchemi.Core.Owner.ApplicationState,Alchemi.Core.Owner.ThreadState[])">
+            <summary>
+            Get all threads whose application has the requested thread state.
+            </summary>
+            <param name="appState">Application state.</param>
+            <param name="threadState">Thread states.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetThreads(System.String,Alchemi.Core.Owner.ThreadState[])">
+            <summary>
+            Get all threads with the given states whithin an application.
+            </summary>
+            <param name="applicationId"></param>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetExecutorThreads(System.String,Alchemi.Core.Owner.ThreadState[])">
+            <summary>
+            Get all threads with the given states whithin an executor.
+            </summary>
+            <param name="executorId"></param>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetExecutorThreads(System.Boolean,Alchemi.Core.Owner.ThreadState[])">
+            <summary>
+            Get all threads with the given states and where the executors's dedicated status is as requested.
+            </summary>
+            <param name="dedicatedExecutor"></param>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetExecutorThreads(System.Boolean,System.Boolean,Alchemi.Core.Owner.ThreadState[])">
+            <summary>
+            Get all threads with the given states and where the executors's dedicated and connected statuses are as requested.
+            </summary>
+            <param name="dedicatedExecutor"></param>
+            <param name="connectedExecutor"></param>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetApplicationThreadCount(System.String,System.Int32@,System.Int32@)">
+            <summary>
+            Get total and unfinished thread count for an application.
+            </summary>
+            <param name="applicationId"></param>
+            <param name="totalthreads"></param>
+            <param name="unfinishedThreads"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetApplicationThreadCount(System.String,Alchemi.Core.Owner.ThreadState)">
+            <summary>
+            Get the number of threads with a given state in an application.
+            </summary>
+            <param name="applicationId"></param>
+            <param name="threadState"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetExecutorThreadCount(System.String,Alchemi.Core.Owner.ThreadState[])">
+            <summary>
+            Get the number of threads on an executor.
+            </summary>
+            <param name="executorId"></param>
+            <param name="threadState"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.DeleteThread(Alchemi.Core.Manager.Storage.ThreadStorageView)">
+            <summary>
+            Delete a thread from the storage.
+            </summary>
+            <param name="threadToDelete"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorage.GetSystemSummary">
+            <summary>
+            Get system summary information from the storage.
+            </summary>
+            <returns>
+            An object with the summary information or null if the storage does not implement system summary.
+            </returns>
+        </member>
+        <member name="T:Alchemi.Core.Manager.Storage.StorageMaintenanceParameters">
+            <summary>
+            Parameters passed to the Maintenance class to perform storage maintenance tasks.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Manager.Storage.ExecutorStorageView">
+            <summary>
+            Storage view of an executor object. 
+            Used to pass executor related data to and from the storage layer.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ExecutorStorageView.#ctor(System.Boolean,System.Boolean,System.DateTime,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Single)">
+            <summary>
+            ExecutorStorageView constructor.
+            </summary>
+            <param name="dedicated"></param>
+            <param name="connected"></param>
+            <param name="pingTime"></param>
+            <param name="hostname"></param>
+            <param name="port"></param>
+            <param name="username"></param>
+            <param name="maxCpu"></param>
+            <param name="cpuUsage"></param>
+            <param name="availableCpu"></param>
+            <param name="totalCpuUsage"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ExecutorStorageView.#ctor(System.String,System.Boolean,System.Boolean,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Single)">
+            <summary>
+            ExecutorStorageView constructor.
+            </summary>
+            <param name="executorId"></param>
+            <param name="dedicated"></param>
+            <param name="connected"></param>
+            <param name="hostname"></param>
+            <param name="port"></param>
+            <param name="username"></param>
+            <param name="maxCpu"></param>
+            <param name="cpuUsage"></param>
+            <param name="availableCpu"></param>
+            <param name="totalCpuUsage"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ExecutorStorageView.#ctor(System.String,System.Boolean,System.Boolean,System.DateTime,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Single)">
+            <summary>
+            ExecutorStorageView constructor.
+            </summary>
+            <param name="executorId"></param>
+            <param name="dedicated"></param>
+            <param name="connected"></param>
+            <param name="pingTime"></param>
+            <param name="hostname"></param>
+            <param name="port"></param>
+            <param name="username"></param>
+            <param name="maxCpu"></param>
+            <param name="cpuUsage"></param>
+            <param name="availableCpu"></param>
+            <param name="totalCpuUsage"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ExecutorStorageView.#ctor(System.Boolean,System.Boolean,System.String,System.String,System.Int32,System.Single,System.Single,System.Int32,System.String,System.String)">
+            <summary>
+            ExecutorStorageView constructor.
+            </summary>
+            <param name="dedicated"></param>
+            <param name="connected"></param>
+            <param name="hostname"></param>
+            <param name="username"></param>
+            <param name="maxCpu"></param>
+            <param name="maxMemory"></param>
+            <param name="maxDisk"></param>
+            <param name="numberOfCpu"></param>
+            <param name="os"></param>
+            <param name="architecture"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ExecutorStorageView.#ctor(System.String,System.Boolean,System.Boolean,System.String,System.String,System.Int32,System.Single,System.Single,System.Int32,System.String,System.String)">
+            <summary>
+            ExecutorStorageView constructor.
+            </summary>
+            <param name="executorId"></param>
+            <param name="dedicated"></param>
+            <param name="connected"></param>
+            <param name="hostname"></param>
+            <param name="username"></param>
+            <param name="maxCpu"></param>
+            <param name="maxMemory"></param>
+            <param name="maxDisk"></param>
+            <param name="numberOfCpu"></param>
+            <param name="os"></param>
+            <param name="architecture"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ExecutorStorageView.#ctor(System.String,System.Boolean,System.Boolean,System.DateTime,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Single,System.Single,System.Single,System.Int32,System.String,System.String)">
+            <summary>
+            ExecutorStorageView constructor.
+            </summary>
+            <param name="executorId"></param>
+            <param name="dedicated"></param>
+            <param name="connected"></param>
+            <param name="pingTime"></param>
+            <param name="hostname"></param>
+            <param name="port"></param>
+            <param name="username"></param>
+            <param name="maxCpu"></param>
+            <param name="cpuUsage"></param>
+            <param name="availableCpu"></param>
+            <param name="totalCpuUsage"></param>
+            <param name="maxMemory"></param>
+            <param name="maxDisk"></param>
+            <param name="numberOfCpu"></param>
+            <param name="os"></param>
+            <param name="architecture"></param>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.Architecture">
+            <summary>
+            Executor architecture.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.Os">
+            <summary>
+            Executor Operating System.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.NumberOfCpu">
+            <summary>
+            The number of CPUs on this Executor.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.MaxDisk">
+            <summary>
+            The maximum disk space available on this Executor.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.MaxMemory">
+            <summary>
+            The maximum memory available on this Executor.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.ExecutorId">
+            <summary>
+            Executor Id.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.Dedicated">
+            <summary>
+            Gets or sets a value indicating whether the Executor is dedicated or not.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.Connected">
+            <summary>
+            Gets or sets a value indicating whether the Executor is connected or not.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.PingTime">
+            <summary>
+            The last time this Executor was pinged
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.PingTimeSet">
+            <summary>
+            Gets a value indicating whether the PingTime property is set or not.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.HostName">
+            <summary>
+            The Executor's host name.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.Port">
+            <summary>
+            The Executor's port.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.Username">
+            <summary>
+            The Executor's username.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.MaxCpu">
+            <summary>
+            The maximum CPU of the Executor.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.CpuUsage">
+            <summary>
+            The CPU usage for this Executor.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.AvailableCpu">
+            <summary>
+            The available CPU power for this Executor.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ExecutorStorageView.TotalCpuUsage">
+            <summary>
+            The total CPU usage for this Executor.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.ThreadState">
+            <summary>
+            List of possible thread states
+            Ready = 0, // ready to execute <br />
+            Scheduled = 1, // executor has id <br/>
+            Started = 2, // executor has thread and is executing <br />
+            Finished = 3, // executor has returned the finished thread<br />
+            Dead = 4, // returned to owner OR aborted
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Owner.ThreadState.Unknown">
+            <summary>
+            Unknown or unitialized
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Owner.ThreadState.Ready">
+            <summary>
+            Ready to execute
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Owner.ThreadState.Scheduled">
+            <summary>
+            Executor received the Id for the thread.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Owner.ThreadState.Started">
+            <summary>
+            Executor has thread and is executing.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Owner.ThreadState.Finished">
+            <summary>
+            Executor has returned the finished thread.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Owner.ThreadState.Dead">
+            <summary>
+            Returned to owner OR aborted
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.IOwner">
+            <summary>
+            Defines the functions / services that should be provided by an "owner" node. (i.e the node which creates/starts an application).
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Manager.Storage.ThreadStorageView">
+            <summary>
+            Storage view of an thread object. 
+            Used to pass thread related data to and from the storage layer.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ThreadStorageView.ResetTimeStarted">
+            <summary>
+            Reset the TimeStarted property to the default value.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ThreadStorageView.ResetTimeFinished">
+            <summary>
+            Reset the TimeFinished property to the default value.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ThreadStorageView.#ctor(System.String,System.Int32)">
+            <summary>
+            ThreadStorageView constructor.
+            </summary>
+            <param name="applicationId"></param>
+            <param name="threadId"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ThreadStorageView.#ctor(System.String,System.Int32,Alchemi.Core.Owner.ThreadState)">
+            <summary>
+            ThreadStorageView constructor.
+            </summary>
+            <param name="applicationId"></param>
+            <param name="threadId"></param>
+            <param name="state"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ThreadStorageView.#ctor(System.String,System.String,System.Int32,Alchemi.Core.Owner.ThreadState,System.DateTime,System.DateTime,System.Int32,System.Boolean)">
+            <summary>
+            ThreadStorageView constructor.
+            </summary>
+            <param name="applicationId"></param>
+            <param name="executorId"></param>
+            <param name="threadId"></param>
+            <param name="state"></param>
+            <param name="timeStarted"></param>
+            <param name="timeFinished"></param>
+            <param name="priority"></param>
+            <param name="failed"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ThreadStorageView.#ctor(System.Int32,System.String,System.String,System.Int32,Alchemi.Core.Owner.ThreadState,System.DateTime,System.DateTime,System.Int32,System.Boolean)">
+            <summary>
+            ThreadStorageView constructor.
+            </summary>
+            <param name="internalThreadId"></param>
+            <param name="applicationId"></param>
+            <param name="executorId"></param>
+            <param name="threadId"></param>
+            <param name="state"></param>
+            <param name="timeStarted"></param>
+            <param name="timeFinished"></param>
+            <param name="priority"></param>
+            <param name="failed"></param>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ThreadStorageView.InternalThreadId">
+            <summary>
+            Internal thread Id.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ThreadStorageView.ApplicationId">
+            <summary>
+            The application Id to which this thread belongs to.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ThreadStorageView.ExecutorId">
+            <summary>
+            The executor Id of the Executor on which this thread was executed.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ThreadStorageView.ThreadId">
+            <summary>
+            The thread Id.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ThreadStorageView.State">
+            <summary>
+            The thread state.
+            <seealso cref="T:Alchemi.Core.Owner.ThreadState"/>
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ThreadStorageView.TimeStarted">
+            <summary>
+            The time this thread was started.
+            <seealso cref="P:Alchemi.Core.Manager.Storage.ThreadStorageView.TimeStartedSet"/>
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ThreadStorageView.TimeFinished">
+            <summary>
+            The time this thread was finished.
+            <seealso cref="P:Alchemi.Core.Manager.Storage.ThreadStorageView.TimeFinishedSet"/>
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ThreadStorageView.TimeStartedSet">
+            <summary>
+            Gets a value indicating whether the TimeStarted property is set.
+            <seealso cref="P:Alchemi.Core.Manager.Storage.ThreadStorageView.TimeStarted"/>
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ThreadStorageView.TimeFinishedSet">
+            <summary>
+            Gets a value indicating whether the TimeFinished property is set.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ThreadStorageView.Priority">
+            <summary>
+            The thread priority.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ThreadStorageView.Failed">
+            <summary>
+            Gets a value indicating whether this thread failed running.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ThreadStorageView.StateString">
+            <summary>
+            Gets a hunam readable description of the State property.
+            <seealso cref="P:Alchemi.Core.Manager.Storage.ThreadStorageView.State"/>
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Manager.Permission">
+            <summary>
+            List of various permission values.
+            Possible values are:
+            ExecuteThread ,
+            ManageOwnApp ,
+            ManageAllApps3,
+            ManageUsers 
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Manager.Permission.ExecuteThread">
+            <summary>
+            Allowed to execute threads.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Manager.Permission.ManageOwnApp">
+            <summary>
+            Allowed to manage own applications.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Manager.Permission.ManageAllApps">
+            <summary>
+            Allowed to manage all applications.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Manager.Permission.ManageUsers">
+            <summary>
+            Allowed to manage users.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Logger">
+            <summary>
+            The Alchemi logger class raises log events which can be handled by other classes.
+            This allows to log messages using any logging system the log-event-handler may choose.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Logger.LogHandler">
+            <summary>
+            Logger Event Handler
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Logger.#ctor">
+            <summary>
+            Creates an instance of the logger.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Logger.Info(System.String)">
+            <summary>
+            Raises a log event with the given message and Info level
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Alchemi.Core.Logger.Debug(System.String)">
+            <summary>
+            Raises a log event with the given message and Debug level
+            </summary>
+            <param name="debugMsg"></param>
+        </member>
+        <member name="M:Alchemi.Core.Logger.Debug(System.String,System.Exception)">
+            <summary>
+            Raises a log event with the given message and Debug level and exception
+            </summary>
+            <param name="debugMsg"></param>
+            <param name="ex"></param>
+        </member>
+        <member name="M:Alchemi.Core.Logger.Error(System.String,System.Exception)">
+            <summary>
+            Raises a log event with the given message and Error level and exception
+            </summary>
+            <param name="msg"></param>
+            <param name="ex"></param>
+        </member>
+        <member name="M:Alchemi.Core.Logger.Warn(System.String)">
+            <summary>
+            Raises a log event with the given message and Warn level
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Alchemi.Core.Logger.Warn(System.String,System.Exception)">
+            <summary>
+            Raises a log event with the given message and Warn level and exception
+            </summary>
+            <param name="msg"></param>
+            <param name="ex"></param>
+        </member>
+        <member name="T:Alchemi.Core.LogLevel">
+            <summary>
+            The log-level of the message. The levels can be one of
+            Debug,
+            Warn,
+            Error,
+            Info
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.LogEventArgs">
+            <summary>
+            The arguments passed when raising a log event.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.LogEventArgs.#ctor">
+            <summary>
+            Default constructor: creates an instance of the LogEventArgs class
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.LogEventArgs.#ctor(System.String,System.String,System.String,Alchemi.Core.LogLevel,System.Exception)">
+            <summary>
+            Creates an instance of the LogEventArgs class with the given message, level and exception.
+            </summary>
+            <param name="source"></param>
+            <param name="sourceMember"></param>
+            <param name="message"></param>
+            <param name="level"></param>
+            <param name="ex"></param>
+        </member>
+        <member name="P:Alchemi.Core.LogEventArgs.Level">
+            <summary>
+            Gets the level of the log message
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.LogEventArgs.Message">
+            <summary>
+            Getsthe log message
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.LogEventArgs.Exception">
+            <summary>
+            Gets the exception for the log event
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.LogEventArgs.Source">
+            <summary>
+            Gets the source 
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.LogEventArgs.Member">
+            <summary>
+            Gets the member of the source class that raised the log event
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.GThreadBuffer">
+            <summary>
+            GThreadBuffer class represents a thread buffer that holds many threads that can be executed by an executor as one thread. It is used primarily by GApplicationBuffered to improve performance when executing many threads with short execution times.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThreadBuffer.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThreadBuffer.#ctor(System.Int32)">
+            <summary>
+            Constructor that takes the capacity.
+            </summary>
+            <param name="nCapacity">capacity</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThreadBuffer.IsFull">
+            <summary>
+            Determines whether the thread buffer is full.
+            </summary>
+            <returns>whether it is full</returns>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThreadBuffer.Add(Alchemi.Core.Owner.GThread)">
+            <summary>
+            Adds a thread to the buffer.
+            </summary>
+            <param name="oThread">thread</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThreadBuffer.OnFull">
+            <summary>
+            Fires the full event.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThreadBuffer.Start">
+            <summary>
+            Starts the thread buffer by starting each thread in the buffer.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThreadBuffer.GetException(System.Int32)">
+            <summary>
+            Gets the thread exception for the given thread id.
+            </summary>
+            <param name="nThreadId">thread id</param>
+            <returns>thread exception</returns>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThreadBuffer.CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the threads to the given array.
+            </summary>
+            <param name="oArray">array</param>
+            <param name="nIndex">index</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GThreadBuffer.GetEnumerator">
+            <summary>
+            Gets the threads enumerator.
+            </summary>
+            <returns>enumerator</returns>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GThreadBuffer.Capacity">
+            <summary>
+            Capacity property represents the maximum the number of threads that can be held in the buffer.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GThreadBuffer.Count">
+            <summary>
+            Count property represents the number of threads in the buffer.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GThreadBuffer.IsSynchronized">
+            <summary>
+            Determines whether the threads are synchronized.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GThreadBuffer.SyncRoot">
+            <summary>
+            Gets the threads sync root.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.FullEventHandler">
+            <summary>
+            FullEventHandler delegate represents the Full event handler.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.ThreadBufferFullException">
+            <summary>
+            ThreadBufferFullException class represents an exception thrown when attempting to add a thread to a full thread buffer.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.ThreadBufferFullException.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.ThreadBufferFullException.#ctor(System.String)">
+            <summary>
+            Constructor that takes the given message.
+            </summary>
+            <param name="strMessage">message</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.ThreadBufferFullException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor that takes the given message and exception.
+            </summary>
+            <param name="strMessage">message</param>
+            <param name="oException">exception</param>
+        </member>
+        <member name="T:Alchemi.Core.Owner.GJob">
+            <summary>
+            Represents a coarse unit of work on the grid. This class extends the GThread to enable legacy applications to 
+            run on the grid. A GJob is associated with file dependencies which are the inputs and outputs of the job
+            and a compiled binary (the legacy application) which is the work unit of the job.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GJob.Start">
+            <summary>
+            Runs the executable specified in the RunCommand of the GJob. This happens on the executor node.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GJob.InputFiles">
+            <summary>
+            Gets the collection of input files for this job
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GJob.OutputFiles">
+            <summary>
+            Gets the collection of output files for this job
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GJob.RunCommand">
+            <summary>
+            Gets or sets the work unit, or the command that is to be executed when this job runs on the executor
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Manager.Storage.PermissionStorageView">
+            <summary>
+            Storage view of a Permission object. 
+            Used to pass permission related data to and from the storage layer.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.PermissionStorageView.#ctor(System.Int32,System.String)">
+            <summary>
+            PermissionStorageView constructor.
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.PermissionStorageView.#ctor(Alchemi.Core.Manager.Permission)">
+            <summary>
+            PermissionStorageView constructor.
+            </summary>
+            <param name="perm"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.PermissionStorageView.GetPermissionStorageView(Alchemi.Core.Manager.Permission[])">
+            <summary>
+            Convert a Permission array into a PermissionStorageView array.
+            <seealso cref="T:Alchemi.Core.Manager.Permission"/>
+            </summary>
+            <param name="permissions">The Permission array to be converted</param>
+            <returns>A new array of PermissionStorageView values.</returns>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.PermissionStorageView.PermissionName">
+            <summary>
+            A human readable permission name.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.PermissionStorageView.PermissionId">
+            <summary>
+            Permission Id.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.GConnectionDialog">
+            <summary>
+            Represents the dialog box that is used to connect to the manager.
+            This class is a wrapper around the GConnectionDialogForm
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GConnectionDialog.ShowDialog">
+            <summary>
+            Shows the dialog form
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GConnectionDialog.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates an instance of the GConnectionDialog
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GConnectionDialog.#ctor">
+            <summary>
+            Creates an instance of the GConnectionDialog
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GConnectionDialog.Dispose(System.Boolean)">
+            <summary>
+            Disposes the GConnectionDialog object and performs clean up operations.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GConnectionDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GConnectionDialog.Connection">
+            <summary>
+            Gets the GConnection object
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.RemotingMechanism">
+            <summary>
+            List of possible remoting mechanisms:
+            TcpBinary
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.ThreadIdentifier">
+            <summary>
+            Represents a identifier to uniquely identify a thread across applications
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.ThreadIdentifier.#ctor(System.String,System.Int32)">
+            <summary>
+            Creates an instance of the ThreadIdentifier
+            </summary>
+            <param name="applicationId"></param>
+            <param name="threadId"></param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.ThreadIdentifier.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            Creates an instance of the ThreadIdentifier
+            </summary>
+            <param name="applicationId"></param>
+            <param name="threadId"></param>
+            <param name="priority"></param>
+        </member>
+        <member name="P:Alchemi.Core.Owner.ThreadIdentifier.ApplicationId">
+            <summary>
+            Gets the id of the application to which this thread belongs
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.ThreadIdentifier.ThreadId">
+            <summary>
+            Gets the thread id
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.ThreadIdentifier.Priority">
+            <summary>
+            Gets the priority of the thread
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.CrossPlatformHelper">
+            <summary>
+            Provides helper methods for working with tasks and jobs on a Manager. This class is used by the X-Platform Manager
+            and should be used by any client tools providing task/job support.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.CrossPlatformHelper.CreateTask(Alchemi.Core.IManager,Alchemi.Core.SecurityCredentials)">
+            <summary>
+            Creates an empty task on a Manager and returns its Id.
+            </summary>
+            <param name="manager"></param>
+            <param name="sc">Security Credentials</param>
+            <returns>application id</returns>
+        </member>
+        <member name="M:Alchemi.Core.CrossPlatformHelper.CreateTask(Alchemi.Core.IManager,Alchemi.Core.SecurityCredentials,System.String)">
+            <summary>
+            Creates a task on the Manager from the provided XML task representation and returns its Id. 
+            </summary>
+            <param name="manager"></param>
+            <param name="sc">Security Credentials</param>
+            <param name="taskXml"></param>
+            <returns>application id</returns>
+        </member>
+        <member name="M:Alchemi.Core.CrossPlatformHelper.AddJob(Alchemi.Core.IManager,Alchemi.Core.SecurityCredentials,System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            Adds a job to the manager
+            </summary>
+            <param name="manager"></param>
+            <param name="sc">security credentials used to perform this operation</param>
+            <param name="taskId"></param>
+            <param name="jobId"></param>
+            <param name="priority"></param>
+            <param name="jobXml"></param>
+        </member>
+        <member name="M:Alchemi.Core.CrossPlatformHelper.GetJobState(Alchemi.Core.IManager,Alchemi.Core.SecurityCredentials,System.String,System.Int32)">
+            <summary>
+            Gets the status of the given job
+            </summary>
+            <param name="manager"></param>
+            <param name="sc">security credentials used to perform this operation</param>
+            <param name="taskId"></param>
+            <param name="jobId"></param>
+            <returns>job status</returns>
+        </member>
+        <member name="M:Alchemi.Core.CrossPlatformHelper.GetFinishedJobs(Alchemi.Core.IManager,Alchemi.Core.SecurityCredentials,System.String)">
+            <summary>
+            Gets the finished jobs as an xml string
+            </summary>
+            <param name="manager"></param>
+            <param name="sc">security credentials used to perform this operation</param>
+            <param name="taskId"></param>
+            <returns>XML string representing the job</returns>
+        </member>
+        <member name="T:Alchemi.Core.Manager.Storage.IManagerStorageSetup">
+            <summary>
+            Sets up a specific storage structure.
+            
+            A storage should know how to set itself up. In the event that the 
+            storage detects that it is not setup it might decide to initialize
+            the required data structures automatically.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorageSetup.CreateStorage(System.String)">
+            <summary>
+            Create the physical storage.
+            For databases this means creating the actual database files.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorageSetup.SetUpStorage">
+            <summary>
+            Create the basic storage structures such as tables.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorageSetup.InitializeStorageData">
+            <summary>
+            Add default storage data.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.IManagerStorageSetup.TearDownStorage">
+            <summary>
+            Remove the structures initialized by this storage.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Utility.XmlStringWriter">
+            <summary>
+            This class is used to read in / write out XML data from / in memory.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Utility.XmlStringWriter.#ctor">
+            <summary>
+            Creates an instance of an XML writer capable of writing ASCII text with indented format.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Utility.XmlStringWriter.GetXmlString">
+            <summary>
+            Returns the XML written to memory (so far) by the writer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Alchemi.Core.Utility.XmlStringWriter.Writer">
+            <summary>
+            Creates an instance of the XML writer capable of writing text
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Utility.HashUtil">
+            <summary>Class used to generate and check hashes.</summary>
+        </member>
+        <member name="M:Alchemi.Core.Utility.HashUtil.#ctor">
+            <summary></summary>
+        </member>
+        <member name="M:Alchemi.Core.Utility.HashUtil.GetHash(System.String,Alchemi.Core.Utility.HashUtil.HashType)">
+            <summary>Generates the hash of a text.</summary>
+            <param name="strPlain">The text of which to generate a hash of.</param>
+            <param name="hshType">The hash function to use.</param>
+            <returns>The hash as a hexadecimal string.</returns>
+        </member>
+        <member name="M:Alchemi.Core.Utility.HashUtil.CheckHash(System.String,System.String,Alchemi.Core.Utility.HashUtil.HashType)">
+            <summary>Checks a text with a hash.</summary>
+            <param name="strOriginal">The text to compare the hash against.</param>
+            <param name="strHash">The hash to compare against.</param>
+            <param name="hshType">The type of hash.</param>
+            <returns>True if the hash validates, false otherwise.</returns>
+        </member>
+        <member name="T:Alchemi.Core.Utility.HashUtil.HashType">
+            <summary>The wanted hash function.</summary>
+        </member>
+        <member name="F:Alchemi.Core.Utility.HashUtil.HashType.MD5">
+            <summary>MD5 Hashing</summary>
+        </member>
+        <member name="F:Alchemi.Core.Utility.HashUtil.HashType.SHA1">
+            <summary>SHA1 Hashing</summary>
+        </member>
+        <member name="F:Alchemi.Core.Utility.HashUtil.HashType.SHA256">
+            <summary>SHA256 Hashing</summary>
+        </member>
+        <member name="F:Alchemi.Core.Utility.HashUtil.HashType.SHA384">
+            <summary>SHA384 Hashing</summary>
+        </member>
+        <member name="F:Alchemi.Core.Utility.HashUtil.HashType.SHA512">
+            <summary>SHA512 Hashing</summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.GApplicationFinish">
+            <summary>
+            Delegate for the Application Finished event
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.GThreadFinish">
+            <summary>
+            Delegare for the ThreadFinish event
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.GThreadFailed">
+            <summary>
+            Delegate for the ThreadFailed event
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Manager.Storage.UserStorageView">
+            <summary>
+            Storage view of a user object. 
+            Used to pass user related data to and from the storage layer.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Manager.Storage.UserStorageView.m_passwordMd5Hash">
+            <summary>
+            use this sto store a hash if the plain password is unknown
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.UserStorageView.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+            UserStorageView constructor.
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="groupId"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.UserStorageView.#ctor(System.String)">
+            <summary>
+            UserStorageView constructor.
+            </summary>
+            <param name="username"></param>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.UserStorageView.IsSystem">
+            <summary>
+            Gets or sets a value indicating whether this user is a system user.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.UserStorageView.Username">
+            <summary>
+            The username.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.UserStorageView.Password">
+            <summary>
+            The password. This value is never stored in the database.
+            This is used to calculate the MD5 hash stored in the database. 
+            <seealso cref="P:Alchemi.Core.Manager.Storage.UserStorageView.PasswordMd5Hash"/>
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.UserStorageView.PasswordMd5Hash">
+            <summary>
+            The password's MD5 hash. When validating the user's password only this hash is required.
+            <seealso cref="P:Alchemi.Core.Manager.Storage.UserStorageView.Password"/>
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.UserStorageView.GroupId">
+            <summary>
+            The group id this user belongs to.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Manager.Storage.SystemSummary">
+            <summary>
+            Returned by GetSystemSummary.
+            Contains various information about the application status.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.SystemSummary.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            Create the SystemSummary structure
+            </summary>
+            <param name="maxPower"></param>
+            <param name="totalExecutors"></param>
+            <param name="powerUsage"></param>
+            <param name="powerAvailable"></param>
+            <param name="powerTotalUsage"></param>
+            <param name="unfinishedApps"></param>
+            <param name="unfinishedThreads"></param>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.SystemSummary.MaxPower">
+            <summary>
+            Maximum power.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.SystemSummary.TotalExecutors">
+            <summary>
+            The total number of Executors.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.SystemSummary.PowerUsage">
+            <summary>
+            The power usage.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.SystemSummary.PowerAvailable">
+            <summary>
+            The available power.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.SystemSummary.PowerTotalUsage">
+            <summary>
+            The total power usage.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.SystemSummary.UnfinishedThreads">
+            <summary>
+            The number of unfinished threads.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.SystemSummary.UnfinishedApps">
+            <summary>
+            The number of unfinished applications.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Manager.Storage.GroupStorageView">
+            <summary>
+            Storage view of a group object. 
+            Used to pass group related data to and from the storage layer.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.GroupStorageView.#ctor(System.Int32,System.String)">
+            <summary>
+            GroupStorageView constructor.
+            </summary>
+            <param name="groupId"></param>
+            <param name="groupName"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.GroupStorageView.#ctor(System.Int32)">
+            <summary>
+            GroupStorageView constructor.
+            Initializes an empty object.
+            </summary>
+            <param name="groupId"></param>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.GroupStorageView.IsSystem">
+            <summary>
+            Gets or sets a value indicating whether this Group is a system group.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.GroupStorageView.GroupName">
+            <summary>
+            The group name.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.GroupStorageView.GroupId">
+            <summary>
+            The group Id.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.GroupStorageView.Description">
+            <summary>
+            A human readable description for this group.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.IManager">
+            <summary>
+            Defines the functions / services that need to be provided by a manager implementation
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.IExecutor">
+            <summary>
+            Defines the functions / services that should be provided by an executor implementation
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.IExecutor.PingExecutor">
+            <summary>
+            Ping the executor to check if it is alive
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.IExecutor.Manager_ExecuteThread(Alchemi.Core.Owner.ThreadIdentifier)">
+            <summary>
+            Executes the thread with the given identifier. 
+            <br/>(Generally meant to be called by a Manager)
+            </summary>
+            <param name="ti"></param>
+        </member>
+        <member name="M:Alchemi.Core.IExecutor.Manager_AbortThread(Alchemi.Core.Owner.ThreadIdentifier)">
+            <summary>
+            Aborts the thread with the given identifier
+            <br/>(Generally meant to be called by a Manager)
+            </summary>
+            <param name="ti"></param>
+        </member>
+        <member name="M:Alchemi.Core.IExecutor.Manager_CleanupApplication(System.String)">
+            <summary>
+            Cleans up the files related to the application with the given id.
+            <br/>(Generally meant to be called by a Manager)
+            </summary>
+            <param name="appid"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.PingManager">
+            <summary>
+            Pings the manager to verify if it is alive
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.IManager.AuthenticateUser(Alchemi.Core.SecurityCredentials)">
+            <summary>
+            Authenticates the user with the given security credentials
+            </summary>
+            <param name="sc"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Owner_CreateApplication(Alchemi.Core.SecurityCredentials)">
+            <summary>
+            Create an application
+            <br/>(Generally meant to be called by a Owner of an application)
+            </summary>
+            <param name="sc"></param>
+            <returns>Application id</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Owner_SetApplicationName(Alchemi.Core.SecurityCredentials,System.String,System.String)">
+            <summary>
+            Set the application human readable name.
+            </summary>
+            <param name="sc"></param>
+            <param name="appId"></param>
+            <param name="applicationName"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Owner_VerifyApplication(Alchemi.Core.SecurityCredentials,System.String)">
+            <summary>
+            Verify if an application exists.
+            <br/>(Generally meant to be called by a Owner of an application)
+            </summary>
+            <param name="sc"></param>
+            <param name="appId"></param>
+            <returns>true if the application exists in the Manager database</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Owner_SetApplicationManifest(Alchemi.Core.SecurityCredentials,System.String,Alchemi.Core.Owner.FileDependencyCollection)">
+            <summary>
+            Set the application manifest (file dependencies) for the application with the given id.
+            <br/>(Generally meant to be called by a Owner of an application)
+            </summary>
+            <param name="sc"></param>
+            <param name="appId"></param>
+            <param name="manifest"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Owner_HasApplicationManifest(Alchemi.Core.SecurityCredentials,System.String)">
+            <summary>
+            Determines whether the manager has the application manifest for the given application id.
+            <br/>(Generally meant to be called by a Owner of an application)
+            </summary>
+            <param name="sc"></param>
+            <param name="appId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Owner_SetThread(Alchemi.Core.SecurityCredentials,Alchemi.Core.Owner.ThreadIdentifier,System.Byte[])">
+            <summary>
+            Set the thread on the manager. i.e provide the manager with a byte array[] representing the thread code.
+            <br/>(Generally meant to be called by a Owner of an application)
+            </summary>
+            <param name="sc"></param>
+            <param name="ti"></param>
+            <param name="thread"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Owner_GetFinishedThreads(Alchemi.Core.SecurityCredentials,System.String)">
+            <summary>
+            Retrieve the finished threads for an application with the given id, as a 2-D byte array [][]
+            </summary>
+            <param name="sc"></param>
+            <param name="appId"></param>
+            <returns>byte array representing all the threads that are finished for the given appication</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Owner_GetThreadState(Alchemi.Core.SecurityCredentials,Alchemi.Core.Owner.ThreadIdentifier)">
+            <summary>
+            Gets the state of the thread with the given identifier.
+            <br/>(Generally meant to be called by a Owner of an application)
+            </summary>
+            <param name="sc"></param>
+            <param name="ti"></param>
+            <returns>ThreadState</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Owner_GetFailedThreadException(Alchemi.Core.SecurityCredentials,Alchemi.Core.Owner.ThreadIdentifier)">
+            <summary>
+            Gets the exception, if any, for a thread. If the thread has failed the exception object contains the Exception that 
+            caused the failure. Otherwise, the return value is null.
+            <br/>(Generally meant to be called by a Owner of an application)
+            </summary>
+            <param name="sc"></param>
+            <param name="ti"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Owner_GetApplicationState(Alchemi.Core.SecurityCredentials,System.String)">
+            <summary>
+            Gets the state of the application with the given id.
+            <br/>(Generally meant to be called by a Owner of an application)
+            </summary>
+            <param name="sc"></param>
+            <param name="appId"></param>
+            <returns>ApplicationState</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Owner_AbortThread(Alchemi.Core.SecurityCredentials,Alchemi.Core.Owner.ThreadIdentifier)">
+            <summary>
+            Aborts the thread with the given identifier.
+            <br/>(Generally meant to be called by a Owner of an application)
+            </summary>
+            <param name="sc"></param>
+            <param name="ti"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Owner_StopApplication(Alchemi.Core.SecurityCredentials,System.String)">
+            <summary>
+            Stops the application with the given id.
+            <br/>(Generally meant to be called by a Owner of an application)
+            </summary>
+            <param name="sc"></param>
+            <param name="appId"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Owner_CleanupApplication(Alchemi.Core.SecurityCredentials,System.String)">
+            <summary>
+            Cleans up the files for an application with the given id.
+            <br/>(Generally meant to be called by a Owner of an application)
+            </summary>
+            <param name="sc"></param>
+            <param name="appId"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Owner_GetFinishedThreadCount(Alchemi.Core.SecurityCredentials,System.String)">
+            <summary>
+            Gets the number of threads finished for an application with the given id.
+            <br/>(Generally meant to be called by a Owner of an application)
+            </summary>
+            <param name="sc"></param>
+            <param name="appId"></param>
+            <returns>Number of finished threads</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Executor_RegisterNewExecutor(Alchemi.Core.SecurityCredentials,System.String,Alchemi.Core.Executor.ExecutorInfo)">
+            <summary>
+            Registers a new Executor with the Manager.
+            <br/>(Generally meant to be called by a Executor)
+            </summary>
+            <param name="sc"></param>
+            <param name="existingExecutorId"></param>
+            <param name="info"></param>
+            <returns>Executor id</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Executor_ConnectDedicatedExecutor(Alchemi.Core.SecurityCredentials,System.String,Alchemi.Core.RemoteEndPoint)">
+            <summary>
+            Connects an Executor to the Manager in dedicated mode.
+            <br/>(Generally meant to be called by a Executor)
+            </summary>
+            <param name="sc"></param>
+            <param name="executorId"></param>
+            <param name="executorEP"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Executor_ConnectNonDedicatedExecutor(Alchemi.Core.SecurityCredentials,System.String,Alchemi.Core.RemoteEndPoint)">
+            <summary>
+            Connects an Executor to the Manager in non-dedicated mode.
+            <br/>(Generally meant to be called by a Executor)
+            </summary>
+            <param name="sc"></param>
+            <param name="executorId"></param>
+            <param name="executorEP"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Executor_DisconnectExecutor(Alchemi.Core.SecurityCredentials,System.String)">
+            <summary>
+            Disconnects an Executor from the Manager.
+            <br/>(Generally meant to be called by a Executor)
+            </summary>
+            <param name="sc"></param>
+            <param name="executorId"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Executor_GetNextScheduledThreadIdentifier(Alchemi.Core.SecurityCredentials,System.String)">
+            <summary>
+            Gets the thread-identifier of the next thread scheduled to be executed.
+            <br/>(Generally meant to be called by a Executor)
+            </summary>
+            <param name="sc"></param>
+            <param name="executorId"></param>
+            <returns>ThreadIdentifier</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Executor_GetApplicationManifest(Alchemi.Core.SecurityCredentials,System.String)">
+            <summary>
+            Gets the manifest of the application with the given id.
+            <br/>(Generally meant to be called by a Executor)
+            </summary>
+            <param name="sc"></param>
+            <param name="appId"></param>
+            <returns>FileDependencyCollection</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Executor_GetThread(Alchemi.Core.SecurityCredentials,Alchemi.Core.Owner.ThreadIdentifier)">
+            <summary>
+            Gets the thread with the given id in the form of a byte array. This is the code to be executed on the Executor.
+            <br/>(Generally meant to be called by a Executor)
+            </summary>
+            <param name="sc"></param>
+            <param name="ti"></param>
+            <returns>byte array [] representing the thread </returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Executor_Heartbeat(Alchemi.Core.SecurityCredentials,System.String,Alchemi.Core.Executor.HeartbeatInfo)">
+            <summary>
+            Notifies the Manager about the status of the Executor with the "heartbeat" information
+            <br/>(Generally meant to be called by a Executor)
+            </summary>
+            <param name="sc"></param>
+            <param name="executorId"></param>
+            <param name="info"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Executor_SetFinishedThread(Alchemi.Core.SecurityCredentials,Alchemi.Core.Owner.ThreadIdentifier,System.Byte[],System.Exception)">
+            <summary>
+            Returns the finished thread to the Manager.
+            <br/>(Generally meant to be called by a Executor)
+            </summary>
+            <param name="sc"></param>
+            <param name="ti"></param>
+            <param name="thread"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Executor_RelinquishThread(Alchemi.Core.SecurityCredentials,Alchemi.Core.Owner.ThreadIdentifier)">
+            <summary>
+            Informs the manager that the Executor has given up execution of the thread with the given id. 
+            <br/>(Generally meant to be called by a Executor)
+            </summary>
+            <param name="sc"></param>
+            <param name="ti"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_GetLiveApplicationList(Alchemi.Core.SecurityCredentials)">
+            <summary>
+            Gets the list of all the applications.
+            
+            Updates: 
+            
+            23 October 2005 - Tibor Biro (tb@tbiro.com) - Changed the Application data from a DataSet 
+            	to ApplicationStorageView
+            
+            </summary>
+            <param name="sc"></param>
+            <returns>ApplicationStorageView array with application information</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_GetUserApplicationList(Alchemi.Core.SecurityCredentials)">
+            <summary>
+            Gets the application list for the given user.
+            
+            Updates: 
+            
+            23 October 2005 - Tibor Biro (tb@tbiro.com) - Changed the Application data from a DataSet DataSet 
+            	to ApplicationStorageView
+            </summary>
+            <param name="sc"></param>
+            <returns>ApplicationStorageView array with application information</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_GetThreadList(Alchemi.Core.SecurityCredentials,System.String)">
+            <summary>
+            Gets the list of thread for the given application
+            </summary>
+            <param name="sc"></param>
+            <param name="appId"></param>
+            <returns>ThreadStorageView array with thread list</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_GetThreadList(Alchemi.Core.SecurityCredentials,System.String,Alchemi.Core.Owner.ThreadState)">
+            <summary>
+            Gets the list of threads with a given status.
+            </summary>
+            <param name="sc"></param>
+            <param name="appId"></param>
+            <param name="status"></param>
+            <returns>ThreadStorageView array with thread list</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_GetUserList(Alchemi.Core.SecurityCredentials)">
+            <summary>
+            Gets the list of users.
+            </summary>
+            <param name="sc"></param>
+            <returns>DataTabke with user information</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_GetGroups(Alchemi.Core.SecurityCredentials)">
+            <summary>
+            Gets the list of groups
+            </summary>
+            <param name="sc"></param>
+            <returns>DataTable with group information</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_GetGroup(Alchemi.Core.SecurityCredentials,System.Int32)">
+            <summary>
+            Gets group details.
+            </summary>
+            <param name="sc"></param>
+            <param name="groupId"></param>
+            <returns>Group details</returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_DeleteGroup(Alchemi.Core.SecurityCredentials,Alchemi.Core.Manager.Storage.GroupStorageView)">
+            <summary>
+            Delete a group and all the associated users.
+            </summary>
+            <param name="sc"></param>
+            <param name="groupToDelete"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.GetGroupUsers(Alchemi.Core.SecurityCredentials,System.Int32)">
+            <summary>
+            Get the users associated with a group.
+            </summary>
+            <param name="sc"></param>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_UpdateUsers(Alchemi.Core.SecurityCredentials,Alchemi.Core.Manager.Storage.UserStorageView[])">
+            <summary>
+            Updates the Manager database with the given table of users.
+            </summary>
+            <param name="sc"></param>
+            <param name="updates"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_AddUsers(Alchemi.Core.SecurityCredentials,Alchemi.Core.Manager.Storage.UserStorageView[])">
+            <summary>
+            Adds all the users in the given table to the Manager database
+            </summary>
+            <param name="sc"></param>
+            <param name="users"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_DeleteUser(Alchemi.Core.SecurityCredentials,Alchemi.Core.Manager.Storage.UserStorageView)">
+            <summary>
+            Remove a user from the database;
+            </summary>
+            <param name="sc"></param>
+            <param name="userToDelete"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_GetSystemSummary(Alchemi.Core.SecurityCredentials)">
+            <summary>
+            Gets the system summary information
+            </summary>
+            <param name="sc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_GetExecutors(Alchemi.Core.SecurityCredentials)">
+            <summary>
+            
+            </summary>
+            <param name="sc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_GetExecutor(Alchemi.Core.SecurityCredentials,System.String)">
+            <summary>
+            Get executor details
+            </summary>
+            <param name="sc"></param>
+            <param name="executorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_DeleteThread(Alchemi.Core.SecurityCredentials,Alchemi.Core.Manager.Storage.ThreadStorageView)">
+            <summary>
+            Delete the given thread form the database.
+            </summary>
+            <param name="sc"></param>
+            <param name="threadToDelete"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_DeleteApplication(Alchemi.Core.SecurityCredentials,Alchemi.Core.Manager.Storage.ApplicationStorageView)">
+            <summary>
+            Delete an application and alal associated threads.
+            </summary>
+            <param name="sc"></param>
+            <param name="applicationToDelete"></param>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_GetGroupPermissions(Alchemi.Core.SecurityCredentials,Alchemi.Core.Manager.Storage.GroupStorageView)">
+            <summary>
+            Get a list of permissions for a group.
+            </summary>
+            <param name="sc"></param>
+            <param name="group"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_GetPermissions(Alchemi.Core.SecurityCredentials)">
+            <summary>
+            Get a list of all permissions defined in the application
+            </summary>
+            <param name="sc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.IManager.Admon_PerformStorageMaintenance(Alchemi.Core.SecurityCredentials,Alchemi.Core.Manager.Storage.StorageMaintenanceParameters)">
+            <summary>
+            Performs maintenance on the manager storage using the given parameters.
+            </summary>
+            <param name="sc"></param>
+            <param name="maintenanceParameters"></param>
+        </member>
+        <member name="T:Alchemi.Core.Executor.HeartbeatInfo">
+            <summary>
+            This structure is a container for all the information sent in a heartbeat update.
+            This primarily consists of dynamic information about an Executor, such as current load conditions etc...
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.HeartbeatInfo.Interval">
+            <summary>
+            Heartbeat interval
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.HeartbeatInfo.PercentUsedCpuPower">
+            <summary>
+            PercentUsedCpuPower
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.HeartbeatInfo.PercentAvailCpuPower">
+            <summary>
+            PercentAvailCpuPower
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Executor.HeartbeatInfo.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates an instance of the HeartBeat object with the given interval, used, and available CPU power.
+            </summary>
+            <param name="interval"></param>
+            <param name="used"></param>
+            <param name="avail"></param>
+        </member>
+        <member name="T:Alchemi.Core.RemotingException">
+            <summary>
+            Represents a exception that occured in Remoting
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.RemotingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Creates an instance of the RemotingException
+            </summary>
+            <param name="message">error message</param>
+            <param name="innerException">innerException causing this exception</param>
+        </member>
+        <member name="T:Alchemi.Core.AuthenticationException">
+            <summary>
+            Represents an exception that occured during Authentication
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.AuthenticationException.#ctor(System.String,System.Exception)">
+            <summary>
+             Creates an instance of the AuthenticationException
+            </summary>
+            <param name="message">error message</param>
+            <param name="innerException">innerException causing this exception</param>
+        </member>
+        <member name="M:Alchemi.Core.AuthenticationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Creates an instance of the AuthenticationException
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Alchemi.Core.AuthorizationException">
+            <summary>
+            Represents an exception that occured during authorization (checking user permissions).
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.AuthorizationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Creates an instance of the AuthorizationException
+            </summary>
+            <param name="message">error message</param>
+            <param name="innerException">innerException causing this exception</param>
+        </member>
+        <member name="M:Alchemi.Core.AuthorizationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Creates an instance of the AuthorizationException
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Alchemi.Core.InvalidExecutorException">
+            <summary>
+            Represents an exception that occurs when the executor id is invalid.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.InvalidExecutorException.#ctor(System.String,System.Exception)">
+            <summary>
+            Creates an instance of the InvalidExecutorException
+            </summary>
+            <param name="message">error message</param>
+            <param name="innerException">innerException causing this exception</param>
+        </member>
+        <member name="M:Alchemi.Core.InvalidExecutorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Creates an instance of the InvalidExecutorException
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Alchemi.Core.InvalidApplicationException">
+            <summary>
+            Represents an exception that occurs when the application id is invalid.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.InvalidApplicationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Creates an instance of the InvalidApplicationException
+            </summary>
+            <param name="message">message</param>
+            <param name="innerException">innerException causing this exception</param>
+        </member>
+        <member name="M:Alchemi.Core.InvalidApplicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Creates an instance of the InvalidApplicationException
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Alchemi.Core.InvalidThreadException">
+            <summary>
+            Represents an exception that occurs when the thread id is invalid.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.InvalidThreadException.#ctor(System.String,System.Exception)">
+            <summary>
+            Creates an instance of the InvalidThreadException
+            </summary>
+            <param name="message">message</param>
+            <param name="innerException">innerException causing this exception</param>
+        </member>
+        <member name="M:Alchemi.Core.InvalidThreadException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Creates an instance of the InvalidThreadException
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Alchemi.Core.ConnectBackException">
+            <summary>
+            Represents an exception that occurs when the manager cannot connect back to the executor
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.ConnectBackException.#ctor(System.String,System.Exception)">
+            <summary>
+            Creates an instance of the ConnectBackException
+            </summary>
+            <param name="message">error message</param>
+            <param name="innerException">innerException causing this exception</param>
+        </member>
+        <member name="M:Alchemi.Core.ConnectBackException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Creates an instance of the ConnectBackException
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Alchemi.Core.ManifestFileException">
+            <summary>
+            Represents an exception used to indicate that there is an error related to saving/retrieving the Application Manifest file.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.ManifestFileException.ApplicationId">
+            <summary>
+            Id of the ApplicationId
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.ManifestFileException.#ctor(System.String,System.Exception)">
+            <summary>
+            Creates an instance of the ManifestException class
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Alchemi.Core.ManifestFileException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Creates an instance of the ManifestFileException
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Alchemi.Core.ThreadDatFileException">
+            <summary>
+            Represents an exception used to indicate that there is an error related to saving/retrieving the Thread Data file.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.ThreadDatFileException.ApplicationId">
+            <summary>
+            Id of the Application
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.ThreadDatFileException.ThreadId">
+            <summary>
+            Id of the Thread
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.ThreadDatFileException.#ctor(System.String,System.Exception)">
+            <summary>
+            Creates an instance of the ThreadDatFileException class
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Alchemi.Core.ThreadDatFileException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Creates an instance of the ThreadDatFileException
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Alchemi.Core.Owner.ModuleDependency">
+            <summary>
+            Represents a dependency which is a .Net module
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.ModuleDependency.#ctor(System.Reflection.Module)">
+            <summary>
+            Creates an instance of the ModuleDependency class
+            </summary>
+            <param name="module"></param>
+        </member>
+        <member name="T:Alchemi.Core.Owner.GApplicationBuffered">
+            <summary>
+            GApplicationBuffered class represents a buffered multi-use application. StartThread method has been overridden such that the thread is not immediately started rather it is placed in a thread buffer. When the thread buffer count reaches the thread buffer capacity then that thread buffer is sent to the manager as one thread. The GApplicationBuffered class should be used when there are many threads with short execution times. Under these conditions, using GApplicationBuffered class can significantly improve performance compared to using GApplication class.
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.GApplication">
+            <summary>
+            Represents a grid application
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplication.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplication.GetThreadState(Alchemi.Core.Owner.GThread)">
+            <summary>
+            Gets the state of the given GThread
+            </summary>
+            <param name="thread"></param>
+            <returns>ThreadState indicating its status</returns>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplication.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates an instance of the GApplication
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplication.#ctor">
+            <summary>
+            Creates an instance of the GApplication
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplication.#ctor(Alchemi.Core.Owner.GConnection)">
+            <summary>
+            Creates an instance of the GApplication
+            </summary>
+            <param name="connection"></param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplication.#ctor(System.Boolean)">
+            <summary>
+            Creates an instance of the GApplication
+            </summary>
+            <param name="multiUse">specifies if the GApplication instance is re-usable</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplication.Dispose(System.Boolean)">
+            <summary>
+            Disposes the GApplication object and performs clean up operations.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplication.Start">
+            <summary>
+            Starts the grid application
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplication.StartThread(Alchemi.Core.Owner.GThread)">
+            <summary>
+            Starts the given thread
+            </summary>
+            <param name="thread">thread to start</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplication.Stop">
+            <summary>
+            Stops the grid application
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplication.AbortThread(Alchemi.Core.Owner.GThread)">
+            <summary>
+            Aborts the given thread
+            </summary>
+            <param name="thread">thread to abort</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplication.OnThreadFinish(Alchemi.Core.Owner.GThread)">
+            <summary>
+            Fires the thread finish event.
+            </summary>
+            <param name="th">thread</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplication.OnThreadFailed(Alchemi.Core.Owner.GThread,System.Exception)">
+            <summary>
+            Fires the thread failed event.
+            </summary>
+            <param name="th">thread</param>
+            <param name="ex">ex</param>
+        </member>
+        <member name="E:Alchemi.Core.Owner.GApplication.ThreadFinish">
+            <summary>
+            ThreadFinish event: is raised when the thread has completed execution successfully.
+            </summary>
+        </member>
+        <member name="E:Alchemi.Core.Owner.GApplication.ThreadFailed">
+            <summary>
+            ThreadFailed event: is raised when the thread has completed execution and failed.
+            </summary>
+        </member>
+        <member name="E:Alchemi.Core.Owner.GApplication.ApplicationFinish">
+            <summary>
+            ApplicationFinish event: is raised when all the threads in the application have completed execution, i.e finished/failed.
+            This event is NOT raised when the GApplication is declared as "multi-use".
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GApplication.Manifest">
+            <summary>
+            Gets the application manifest (a manifest is a collection file dependencies)
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GApplication.Threads">
+            <summary>
+            Gets the collection  threads in the application
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GApplication.Id">
+            <summary>
+            Gets the application id
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GApplication.Running">
+            <summary>
+            Gets a value indicating whether the application is currently running
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplicationBuffered.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplicationBuffered.#ctor(Alchemi.Core.Owner.GConnection)">
+            <summary>
+            Constructor that takes the given connection.
+            </summary>
+            <param name="connection">connection to alchemi manager</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplicationBuffered.#ctor(Alchemi.Core.Owner.GConnection,System.Int32)">
+            <summary>
+            Constructor that takes the given connection and the thread buffer capacity.
+            </summary>
+            <param name="oConnection"></param>
+            <param name="nThreadBufferCapacity"></param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplicationBuffered.#ctor(System.Int32)">
+            <summary>
+            Constructor that takes the thread buffer capacity.
+            </summary>
+            <param name="nThreadBufferCapacity">thread buffer capacity</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplicationBuffered.StartThread(Alchemi.Core.Owner.GThread)">
+            <summary>
+            Starts the given thread indirectly by adding it to the thread buffer. When the thread buffer count reaches the thread buffer capacity then that thread buffer is sent to the manager as one thread.
+            </summary>
+            <param name="oThread">thread</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplicationBuffered.oThreadBuffer_Full(System.Object,System.EventArgs)">
+            <summary>
+            Handles the thread buffer full event. It flushes the thread buffer.
+            </summary>
+            <param name="oSender">sender</param>
+            <param name="oEventArgs">event args</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplicationBuffered.FlushThreads">
+            <summary>
+            Flushes the thread buffer by sending the thread buffer to the manager as one thread.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplicationBuffered.CreateThreadBuffer">
+            <summary>
+            Creates a thread buffer.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplicationBuffered.OnThreadFinish(Alchemi.Core.Owner.GThread)">
+            <summary>
+            Fires the thread finish event.
+            </summary>
+            <param name="oThread0">thread</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GApplicationBuffered.OnThreadFailed(Alchemi.Core.Owner.GThread,System.Exception)">
+            <summary>
+            Fires the thread failed event.
+            </summary>
+            <param name="oThread0">thread</param>
+            <param name="oException">exception</param>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GApplicationBuffered.ThreadBufferCapacity">
+            <summary>
+            ThreadBufferCapacity property represents the thread buffer capacity. 
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Owner.FileDependencyCollection">
+            <summary>
+            Represents a collection of FileDependencies
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.FileDependencyCollection.Add(Alchemi.Core.Owner.FileDependency)">
+            <summary>
+            Adds the given FileDependency object to this collection
+            </summary>
+            <param name="dependency">file dependency to add</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.FileDependencyCollection.Add(Alchemi.Core.Owner.FileDependency[])">
+            <summary>
+            Adds the given FileDependency list to this collection
+            </summary>
+            <param name="dependencyList">file dependencies to add</param>
+        </member>
+        <member name="M:Alchemi.Core.Owner.FileDependencyCollection.Contains(Alchemi.Core.Owner.FileDependency)">
+            <summary>
+            Checks if the collection already contains the given dependency.
+            </summary>
+            <param name="dependency">Dependency to check.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Alchemi.Core.Owner.FileDependencyCollection.Item(System.Int32)">
+            <summary>
+            Gets the FileDependency with the given index
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Manager.Storage.ApplicationStorageView">
+            <summary>
+            Storage view of an application object. 
+            Used to pass application related data to and from the storage layer.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ApplicationStorageView.#ctor(Alchemi.Core.Owner.ApplicationState,System.DateTime,System.Boolean,System.String)">
+            <summary>
+            ApplicationStorageView constructor.
+            </summary>
+            <param name="state"></param>
+            <param name="timeCreated"></param>
+            <param name="primary"></param>
+            <param name="username"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ApplicationStorageView.#ctor(System.String,Alchemi.Core.Owner.ApplicationState,System.DateTime,System.Boolean,System.String)">
+            <summary>
+            ApplicationStorageView constructor.
+            </summary>
+            <param name="applicationId"></param>
+            <param name="state"></param>
+            <param name="timeCreated"></param>
+            <param name="primary"></param>
+            <param name="username"></param>
+        </member>
+        <member name="M:Alchemi.Core.Manager.Storage.ApplicationStorageView.#ctor(System.String)">
+            <summary>
+            ApplicationStorageView constructor.
+            Initialize an application with only a username supplied.
+            </summary>
+            <param name="username"></param>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ApplicationStorageView.ApplicationName">
+            <summary>
+            The application name.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ApplicationStorageView.ApplicationId">
+            <summary>
+            The Application Id.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ApplicationStorageView.State">
+            <summary>
+            The Application state.
+            <seealso cref="T:Alchemi.Core.Owner.ApplicationState"/>
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ApplicationStorageView.TimeCreated">
+            <summary>
+            The time the application was created.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ApplicationStorageView.TimeCompleted">
+            <summary>
+            The time the application was completed.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ApplicationStorageView.TimeCreatedSet">
+            <summary>
+            Gets a value indicating whether the TimeCreated property is set or not.
+            <seealso cref="P:Alchemi.Core.Manager.Storage.ApplicationStorageView.TimeCreated"/>
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ApplicationStorageView.TimeCompletedSet">
+            <summary>
+            Gets a value indicating whether the TimeCompleted property is set or not.
+            <seealso cref="P:Alchemi.Core.Manager.Storage.ApplicationStorageView.TimeCompleted"/>
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ApplicationStorageView.Primary">
+            <summary>
+            Gets a value indicating whether this is the primary application.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ApplicationStorageView.Username">
+            <summary>
+            The user that created this application.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ApplicationStorageView.TotalThreads">
+            <summary>
+            The total thread count for this application.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ApplicationStorageView.UnfinishedThreads">
+            <summary>
+            The unfinished thread count for this application.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Manager.Storage.ApplicationStorageView.StateString">
+            <summary>
+            Gets a human readable description of the ApplicationState property.
+            <seealso cref="T:Alchemi.Core.Owner.ApplicationState"/>
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.RemoteEndPoint">
+            <summary>
+            Represents a remote end point.
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.RemoteEndPoint.#ctor(System.String,System.Int32,Alchemi.Core.RemotingMechanism)">
+            <summary>
+            Creates an instance of the RemoteEndPoint class
+            </summary>
+            <param name="host"></param>
+            <param name="port"></param>
+            <param name="remotingMechanism"></param>
+        </member>
+        <member name="P:Alchemi.Core.RemoteEndPoint.Host">
+            <summary>
+            Gets or sets the hostname of the remote end point
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.SecurityCredentials">
+            <summary>
+            Represents the credentials required to authenticate to a node
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.SecurityCredentials.Username">
+            <summary>
+            Username
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.SecurityCredentials.Password">
+            <summary>
+            Password
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.SecurityCredentials.#ctor(System.String,System.String)">
+            <summary>
+            Creates an instance of the SecurityCredentials class
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+        </member>
+        <member name="T:Alchemi.Core.ICrossPlatformManager">
+            <summary>
+            Defines the functions to be provided by a cross-platform webservices manager
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.ICrossPlatformManager.CreateTask(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.ICrossPlatformManager.SubmitTask(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="taskXml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.ICrossPlatformManager.AddJob(System.String,System.String,System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            Add a job to the manager with the given credentials, task and jobID, priority and XML description
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="taskId"></param>
+            <param name="jobId"></param>
+            <param name="priority"></param>
+            <param name="jobXml"></param>
+        </member>
+        <member name="M:Alchemi.Core.ICrossPlatformManager.GetFinishedJobs(System.String,System.String,System.String)">
+            <summary>
+            Gets the XML description of the finished jobs for the given application/task id
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="taskId">task / application id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Alchemi.Core.ICrossPlatformManager.GetJobState(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Gets the status of the job with the given id and task/application id.
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="taskId">application / task id</param>
+            <param name="jobId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Alchemi.Core.Owner.GConnectionDialogForm">
+            <summary>
+            Represents the form that is used to connect to the manager
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GConnectionDialogForm.#ctor">
+            <summary>
+            Creates an instance of the GConnectionDialogForm class
+            </summary>
+        </member>
+        <member name="M:Alchemi.Core.Owner.GConnectionDialogForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Alchemi.Core.Owner.GConnectionDialogForm.Connection">
+            <summary>
+            Gets the GConnection object
+            </summary>
+        </member>
+        <member name="T:Config">
+            <summary>
+            Represents the login configuration information, to connect to a manager.
+            Used for GConnection Dialog
+            </summary>
+        </member>
+        <member name="M:Config.Read(System.String)">
+            <summary>
+            Reads the config from a file
+            </summary>
+            <param name="filename">file to read from</param>
+            <returns>Config object read</returns>
+        </member>
+        <member name="M:Config.#ctor(System.String)">
+            <summary>
+            Creates a new instance of the Config class
+            </summary>
+            <param name="file">file name to read from / write to</param>
+        </member>
+        <member name="M:Config.Write">
+            <summary>
+            Write the config to file
+            </summary>
+        </member>
+        <member name="T:Alchemi.Core.Executor.ExecutorInfo">
+            <summary>
+            Represents the static attributes of an executor.
+            
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.ExecutorInfo.Hostname">
+            <summary>
+            Gets or sets the Hostname of the Executor.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.ExecutorInfo.MaxCpuPower">
+            <summary>
+            Gets or sets the maximum CPU power in the Executor hardware. (in Mhz)?Ghz
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.ExecutorInfo.MaxMemory">
+            <summary>
+            Gets or sets the maximum memory (RAM) in the Executor hardware. (in MB)
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.ExecutorInfo.MaxDiskSpace">
+            <summary>
+            Gets or sets the maximum disk space in the Executor hardware. (in MB)
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.ExecutorInfo.Number_of_CPUs">
+            <summary>
+            Gets or sets the total number of CPUs in the Executor hardware.
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.ExecutorInfo.OS">
+            <summary>
+            Gets or sets the name of Operating system running on the Executor
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.ExecutorInfo.Architecture">
+            <summary>
+            Gets or sets the architecture of the processor/machine of the Executor (eg: x86, RISC etc)
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.ExecutorInfo.CPULimit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.ExecutorInfo.memLimit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.ExecutorInfo.diskLimit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.ExecutorInfo.CostPerCPUSec">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.ExecutorInfo.CostPerThread">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Alchemi.Core.Executor.ExecutorInfo.CostPerDiskMB">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

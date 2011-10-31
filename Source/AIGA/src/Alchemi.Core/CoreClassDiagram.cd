@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Alchemi.Core.RemotingException" Collapsed="true">
+    <Position X="12.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Exceptions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.AuthenticationException" Collapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Exceptions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.AuthorizationException" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Exceptions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.InvalidExecutorException" Collapsed="true">
+    <Position X="12.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Exceptions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.InvalidApplicationException" Collapsed="true">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Exceptions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.InvalidThreadException" Collapsed="true">
+    <Position X="14.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Exceptions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.ConnectBackException" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Exceptions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.ManifestFileException" Collapsed="true">
+    <Position X="9" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Exceptions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.ThreadDatFileException" Collapsed="true">
+    <Position X="10.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Exceptions.cs</FileName>
+      <HashCode>AAAAAAAAAAAgAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.GNode" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GNode.cs</FileName>
+      <HashCode>BAAAIQQAEAAAAAECAUAIAgAAAAAERAAABIACAAIAAgI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Logger" Collapsed="true">
+    <Position X="17.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Logger.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAYAAAAAAAAAAAAAAAAEEAAAAAEAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.LogEventArgs" Collapsed="true">
+    <Position X="16" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Logger.cs</FileName>
+      <HashCode>AAAAAAAAAgAAAAIAAAAAAAAAAAEIAEABCABAIAAAACA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.OwnEndPoint" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>OwnEndPoint.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAEACAABCAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.CrossPlatformHelper" Collapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\CrossPlatformHelper.cs</FileName>
+      <HashCode>BAAAAAAAAAEAAAQCAAAAAAAAAAgAAABAABAIBBAAgAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.RemoteEndPoint" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RemoteEndPoint.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAACAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.SecurityCredentials" Collapsed="true">
+    <Position X="14.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SecurityCredentials.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.GConnection" Collapsed="true">
+    <Position X="12.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GConnection.cs</FileName>
+      <HashCode>AAAAAAAAQCAAAEAAAQKAAECCCAAECAACAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.GConnectionDialog" Collapsed="true">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GConnectionDialog.cs</FileName>
+      <HashCode>AQAAAAAAACAAAAEAAACAAAECAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.GConnectionDialogForm" Collapsed="true">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GConnectionDialogForm.cs</FileName>
+      <HashCode>ACACAAAAACAAABEABACBAAACAAAAAACAACAAMQAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.EmbeddedFileDependency" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>Owner\EmbeddedFileDependency.cs</FileName>
+      <HashCode>AAAAAAAAAAAEAGQAAAAAAAAAAAAAAAAAAAAIAAAAAAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.FileDependency" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\FileDependency.cs</FileName>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAABAAAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.FileDependencyCollection" Collapsed="true">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\FileDependencyCollection.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.GApplication" Collapsed="true">
+    <Position X="3.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\GApplication.cs</FileName>
+      <HashCode>AAACAQASRCAIEAECAICgAAESEAAAAkAIJAACBDBEBAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.GJob" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\GJob.cs</FileName>
+      <HashCode>AAAAAAAAACAAAAACAAAAAQAAAAAAIACAADAAAAQAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.GThread" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\GThread.cs</FileName>
+      <HashCode>QAACAAAAADAQICEEBQAAAAAAAAAAAAAAAAAABAQEACA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.ModuleDependency" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Owner\ModuleDependency.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.ThreadCollection" Collapsed="true">
+    <Position X="9" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\ThreadCollection.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAACAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.ThreadIdentifier" Collapsed="true">
+    <Position X="12.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\ThreadIdentifier.cs</FileName>
+      <HashCode>AAAAAAAAAAAgIEAEAQAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Config" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GConnectionDialogForm.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAACAQAAAAAgCAAACAACAAAAAAEAEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Manager.Storage.ApplicationStorageView" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Manager\Storage\ApplicationStorageView.cs</FileName>
+      <HashCode>gAAAQgAAAAAFAAAAUQAABgCBAAAIAAAAAAAABACCALg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Manager.Storage.ExecutorStorageView" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Manager\Storage\ExecutorStorageView.cs</FileName>
+      <HashCode>gICQgACQAAIAQAEAQQAAFAgUHQBIAaCAgAAUDAEAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Manager.Storage.GroupStorageView" Collapsed="true">
+    <Position X="17.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Manager\Storage\GroupStorageView.cs</FileName>
+      <HashCode>AAAAAAAEAAAgBAQBAAAAAAAAAAAIAAAAAAAAAABAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Manager.Storage.PermissionStorageView" Collapsed="true">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Manager\Storage\PermissionStorageView.cs</FileName>
+      <HashCode>AIAAIAAAAAAAAICAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Manager.Storage.SystemSummary" Collapsed="true">
+    <Position X="17.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Manager\Storage\SystemSummary.cs</FileName>
+      <HashCode>AAAIBAAAAAAAAAAAAAAAAIBQACEIAAAgCAAAAICCAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Manager.Storage.ThreadStorageView" Collapsed="true">
+    <Position X="14.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Manager\Storage\ThreadStorageView.cs</FileName>
+      <HashCode>ABAAIQAAAABhEAAEAQABEAIFgQAAAACAABAABCIACCA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Manager.Storage.UserStorageView" Collapsed="true">
+    <Position X="16" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Manager\Storage\UserStorageView.cs</FileName>
+      <HashCode>AAAAAAAEAAAABAQBAQAIBQAAAAAAAAAGAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Utility.HashUtil" Collapsed="true">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utility\HashUtil.cs</FileName>
+      <HashCode>AAAEAAAAEAAAAACAACAAAAgAAAAAAAADAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Utility.ServiceHelper" Collapsed="true">
+    <Position X="16" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utility\ServiceHelper.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAgAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Utility.Utils" Collapsed="true">
+    <Position X="17.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utility\Utils.cs</FileName>
+      <HashCode>EAAAAgIBABABQAQACABAAgAAAAAAkBABAAAAQAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Utility.XmlStringWriter" Collapsed="true">
+    <Position X="9" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utility\XmlStringWriter.cs</FileName>
+      <HashCode>AAAIAAAAAAAAAACAAAAAAAQAAAAAAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Alchemi.Core.Executor.ExecutorInfo" Collapsed="true">
+    <Position X="9" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Executor\ExecutorInfo.cs</FileName>
+      <HashCode>BAAIAAAAAAMAAAACAAgAAABAAAAACoAAAAAABAAQAAE=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Alchemi.Core.Executor.HeartbeatInfo" Collapsed="true">
+    <Position X="10.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Executor\HearbeatInfo.cs</FileName>
+      <HashCode>AAgAAAAAAAAAAAAAAIAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Alchemi.Core.Utility.TriStateBoolean" Collapsed="true">
+    <Position X="12.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utility\TriStateBoolean.cs</FileName>
+      <HashCode>AAAAAAAAAACAAAAEgAAAAAAAAAQAAIAAAAgAAAAAAiA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Alchemi.Core.IExecutor" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Executor\IExecutor.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Alchemi.Core.ICrossPlatformManager" Collapsed="true">
+    <Position X="9" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Manager\ICrossPlatformManager.cs</FileName>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAgAAABAABAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Alchemi.Core.IManager" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Manager\IManager.cs</FileName>
+      <HashCode>QCEImAABAgEhFQAEICCMAIDSAQAQAAQACIqEJAAAEAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Alchemi.Core.IOwner" Collapsed="true">
+    <Position X="14.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\IOwner.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Alchemi.Core.Manager.Storage.IManagerStorage" Collapsed="true">
+    <Position X="10.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Manager\Storage\IManagerStorage.cs</FileName>
+      <HashCode>YCAACACADSAQAQAEQQACACgAEAAkAUAEQAAACAAAEBU=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Alchemi.Core.Manager.Storage.IManagerStorageSetup" Collapsed="true">
+    <Position X="12.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Manager\Storage\IManagerStorageSetup.cs</FileName>
+      <HashCode>AAAgAAIAAAAAAAAAAIAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Alchemi.Core.LogLevel" Collapsed="true">
+    <Position X="12.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Logger.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAYAAAAAAAAAAAAAAAAEAAAAAAEAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Alchemi.Core.RemotingMechanism" Collapsed="true">
+    <Position X="16" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RemotingMechanism.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Alchemi.Core.Owner.ApplicationState" Collapsed="true">
+    <Position X="9" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\ApplicationState.cs</FileName>
+      <HashCode>AAAAAAAAAAIAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Alchemi.Core.Owner.ThreadState" Collapsed="true">
+    <Position X="17.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\ThreadState.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAEAAAQAAAAAAEIAAAAAAAAACAAAABA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Alchemi.Core.Manager.Permission" Collapsed="true">
+    <Position X="14.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Manager\Permission.cs</FileName>
+      <HashCode>AAAAAAAACAAAAAAAAAAACAAAAAAAAAAgAAAAAAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Alchemi.Core.Utility.DateTimeInterval" Collapsed="true">
+    <Position X="10.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utility\Utils.cs</FileName>
+      <HashCode>AAAAAAAAJACAAAAAAAAAAAIAAAEAECIEAAAAAIAAQAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Alchemi.Core.LogEventHandler" Collapsed="true">
+    <Position X="14.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Delegates.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAgAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Alchemi.Core.Owner.GApplicationFinish" Collapsed="true">
+    <Position X="9" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\Delegates.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Alchemi.Core.Owner.GThreadFinish" Collapsed="true">
+    <Position X="12.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\Delegates.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Alchemi.Core.Owner.GThreadFailed" Collapsed="true">
+    <Position X="10.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\Delegates.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+</ClassDiagram>

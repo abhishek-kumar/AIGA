@@ -1,0 +1,49 @@
+/*** style overrides for printing level 3 pages ***/
+
+html, body {
+      background-color: transparent;
+}
+
+/* gallery images page styles */
+.tdimagesproject {
+      background-color: #FFFFFF;
+}
+.tdimagesproject p,
+.tdimagesproject a,
+.tdimagesproject a:link,
+.tdimagesproject a:visited,
+.tdimagesproject a:active,
+.tdimagesproject a:hover {
+      color: #000000;
+}
+
+
+/*** TABLE BACKGROUNDS ***/
+
+#tdlefttop,
+#tdcentertop,
+#tdrighttop,
+#tdrighttopspotlights,
+#tdrighttopspotlight,
+#tdrighttopmitstrategy,
+#tdrighttopmicrosoftgoals,
+#tdrighttopbythenumbers,
+#tdrighttopfaculty,
+#tdrighttopstudents,
+#tdrighttopwebservices,
+#tdrighttopclassroomtransform,
+#tdrighttopannouncement,
+#tdrighttoppresskit,
+#tdrighttopevents,
+#tdrighttopimages,
+#tdrighttopvideo,
+{
+      background-color: transparent;
+      background-image: none;
+}
+
+#tabletitle2,
+#tablesubtitle,
+#tablecontent {
+      background-color: transparent;
+}

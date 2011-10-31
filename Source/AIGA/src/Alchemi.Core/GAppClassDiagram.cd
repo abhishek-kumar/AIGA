@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Alchemi.Core.SecurityCredentials" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SecurityCredentials.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.GConnection" Collapsed="true">
+    <Position X="5.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GConnection.cs</FileName>
+      <HashCode>AAAAAAAAQCAAAEAAAQKAAECCCAAECAACAAAAAAIACAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SecurityCredentials" />
+    </ShowAsAssociation>
+    <AssociationLine Name="SecurityCredentials" Type="Alchemi.Core.SecurityCredentials">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.248" Y="0.081" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.FileDependency" Collapsed="true">
+    <Position X="1" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\FileDependency.cs</FileName>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAABAAAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.FileDependencyCollection" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Owner\FileDependencyCollection.cs</FileName>
+      <HashCode>AAIAAAAAAAQAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FileDependency" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.GApplication" Collapsed="true">
+    <Position X="2.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\GApplication.cs</FileName>
+      <HashCode>AAACAQASRCAIEAECAICgAAESEAAAAkAIJBACBDBEBAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ThreadCollection" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.GJob" Collapsed="true">
+    <Position X="1.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\GJob.cs</FileName>
+      <HashCode>gAAAAAAAACAAAAACAAAAAQAAAAAAIACAADAAAAQAAAE=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FileDependencyCollection" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.GThread" Collapsed="true">
+    <Position X="1.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\GThread.cs</FileName>
+      <HashCode>QAACAAAAADAQICEEBQAAAAAAAAAAAAAAAAAABAQEACA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Alchemi.Core.Owner.ThreadCollection" Collapsed="true">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Owner\ThreadCollection.cs</FileName>
+      <HashCode>AAMAAAAAAAAAAAAACAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GThread" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Alchemi.Core.GNode" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GNode.cs</FileName>
+      <HashCode>BAAAIQQAEAAAAAECAUAIAgAAAAAERAAARIACAAIAAgI=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GConnection" />
+    </ShowAsAssociation>
+  </Class>
+</ClassDiagram>

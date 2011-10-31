@@ -1,0 +1,297 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{234F2AB1-B1F6-4FAD-9DAD-E18AF5847880}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Alchemi.Core</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Alchemi.Core</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>Alchemi.Core.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ServiceRelease|AnyCPU' ">
+    <OutputPath>..\..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>Alchemi.Core.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <Name>System.Runtime.Remoting</Name>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <Name>System.ServiceProcess</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonAssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Delegates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Executor\ExecutorInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Executor\HearbeatInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Executor\IExecutor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GConnection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GConnectionDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GConnectionDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GNode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Owner\GThreadBuffer.cs" />
+    <Compile Include="Logger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\ICrossPlatformManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\IManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\Permission.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\Storage\ApplicationStorageView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\Storage\ExecutorStorageView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\Storage\GroupStorageView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\Storage\IManagerStorage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\Storage\IManagerStorageSetup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\Storage\PermissionStorageView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\Storage\StorageMaintenanceParameters.cs" />
+    <Compile Include="Manager\Storage\SystemSummary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\Storage\ThreadStorageView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Manager\Storage\UserStorageView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OwnEndPoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Owner\ApplicationState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Owner\CrossPlatformHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Owner\Delegates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Owner\EmbeddedFileDependency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Owner\FileDependency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Owner\FileDependencyCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Owner\GApplication.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Owner\GApplicationBuffered.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Owner\GJob.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Owner\GThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Owner\IOwner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Owner\ModuleDependency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Owner\ThreadCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Owner\ThreadIdentifier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Owner\ThreadState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RemoteEndPoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RemotingMechanism.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SecurityCredentials.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utility\HashUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utility\ServiceHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utility\TriStateBoolean.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utility\Utils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utility\XmlStringWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="GConnection.resx">
+      <DependentUpon>GConnection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GConnectionDialog.resx">
+      <DependentUpon>GConnectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GConnectionDialogForm.resx">
+      <DependentUpon>GConnectionDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GNode.resx">
+      <DependentUpon>GNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner\GApplication.resx">
+      <DependentUpon>GApplication.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="AIMLbot2.3\AIMLbot\AIMLbot\AIMLbot.csproj">
+      <Project>{9C87D82C-0E27-4995-A2CB-72BCB84EF2E2}</Project>
+      <Name>AIMLbot</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,22 @@
+/*** pop-up menu true positions, hidden from NN4 ***/
+#menuicampus {
+      left: 355px;
+      top: 14px;
+}
+#menuprojects {
+      left: 355px;
+      top: 42px;
+}
+#menuthemes {
+      left: 355px;
+      top: 70px;
+}
+#menunews {
+      left: 355px;
+      top: 98px;
+}
+#menugallery {
+      left: 355px;
+      top: 126px;
+}
+
